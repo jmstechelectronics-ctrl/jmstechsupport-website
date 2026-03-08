@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="JMS Tech Support provides local IT support in Yamba, Maclean and Clarence Valley. Slow internet help, Wi-Fi fixes, computer repairs and security camera installation." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://jmstechsupport.com.au/" />
+  <title>JMS Tech Support | Local IT Support in Yamba, Maclean & Clarence Valley</title>
+
+  <meta property="og:locale" content="en_AU" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="JMS Tech Support" />
+  <meta property="og:title" content="JMS Tech Support | Local IT Support in Yamba, Maclean & Clarence Valley" />
+  <meta property="og:description" content="Slow internet help, Wi-Fi fixes, computer support and security camera installation across Clarence Valley." />
+  <meta property="og:url" content="https://jmstechsupport.com.au/" />
+  <meta property="og:image" content="https://jmstechsupport.com.au/assets/hero/hero-collage.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="JMS Tech Support | Local IT Support in Yamba, Maclean & Clarence Valley" />
+  <meta name="twitter:description" content="Slow internet help, Wi-Fi fixes, computer support and security camera installation across Clarence Valley." />
+  <meta name="twitter:image" content="https://jmstechsupport.com.au/assets/hero/hero-collage.png" />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <style>
+    [hidden] { display: none !important; }
+    :root {
+      --primary: #006092;
+      --primary-dark: #092d5e;
+      --ink: #0b1020;
+      --muted: #5b6475;
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --line: #e6ebf2;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(11, 16, 32, 0.10);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color: var(--ink);
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(0, 96, 146, .18), transparent 60%),
+                  radial-gradient(1000px 600px at 90% 0%, rgba(9, 45, 94, .12), transparent 55%),
+                  var(--bg);
+      line-height: 1.56;
+    }
+    a { color: inherit; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: saturate(1.2) blur(10px);
+      background: rgba(246, 248, 251, .78);
+      border-bottom: 1px solid rgba(230, 235, 242, .7);
+    }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 12px 0;
+    }
+    .brand img { width: 150px; height: auto; display: block; }
+
+    nav { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    nav a {
+      text-decoration: none;
+      font-weight: 650;
+      color: rgba(11, 16, 32, .9);
+      padding: 9px 10px;
+      border-radius: 12px;
+    }
+    nav a:hover { background: rgba(0, 96, 146, .08); }
+
+    .menu-btn {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      border: 1px solid rgba(230, 235, 242, .9);
+      background: rgba(255,255,255,.75);
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+      padding: 0;
+      color: rgba(11,16,32,.85);
+    }
+    .menu-btn span {
+      display: block;
+      width: 18px;
+      height: 2px;
+      background: currentColor;
+      border-radius: 2px;
+    }
+    .mobile-menu {
+      display: none;
+      margin: 0;
+      padding: 0 10px;
+      border-radius: 16px;
+      border: 1px solid transparent;
+      background: rgba(255,255,255,.85);
+      box-shadow: none;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      pointer-events: none;
+      transform: translateY(-6px);
+      transition: max-height .28s ease, opacity .2s ease, margin .2s ease, padding .2s ease, transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+    .mobile-menu a {
+      display: block;
+      padding: 12px;
+      border-radius: 12px;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .mobile-menu a:hover { background: rgba(0,96,146,.08); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-weight: 750;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: #fff;
+      box-shadow: 0 10px 18px rgba(0,96,146,.22);
+    }
+    .btn-ghost {
+      background: rgba(255,255,255,.8);
+      border-color: rgba(230,235,242,.95);
+      color: var(--ink);
+    }
+
+    .hero { padding: 34px 0 18px; }
+    .hero-shell {
+      background: linear-gradient(145deg, rgba(255,255,255,.84), rgba(255,255,255,.68));
+      border: 1px solid rgba(230,235,242,.92);
+      border-radius: 28px;
+      box-shadow: 0 18px 40px rgba(11,16,32,.10);
+      padding: 14px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      align-items: stretch;
+    }
+    .hero-copy,
+    .panel {
+      background: rgba(255,255,255,.85);
+      border: 1px solid rgba(230,235,242,.92);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+    .hero-copy {
+      border-radius: 22px;
+      padding: clamp(20px, 4vw, 36px);
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(34px, 5.6vw, 54px);
+      line-height: 1.04;
+      letter-spacing: -.8px;
+    }
+    .lead { margin: 0; color: rgba(11,16,32,.78); font-size: 19px; }
+    .hero-actions { margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .trust-badges {
+      margin-top: 16px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 11px;
+      border-radius: 999px;
+      border: 1px solid rgba(0,96,146,.22);
+      background: rgba(0,96,146,.10);
+      color: var(--primary-dark);
+      font-size: 13px;
+      font-weight: 750;
+      white-space: nowrap;
+    }
+    .hero-media {
+      position: relative;
+      overflow: hidden;
+      border-radius: 22px;
+      border: 1px solid rgba(230,235,242,.95);
+      box-shadow: var(--shadow);
+      background: linear-gradient(140deg, rgba(0,96,146,.08), rgba(255,255,255,.95));
+      min-height: 320px;
+    }
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      background: #fff;
+    }
+    .hero-media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(9,45,94,.12) 100%);
+      pointer-events: none;
+    }
+    @media (min-width: 981px) {
+      .hero-grid { grid-template-columns: 1.03fr .97fr; gap: 18px; }
+      .hero-shell { padding: 18px; }
+      .hero-media { min-height: 540px; }
+    }
+
+    section { padding: 18px 0; }
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-end;
+      margin-bottom: 12px;
+    }
+    .section-title h2 { margin: 0; font-size: 28px; letter-spacing: -.4px; }
+    .section-title p { margin: 0; color: var(--muted); font-weight: 600; }
+
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .card:hover { border-color: rgba(0,96,146,.35); }
+    .pill {
+      display: inline-flex;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(0,96,146,.1);
+      border: 1px solid rgba(0,96,146,.18);
+      color: var(--primary-dark);
+      font-weight: 800;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+    .card h3 { margin: 2px 0 8px; font-size: 20px; letter-spacing: -.2px; }
+    .card p { margin: 0; color: rgba(11,16,32,.76); }
+    .service-cards .service-card {
+      padding: 0;
+      min-height: 340px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    }
+    .service-cards .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(11,16,32,.14);
+      border-color: rgba(0,96,146,.34);
+    }
+    .service-card-media {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+    .service-card-body {
+      padding: 16px 18px 18px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 8px;
+    }
+    .service-card-body .pill { margin-bottom: 0; }
+    .service-link {
+      margin-top: auto;
+      color: var(--primary-dark);
+      font-weight: 750;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      font-size: 14px;
+    }
+    .area-map-card {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      min-height: 250px;
+      display: flex;
+      align-items: flex-end;
+    }
+    .area-map-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("assets/areas/clarence-valley-map-v3.png") no-repeat 76% center / cover;
+      transform: scale(1.22);
+      transform-origin: right center;
+      opacity: 0.8;
+      z-index: 0;
+    }
+    .area-map-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(255,255,255,.93) 0%, rgba(255,255,255,.78) 44%, rgba(255,255,255,.22) 100%);
+      z-index: 0;
+    }
+    .area-map-content {
+      position: relative;
+      z-index: 2;
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .area-map-card .pill { width: fit-content; }
+    .area-map-labels {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+    }
+    .area-label {
+      position: absolute;
+      font-size: 11px;
+      line-height: 1;
+      font-weight: 800;
+      color: #ffffff;
+      background: rgba(9,45,94,.8);
+      border: 1px solid rgba(255,255,255,.55);
+      border-radius: 999px;
+      padding: 4px 7px;
+      box-shadow: 0 4px 12px rgba(11,16,32,.24);
+      transform: translate(-50%, -50%);
+    }
+    .area-label.yamba { top: 34%; right: 31%; transform: translate(50%, -50%); }
+    .area-label.iluka { top: 27%; right: 37%; transform: translate(50%, -50%); }
+    .area-label.maclean { top: 46%; right: 35%; transform: translate(50%, -50%); }
+    .area-label.grafton { top: 53%; right: 46%; transform: translate(50%, -50%); }
+    .faq-card {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      min-height: 250px;
+      display: flex;
+      align-items: flex-end;
+      background: linear-gradient(145deg, #f8fbfd 0%, #edf4f8 100%);
+      border-color: rgba(148, 185, 207, .65);
+    }
+    .faq-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("assets/hero/faqbg.png") no-repeat center center / cover;
+      opacity: .92;
+      filter: brightness(.86) saturate(.72) contrast(1);
+      z-index: 0;
+      pointer-events: none;
+    }
+    .faq-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(255,255,255,.93) 0%, rgba(255,255,255,.78) 44%, rgba(255,255,255,.22) 100%);
+      z-index: 1;
+      pointer-events: none;
+    }
+    .faq-card-content {
+      position: relative;
+      z-index: 2;
+      max-width: 56%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .faq-card .pill { width: fit-content; }
+
+    .site-footer { padding: 22px 0 40px; color: rgba(11,16,32,.72); }
+    .footer-panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+    .footer-main {
+      display: grid;
+      grid-template-columns: 1.2fr auto;
+      gap: 14px;
+      align-items: center;
+    }
+    .footer-brand { margin: 0; font-size: 20px; }
+    .footer-meta { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
+    .footer-nav { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+    .footer-nav a { font-size: 14px; text-decoration: none; }
+    .footer-nav a:hover { text-decoration: underline; }
+    .footer-areas {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    @media (max-width: 980px) {
+      .main-nav { display: none; }
+      .menu-btn { display: inline-flex; }
+      .mobile-menu { display: block; }
+      .mobile-menu.is-open {
+        max-height: 420px;
+        opacity: 1;
+        margin: 10px 0 12px;
+        padding: 10px;
+        border-color: rgba(230,235,242,.9);
+        box-shadow: var(--shadow);
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+      .hero-grid { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .area-map-content { max-width: 64%; }
+      .faq-card-content { max-width: 64%; }
+      .footer-main { grid-template-columns: 1fr; }
+      .footer-nav { justify-content: flex-start; }
+      h1 { font-size: 36px; }
+    }
+
+    @media (max-width: 1200px) and (min-width: 981px) {
+      .area-map-content { max-width: 54%; }
+      .area-label.yamba { right: 29%; }
+      .area-label.iluka { right: 34%; }
+      .area-label.maclean { right: 33%; }
+      .area-label.grafton { right: 44%; }
+      .faq-card-content { max-width: 58%; }
+    }
+
+    @media (max-width: 760px) {
+      .brand img { width: 120px; }
+      h1 { font-size: 33px; }
+      .area-map-card::after {
+        background: linear-gradient(90deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.86) 55%, rgba(255,255,255,.40) 100%);
+      }
+      .area-map-content { max-width: 100%; }
+      .area-map-labels { display: none; }
+      .faq-card-content { max-width: 100%; }
+      .faq-card::before {
+        background-size: cover;
+      }
+      .faq-card::after {
+        background: linear-gradient(90deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.86) 55%, rgba(255,255,255,.40) 100%);
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://jmstechsupport.com.au/#website",
+        "name": "JMS Tech Support",
+        "url": "https://jmstechsupport.com.au/"
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://jmstechsupport.com.au/#localbusiness",
+        "name": "JMS Tech Support",
+        "telephone": "+61 418 160 226",
+        "email": "josh@jmstechsupport.com.au",
+        "url": "https://jmstechsupport.com.au/",
+        "areaServed": [
+          "Yamba NSW",
+          "Maclean NSW",
+          "Iluka NSW",
+          "Townsend NSW",
+          "Gulmarrad NSW",
+          "Grafton NSW",
+          "Clarence Valley NSW"
+        ],
+        "sameAs": [
+          "https://instagram.com/jmstechsupport",
+          "https://facebook.com/jmstechit"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://jmstechsupport.com.au/#webpage",
+        "url": "https://jmstechsupport.com.au/",
+        "name": "JMS Tech Support - Local IT Support in Clarence Valley",
+        "isPartOf": { "@id": "https://jmstechsupport.com.au/#website" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a id="top"></a>
+  <header>
+    <div class="container">
+      <div class="topbar">
+        <a class="brand" href="/" aria-label="JMS Tech Support home">
+          <img src="logo.png" alt="JMS Tech Support logo" />
+        </a>
+
+        <nav class="main-nav" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/services.html">Services</a>
+          <a href="/slow-internet-wifi-help.html">Slow internet help</a>
+          <a href="/security-camera-installation-yamba.html">Security Cameras</a>
+          <a href="/tips/">Tips</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+
+        <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu" hidden>
+        <a href="/">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/slow-internet-wifi-help.html">Slow internet help</a>
+        <a href="/security-camera-installation-yamba.html">Security Cameras</a>
+        <a href="/tips/">Tips</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <div class="hero-shell">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <h1>Local IT support that actually solves the problem.</h1>
+              <p class="lead">Fast, practical help for slow internet, Wi-Fi dropouts, computer issues and security cameras across Yamba, Maclean and the Clarence Valley.</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="tel:0418160226">Call 0418 160 226</a>
+                <a class="btn btn-ghost" href="/contact.html">Request support</a>
+              </div>
+              <div class="trust-badges" aria-label="Trust highlights">
+                <span class="trust-badge">We come to you</span>
+                <span class="trust-badge">Local Clarence Valley service</span>
+                <span class="trust-badge">Clear practical support</span>
+              </div>
+            </div>
+
+            <div class="hero-media" aria-label="JMS Tech Support technician">
+              <img src="assets/hero/Bruce.png" alt="JMS Tech Support technician providing local support" loading="eager" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title">
+          <h2>Core services</h2>
+          <p>Dedicated pages, clearer paths.</p>
+        </div>
+        <div class="grid-3 service-cards">
+          <a class="card service-card" href="/services.html">
+            <img class="service-card-media" src="assets/services/pltu.png?v=20260308" alt="Computer and device support service" loading="lazy" />
+            <div class="service-card-body">
+              <div class="pill">General IT</div>
+              <h3>Computer and device support</h3>
+              <p>PC/laptop fixes, email problems, printer setup, software issues and general troubleshooting for home and business.</p>
+              <span class="service-link">Learn more</span>
+            </div>
+          </a>
+          <a class="card service-card" href="/slow-internet-wifi-help.html">
+            <img class="service-card-media" src="assets/services/nfw.png" alt="Slow internet and Wi-Fi support service" loading="lazy" />
+            <div class="service-card-body">
+              <div class="pill">Wi-Fi / NBN</div>
+              <h3>Slow internet and Wi-Fi help</h3>
+              <p>Dropouts, dead zones, buffering and NBN troubleshooting. We isolate the bottleneck and fix it properly.</p>
+              <span class="service-link">Learn more</span>
+            </div>
+          </a>
+          <a class="card service-card" href="/security-camera-installation-yamba.html">
+            <img class="service-card-media" src="assets/services/cis.png" alt="Security camera installation and setup service" loading="lazy" />
+            <div class="service-card-body">
+              <div class="pill">Security cameras</div>
+              <h3>Camera installation and setup</h3>
+              <p>Clean installs, app setup, motion zones, playback training and Wi-Fi optimisation for reliable performance.</p>
+              <span class="service-link">Learn more</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title">
+          <h2>Local pages</h2>
+          <p>Less clutter, faster navigation.</p>
+        </div>
+        <div class="grid-2">
+          <a class="card area-map-card" href="/service-area.html">
+            <div class="area-map-labels" aria-hidden="true">
+              <span class="area-label iluka">Iluka</span>
+              <span class="area-label yamba">Yamba</span>
+              <span class="area-label maclean">Maclean</span>
+              <span class="area-label grafton">Grafton</span>
+            </div>
+            <div class="area-map-content">
+              <div class="pill">Coverage</div>
+              <h3>Service area</h3>
+              <p>See suburbs we cover across Clarence Valley and how to request support outside the core zones.</p>
+            </div>
+          </a>
+          <a class="card faq-card" href="/faq.html">
+            <div class="faq-card-content">
+              <div class="pill">Answers</div>
+              <h3>FAQ</h3>
+              <p>Quick answers on slow internet, Wi-Fi setup, camera installs, troubleshooting, and support options.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title">
+          <h2>Latest tips</h2>
+          <p>Local, practical guides.</p>
+        </div>
+        <div class="grid-3">
+          <a class="card" href="/tips/slow-internet-at-night-yamba.html">
+            <div class="pill">Slow internet</div>
+            <h3>Why is my internet slow at night in Yamba?</h3>
+            <p>Quickly separate Wi-Fi issues from provider-side bottlenecks.</p>
+          </a>
+          <a class="card" href="/tips/best-wifi-setup-maclean-homes.html">
+            <div class="pill">Wi-Fi setup</div>
+            <h3>Best Wi-Fi setup for homes in Maclean</h3>
+            <p>Router placement and mesh planning for stable whole-home coverage.</p>
+          </a>
+          <a class="card" href="/tips/how-many-security-cameras-home-clarence-valley.html">
+            <div class="pill">Security cameras</div>
+            <h3>How many cameras does a home really need?</h3>
+            <p>A practical camera-count guide for local homes.</p>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="panel">
+          <h2 style="margin:0 0 8px; font-size:28px; letter-spacing:-.4px;">Ready to book support?</h2>
+          <p style="margin:0; color:rgba(11,16,32,.78);">Call for urgent help, or use the contact page for quotes and job details.</p>
+          <div class="hero-actions" style="margin-top:14px;">
+            <a class="btn btn-primary" href="tel:0418160226">Call now</a>
+            <a class="btn btn-ghost" href="/contact.html">Open contact page</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-panel">
+          <div class="footer-main">
+            <div>
+              <h3 class="footer-brand">JMS Tech Support</h3>
+              <p class="footer-meta">&copy; <span id="year"></span> JMS Tech Support. All rights reserved.</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Footer">
+              <a href="/services.html">Services</a>
+              <a href="/slow-internet-wifi-help.html">Slow internet help</a>
+              <a href="/security-camera-installation-yamba.html">Security Cameras</a>
+              <a href="/tips/">Tips</a>
+              <a href="/service-area.html">Service area</a>
+              <a href="/faq.html">FAQ</a>
+              <a href="/contact.html">Contact</a>
+            </nav>
+          </div>
+          <p class="footer-areas">JMS Tech Support provides computer repairs, Wi-Fi help and security camera installation across Yamba, Maclean, Iluka, Townsend, Gulmarrad, Grafton and the Clarence Valley.</p>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const menuBtn = document.querySelector('.menu-btn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if (menuBtn && mobileMenu) {
+      mobileMenu.hidden = false;
+
+      const closeMenu = () => {
+        menuBtn.setAttribute('aria-expanded', 'false');
+        mobileMenu.classList.remove('is-open');
+      };
+
+      const toggleMenu = () => {
+        const isOpen = menuBtn.getAttribute('aria-expanded') === 'true';
+        if (isOpen) {
+          closeMenu();
+        } else {
+          menuBtn.setAttribute('aria-expanded', 'true');
+          mobileMenu.classList.add('is-open');
+        }
+      };
+
+      closeMenu();
+      menuBtn.addEventListener('click', toggleMenu);
+
+      mobileMenu.querySelectorAll('a').forEach((a) => {
+        a.addEventListener('click', closeMenu);
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 980) closeMenu();
+      });
+    }
+  </script>
+</body>
+</html>

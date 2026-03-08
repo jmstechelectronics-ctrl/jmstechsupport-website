@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Local tech tips for Yamba, Maclean and Clarence Valley. Practical advice for slow internet, Wi-Fi dropouts, NBN issues and security camera setup." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://jmstechsupport.com.au/tips/" />
+  <title>Tech Tips | Slow Internet, Wi-Fi and Security Camera Advice | JMS Tech Support</title>
+
+  <meta property="og:locale" content="en_AU" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="JMS Tech Support" />
+  <meta property="og:title" content="Tech Tips | Slow Internet, Wi-Fi and Security Camera Advice" />
+  <meta property="og:description" content="Local troubleshooting tips for homes and small businesses in Yamba, Maclean and Clarence Valley." />
+  <meta property="og:url" content="https://jmstechsupport.com.au/tips/" />
+  <meta property="og:image" content="https://jmstechsupport.com.au/assets/hero/popular-help.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tech Tips | Slow Internet, Wi-Fi and Security Camera Advice" />
+  <meta name="twitter:description" content="Local troubleshooting tips for homes and small businesses in Yamba, Maclean and Clarence Valley." />
+  <meta name="twitter:image" content="https://jmstechsupport.com.au/assets/hero/popular-help.png" />
+
+  <link rel="icon" type="image/png" href="../favicon.png" />
+
+  <style>
+    :root {
+      --primary: #006092;
+      --primary-dark: #092d5e;
+      --ink: #0b1020;
+      --muted: #5b6475;
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --line: #e6ebf2;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(11, 16, 32, 0.1);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color: var(--ink);
+      line-height: 1.55;
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(0, 96, 146, 0.18), transparent 60%),
+                  radial-gradient(1000px 600px at 90% 0%, rgba(9, 45, 94, 0.12), transparent 55%),
+                  var(--bg);
+    }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: saturate(1.2) blur(10px);
+      background: rgba(246, 248, 251, 0.78);
+      border-bottom: 1px solid rgba(230, 235, 242, 0.7);
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 12px 0;
+    }
+
+    .brand img { width: 150px; height: auto; display: block; }
+
+    nav { display: flex; gap: 14px; flex-wrap: wrap; }
+    nav a {
+      text-decoration: none;
+      color: rgba(11, 16, 32, 0.9);
+      font-weight: 650;
+      padding: 9px 10px;
+      border-radius: 12px;
+    }
+    nav a:hover { background: rgba(0, 96, 146, 0.08); }
+
+    .hero {
+      padding: 34px 0 14px;
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.84);
+      border: 1px solid rgba(230, 235, 242, 0.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 40px;
+      line-height: 1.1;
+      letter-spacing: -0.6px;
+    }
+
+    .lead { margin: 0; color: rgba(11, 16, 32, 0.78); font-size: 18px; }
+
+    section { padding: 18px 0; }
+
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-end;
+      margin-bottom: 12px;
+    }
+
+    .section-title h2 { margin: 0; font-size: 28px; letter-spacing: -0.4px; }
+    .section-title p { margin: 0; color: var(--muted); font-weight: 600; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .card:hover { border-color: rgba(0, 96, 146, 0.35); }
+    .pill {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      background: rgba(0, 96, 146, 0.1);
+      border: 1px solid rgba(0, 96, 146, 0.2);
+      margin-bottom: 8px;
+    }
+
+    .card h3 { margin: 0 0 8px; font-size: 20px; line-height: 1.25; }
+    .card p { margin: 0; color: rgba(11, 16, 32, 0.76); }
+
+    .cta {
+      margin-top: 8px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      font-weight: 750;
+      border-radius: 14px;
+      padding: 12px 14px;
+      border: 1px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      box-shadow: 0 10px 18px rgba(0, 96, 146, 0.22);
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.86);
+      border-color: rgba(230, 235, 242, 0.95);
+      color: var(--ink);
+    }
+
+    .site-footer {
+      padding: 18px 0 40px;
+      color: rgba(11, 16, 32, 0.75);
+    }
+
+    .site-footer .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+
+    .meta { margin: 0; font-size: 13px; color: var(--muted); }
+
+    @media (max-width: 860px) {
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 34px; }
+      .brand img { width: 122px; }
+      nav { gap: 8px; }
+    }    .menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:1px solid rgba(230,235,242,.9);background:rgba(255,255,255,.75);align-items:center;justify-content:center;flex-direction:column;gap:4px;cursor:pointer;padding:0;color:rgba(11,16,32,.85)}
+    .menu-btn span{display:block;width:18px;height:2px;background:currentColor;border-radius:2px}
+    .mobile-menu{display:none;margin:0;padding:0 10px;border-radius:16px;border:1px solid transparent;background:rgba(255,255,255,.85);box-shadow:none;max-height:0;opacity:0;overflow:hidden;pointer-events:none;transform:translateY(-6px);transition:max-height .28s ease,opacity .2s ease,margin .2s ease,padding .2s ease,transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+    .mobile-menu a{display:block;padding:12px;border-radius:12px;font-weight:650;text-decoration:none}
+    .mobile-menu a:hover{background:rgba(0,96,146,.08)}
+    @media (max-width:980px){.main-nav{display:none}.menu-btn{display:inline-flex}.mobile-menu{display:block}.mobile-menu.is-open{max-height:420px;opacity:1;margin:10px 0 12px;padding:10px;border-color:rgba(230,235,242,.9);box-shadow:var(--shadow);pointer-events:auto;transform:translateY(0)}}
+
+
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://jmstechsupport.com.au/tips/#collection",
+    "name": "JMS Tech Support Tips",
+    "url": "https://jmstechsupport.com.au/tips/",
+    "description": "Local tips for slow internet, Wi-Fi and security cameras in Yamba, Maclean and Clarence Valley.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "JMS Tech Support",
+      "url": "https://jmstechsupport.com.au/"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://jmstechsupport.com.au/tips/slow-internet-at-night-yamba.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://jmstechsupport.com.au/tips/best-wifi-setup-maclean-homes.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://jmstechsupport.com.au/tips/how-many-security-cameras-home-clarence-valley.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://jmstechsupport.com.au/tips/nbn-dropouts-router-or-provider.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "url": "https://jmstechsupport.com.au/tips/outdoor-camera-placement-night-footage.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "url": "https://jmstechsupport.com.au/tips/pop-up-warning-signs-yamba.html"
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="topbar">
+        <a class="brand" href="/" aria-label="JMS Tech Support home">
+          <img src="../logo.png" alt="JMS Tech Support logo" />
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/services.html">Services</a>
+          <a href="/slow-internet-wifi-help.html">Slow internet help</a>
+          <a href="/security-camera-installation-yamba.html">Security Cameras</a>
+          <a href="/tips/">Tips</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+        <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu" hidden>
+        <a href="/">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/slow-internet-wifi-help.html">Slow internet help</a>
+        <a href="/security-camera-installation-yamba.html">Security Cameras</a>
+        <a href="/tips/">Tips</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <div class="hero-card">
+          <h1>Local Tech Tips for Yamba, Maclean and Clarence Valley</h1>
+          <p class="lead">Actionable guides for slow internet, Wi-Fi dropouts, NBN issues and security camera setup. Written for local homes and small businesses.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title">
+          <h2>Latest Guides</h2>
+          <p>Local, practical, no jargon.</p>
+        </div>
+
+        <div class="grid">
+          <a class="card" href="/tips/slow-internet-at-night-yamba.html">
+            <span class="pill">Slow Internet</span>
+            <h3>Why Is My Internet Slow at Night in Yamba?</h3>
+            <p>Find out whether your evening speed drops are caused by Wi-Fi congestion, household usage, or upstream NBN limits.</p>
+          </a>
+
+          <a class="card" href="/tips/best-wifi-setup-maclean-homes.html">
+            <span class="pill">Wi-Fi Setup</span>
+            <h3>Best Wi-Fi Setup for Homes in Maclean</h3>
+            <p>A clear layout for router placement, mesh decisions, and settings that improve speed and stability around the whole house.</p>
+          </a>
+
+          <a class="card" href="/tips/how-many-security-cameras-home-clarence-valley.html">
+            <span class="pill">Security Cameras</span>
+            <h3>How Many Security Cameras Does a Clarence Valley Home Need?</h3>
+            <p>A practical way to choose 2, 3, or 4 cameras based on entry points, blind spots, and your daily routine.</p>
+          </a>
+
+          <a class="card" href="/tips/nbn-dropouts-router-or-provider.html">
+            <span class="pill">NBN Troubleshooting</span>
+            <h3>NBN Dropouts: Router Issue or Provider Issue?</h3>
+            <p>Use a simple testing sequence so you can isolate the fault before replacing hardware or changing provider.</p>
+          </a>
+
+          <a class="card" href="/tips/outdoor-camera-placement-night-footage.html">
+            <span class="pill">Camera Placement</span>
+            <h3>Outdoor Camera Placement for Better Night Footage</h3>
+            <p>Positioning tips to reduce glare, improve facial detail, and capture useful footage instead of dark blur.</p>
+          </a>
+
+          <a class="card" href="/tips/pop-up-warning-signs-yamba.html">
+            <span class="pill">Online Safety</span>
+            <h3>Pop-Ups to Watch For: Local Awareness Guide</h3>
+            <p>A quick guide to high-risk pop-up warning signs so you can spot scam-style prompts and avoid clicking in a rush.</p>
+          </a>
+        </div>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="tel:0418160226">Call 0418 160 226</a>
+          <a class="btn btn-ghost" href="/contact.html">Request local help</a>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="panel">
+          <p class="meta">JMS Tech Support provides computer repairs, Wi-Fi help and security camera installation across Yamba, Maclean, Iluka, Townsend, Gulmarrad, Grafton and the Clarence Valley.</p>
+          <p class="meta" style="margin-top:8px;">&copy; <span id="year"></span> JMS Tech Support</p>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script>
+        (function () {
+      const menuBtn = document.querySelector('.menu-btn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (!menuBtn || !mobileMenu) return;
+
+      mobileMenu.hidden = false;
+
+      const closeMenu = () => {
+        menuBtn.setAttribute('aria-expanded', 'false');
+        mobileMenu.classList.remove('is-open');
+      };
+
+      const toggleMenu = () => {
+        const isOpen = menuBtn.getAttribute('aria-expanded') === 'true';
+        if (isOpen) {
+          closeMenu();
+        } else {
+          menuBtn.setAttribute('aria-expanded', 'true');
+          mobileMenu.classList.add('is-open');
+        }
+      };
+
+      closeMenu();
+      menuBtn.addEventListener('click', toggleMenu);
+
+      mobileMenu.querySelectorAll('a').forEach((a) => {
+        a.addEventListener('click', closeMenu);
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 980) closeMenu();
+      });
+    })();
+
+  </script>
+
+</body>
+</html>
