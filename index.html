@@ -314,7 +314,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: url("assets/areas/clarence-valley-map-v3.png") no-repeat 76% center / cover;
+      background: url("assets/areas/clarence-valley-map-v3.webp") no-repeat 76% center / cover;
       transform: scale(1.22);
       transform-origin: right center;
       opacity: 0.8;
@@ -373,7 +373,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: url("assets/hero/faqbg.png") no-repeat center center / cover;
+      background: url("assets/hero/faqbg.webp") no-repeat center center / cover;
       opacity: .92;
       filter: brightness(.86) saturate(.72) contrast(1);
       z-index: 0;
@@ -572,7 +572,13 @@
             </div>
 
             <div class="hero-media" aria-label="JMS Tech Support technician">
-              <img src="assets/hero/Bruce.png" alt="JMS Tech Support technician providing local support" loading="eager" />
+              <img
+                src="assets/hero/Bruce.png"
+                srcset="assets/hero/Bruce-768.webp 768w, assets/hero/Bruce-1280.webp 1280w"
+                sizes="(max-width: 980px) 100vw, 50vw"
+                alt="JMS Tech Support technician providing local support"
+                loading="eager"
+              />
             </div>
           </div>
         </div>
@@ -585,7 +591,7 @@
         </div>
         <div class="grid-3 service-cards">
           <a class="card service-card" href="/services.html">
-            <img class="service-card-media" src="assets/services/pltu.png?v=20260308" alt="Computer and device support service" loading="lazy" />
+            <img class="service-card-media" src="assets/services/pltu.png" srcset="assets/services/pltu-480.webp 480w, assets/services/pltu-800.webp 800w" sizes="(max-width: 980px) 100vw, 33vw" alt="Computer and device support service" loading="lazy" />
             <div class="service-card-body">
               <div class="pill">General IT</div>
               <h3>Computer and device support</h3>
@@ -594,7 +600,7 @@
             </div>
           </a>
           <a class="card service-card" href="/slow-internet-wifi-help.html">
-            <img class="service-card-media" src="assets/services/nfw.png" alt="Slow internet and Wi-Fi support service" loading="lazy" />
+            <img class="service-card-media" src="assets/services/nfw.png" srcset="assets/services/nfw-480.webp 480w, assets/services/nfw-800.webp 800w" sizes="(max-width: 980px) 100vw, 33vw" alt="Slow internet and Wi-Fi support service" loading="lazy" />
             <div class="service-card-body">
               <div class="pill">Wi-Fi / NBN</div>
               <h3>Slow internet and Wi-Fi help</h3>
@@ -603,7 +609,7 @@
             </div>
           </a>
           <a class="card service-card" href="/security-camera-installation-yamba.html">
-            <img class="service-card-media" src="assets/services/cis.png" alt="Security camera installation and setup service" loading="lazy" />
+            <img class="service-card-media" src="assets/services/cis.png" srcset="assets/services/cis-480.webp 480w, assets/services/cis-800.webp 800w" sizes="(max-width: 980px) 100vw, 33vw" alt="Security camera installation and setup service" loading="lazy" />
             <div class="service-card-body">
               <div class="pill">Security cameras</div>
               <h3>Camera installation and setup</h3>
