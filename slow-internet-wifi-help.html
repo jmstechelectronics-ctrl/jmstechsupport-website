@@ -33,7 +33,17 @@
     .btn-ghost{background:#fff;border-color:var(--line);color:var(--ink)}
     .faq .q{font-size:20px;margin:0 0 6px}.faq p{margin:0;color:rgba(11,16,32,.76)}
     .footer{margin-top:10px;font-size:13px;color:var(--muted)}
-    @media (max-width:980px){.grid-2{grid-template-columns:1fr}.brand img{width:120px}h1{font-size:34px}}    .menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:1px solid rgba(230,235,242,.9);background:rgba(255,255,255,.75);align-items:center;justify-content:center;flex-direction:column;gap:4px;cursor:pointer;padding:0;color:rgba(11,16,32,.85)}
+    @media (max-width:980px){.grid-2{grid-template-columns:1fr}.brand img{width:120px}h1{font-size:34px}}        .site-footer{padding:22px 0 40px;color:rgba(11,16,32,.72)}
+    .footer-panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+    .footer-main{display:grid;grid-template-columns:1.2fr auto;gap:14px;align-items:center}
+    .footer-brand{margin:0;font-size:20px}
+    .footer-meta{margin:8px 0 0;font-size:13px;color:var(--muted)}
+    .footer-nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+    .footer-nav a{font-size:14px;text-decoration:none}
+    .footer-nav a:hover{text-decoration:underline}
+    .footer-areas{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);line-height:1.5}
+    @media (max-width:980px){.footer-main{grid-template-columns:1fr}.footer-nav{justify-content:flex-start}}
+    .menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:1px solid rgba(230,235,242,.9);background:rgba(255,255,255,.75);align-items:center;justify-content:center;flex-direction:column;gap:4px;cursor:pointer;padding:0;color:rgba(11,16,32,.85)}
     .menu-btn span{display:block;width:18px;height:2px;background:currentColor;border-radius:2px}
     .mobile-menu{display:none;margin:0;padding:0 10px;border-radius:16px;border:1px solid transparent;background:rgba(255,255,255,.85);box-shadow:none;max-height:0;opacity:0;overflow:hidden;pointer-events:none;transform:translateY(-6px);transition:max-height .28s ease,opacity .2s ease,margin .2s ease,padding .2s ease,transform .2s ease,border-color .2s ease,box-shadow .2s ease}
     .mobile-menu a{display:block;padding:12px;border-radius:12px;font-weight:650;text-decoration:none}
@@ -161,11 +171,34 @@
           <a class="btn btn-ghost" href="/faq.html">View all FAQ</a>
         </div>
       </section>
+      <footer class="site-footer">
+        <div class="footer-panel">
+          <div class="footer-main">
+            <div>
+              <h3 class="footer-brand">JMS Tech Support</h3>
+              <p class="footer-meta">&copy; <span id="year"></span> JMS Tech Support. All rights reserved.</p>
+            </div>
 
-      <p class="footer">Need camera reliability too? Visit <a href="/security-camera-installation-yamba.html">security camera installation</a>.</p>
+            <nav class="footer-nav" aria-label="Footer">
+              <a href="/about">About</a>
+              <a href="/services.html">Services</a>
+              <a href="/slow-internet-wifi-help.html">Slow internet help</a>
+              <a href="/security-camera-installation-yamba.html">Security Cameras</a>
+              <a href="/tips/">Tips</a>
+              <a href="/service-area.html">Service area</a>
+              <a href="/faq.html">FAQ</a>
+              <a href="/contact.html">Contact</a>
+            </nav>
+          </div>
+          <p class="footer-areas">JMS Tech Support provides computer repairs, Wi-Fi help and security camera installation across Yamba, Maclean, Iluka, Townsend, Gulmarrad, Grafton and the Clarence Valley.</p>
+        </div>
+      </footer>
+
     </div>
   </main>
   <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
         (function () {
       const menuBtn = document.querySelector('.menu-btn');
       const mobileMenu = document.getElementById('mobileMenu');

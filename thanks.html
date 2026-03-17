@@ -3,23 +3,151 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thanks — JMS Tech Support</title>
+  <title>Thanks | JMS Tech Support</title>
   <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" href="favicon.png" />
   <style>
-    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:#f6f8fb;color:#0b1020;line-height:1.6}
-    .wrap{max-width:760px;margin:0 auto;padding:42px 20px}
-    .card{background:#fff;border:1px solid #e6ebf2;border-radius:18px;box-shadow:0 10px 30px rgba(11,16,32,.10);padding:22px}
-    a{color:#006092;font-weight:750;text-decoration:none}
-    a:hover{text-decoration:underline}
+    [hidden]{display:none !important}
+    :root{--primary:#006092;--primary-dark:#092d5e;--ink:#0b1020;--muted:#5b6475;--bg:#f6f8fb;--card:#fff;--line:#e6ebf2;--radius:18px;--shadow:0 10px 30px rgba(11,16,32,.10)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:var(--ink);background:radial-gradient(1200px 600px at 10% -10%, rgba(0,96,146,.18), transparent 60%),radial-gradient(1000px 600px at 90% 0%, rgba(9,45,94,.12), transparent 55%),var(--bg);line-height:1.56}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(1.2) blur(10px);background:rgba(246,248,251,.78);border-bottom:1px solid rgba(230,235,242,.7)}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0}
+    .brand img{width:150px;display:block}
+    nav{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    nav a{text-decoration:none;font-weight:650;color:rgba(11,16,32,.9);padding:9px 10px;border-radius:12px}
+    nav a:hover{background:rgba(0,96,146,.08)}
+    .menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:1px solid rgba(230,235,242,.9);background:rgba(255,255,255,.75);align-items:center;justify-content:center;flex-direction:column;gap:4px;cursor:pointer;padding:0;color:rgba(11,16,32,.85)}
+    .menu-btn span{display:block;width:18px;height:2px;background:currentColor;border-radius:2px}
+    .mobile-menu{display:none;margin:0;padding:0 10px;border-radius:16px;border:1px solid transparent;background:rgba(255,255,255,.85);box-shadow:none;max-height:0;opacity:0;overflow:hidden;pointer-events:none;transform:translateY(-6px);transition:max-height .28s ease,opacity .2s ease,margin .2s ease,padding .2s ease,transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+    .mobile-menu a{display:block;padding:12px;border-radius:12px;font-weight:650;text-decoration:none}
+    .mobile-menu a:hover{background:rgba(0,96,146,.08)}
+    main{padding:34px 0 12px}
+    .wrap{max-width:760px;margin:0 auto}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px}
+    h1{margin:0 0 10px;font-size:40px;line-height:1.08;letter-spacing:-.6px}
+    p{margin:0;color:rgba(11,16,32,.78)}
+    .actions{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 14px;border-radius:14px;text-decoration:none;font-weight:750;border:1px solid transparent}
+    .btn-primary{color:#fff;background:linear-gradient(135deg,var(--primary),var(--primary-dark))}
+    .btn-ghost{background:rgba(255,255,255,.86);border-color:rgba(230,235,242,.95);color:var(--ink)}
+    .site-footer{padding:22px 0 40px;color:rgba(11,16,32,.72)}
+    .footer-panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+    .footer-main{display:grid;grid-template-columns:1.2fr auto;gap:14px;align-items:center}
+    .footer-brand{margin:0;font-size:20px}
+    .footer-meta{margin:8px 0 0;font-size:13px;color:var(--muted)}
+    .footer-nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+    .footer-nav a{font-size:14px;text-decoration:none}
+    .footer-nav a:hover{text-decoration:underline}
+    .footer-areas{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);line-height:1.5}
+    @media (max-width:980px){.main-nav{display:none}.menu-btn{display:inline-flex}.mobile-menu{display:block}.mobile-menu.is-open{max-height:420px;opacity:1;margin:10px 0 12px;padding:10px;border-color:rgba(230,235,242,.9);box-shadow:var(--shadow);pointer-events:auto;transform:translateY(0)}.footer-main{grid-template-columns:1fr}.footer-nav{justify-content:flex-start}}
+    @media (max-width:760px){.brand img{width:120px}h1{font-size:33px}}
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <h1 style="margin:0 0 10px">Thanks — got it.</h1>
-      <p style="margin:0 0 16px">We’ll get back to you shortly with a quote.</p>
-      <p style="margin:0"><a href="/security-camera-installation-yamba.html">Back to the cameras page</a></p>
+  <header>
+    <div class="container">
+      <div class="topbar">
+        <a class="brand" href="/" aria-label="JMS Tech Support home"><img src="logo.png" alt="JMS Tech Support logo" /></a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/services.html">Services</a>
+          <a href="/slow-internet-wifi-help.html">Slow internet help</a>
+          <a href="/security-camera-installation-yamba.html">Security Cameras</a>
+          <a href="/tips/">Tips</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+        <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu" hidden>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/services.html">Services</a>
+        <a href="/slow-internet-wifi-help.html">Slow internet help</a>
+        <a href="/security-camera-installation-yamba.html">Security Cameras</a>
+        <a href="/tips/">Tips</a>
+        <a href="/contact.html">Contact</a>
+      </div>
     </div>
-  </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="wrap">
+        <div class="card">
+          <h1>Thanks, your request has been sent.</h1>
+          <p>We&rsquo;ll get back to you shortly with a clear next step.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="/contact.html">Back to contact</a>
+            <a class="btn btn-ghost" href="/">Return home</a>
+          </div>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <div class="footer-panel">
+          <div class="footer-main">
+            <div>
+              <h3 class="footer-brand">JMS Tech Support</h3>
+              <p class="footer-meta">&copy; <span id="year"></span> JMS Tech Support. All rights reserved.</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Footer">
+              <a href="/about">About</a>
+              <a href="/services.html">Services</a>
+              <a href="/slow-internet-wifi-help.html">Slow internet help</a>
+              <a href="/security-camera-installation-yamba.html">Security Cameras</a>
+              <a href="/tips/">Tips</a>
+              <a href="/service-area.html">Service area</a>
+              <a href="/faq.html">FAQ</a>
+              <a href="/contact.html">Contact</a>
+            </nav>
+          </div>
+          <p class="footer-areas">JMS Tech Support provides computer repairs, Wi-Fi help and security camera installation across Yamba, Maclean, Iluka, Townsend, Gulmarrad, Grafton and the Clarence Valley.</p>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const menuBtn = document.querySelector('.menu-btn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if (menuBtn && mobileMenu) {
+      mobileMenu.hidden = false;
+
+      const closeMenu = () => {
+        menuBtn.setAttribute('aria-expanded', 'false');
+        mobileMenu.classList.remove('is-open');
+      };
+
+      const toggleMenu = () => {
+        const isOpen = menuBtn.getAttribute('aria-expanded') === 'true';
+        if (isOpen) {
+          closeMenu();
+        } else {
+          menuBtn.setAttribute('aria-expanded', 'true');
+          mobileMenu.classList.add('is-open');
+        }
+      };
+
+      closeMenu();
+      menuBtn.addEventListener('click', toggleMenu);
+
+      mobileMenu.querySelectorAll('a').forEach((a) => {
+        a.addEventListener('click', closeMenu);
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 980) closeMenu();
+      });
+    }
+  </script>
 </body>
 </html>
