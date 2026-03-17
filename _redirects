@@ -16,6 +16,8 @@ http://www.jmstechsupport.com.au/*    https://jmstechsupport.com.au/:splat   301
 /website   /website-creation-clarence-valley.html   301!
 /website-creation-clarence-valley   /website-creation-clarence-valley.html   301!
 /website-creation   /website-creation-clarence-valley.html   301!
+/about.html   /about   301!
+/about   /about.html   200
 /services   /services.html   301!
 /slow-internet-wifi-help   /slow-internet-wifi-help.html   301!
 /service-area   /service-area.html   301!
