@@ -360,9 +360,9 @@
     .footer-brand { margin: 0; font-size: 20px; }
     .footer-meta { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
     .footer-nav { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
-    .footer-nav a { font-size: 14px; text-decoration: none; }
+    .footer-nav a { font-size: 14px; text-decoration: none; padding: 8px 10px; border-radius: 12px; }
     .footer-nav a:hover,
-    .footer-nav a[aria-current="page"] { text-decoration: underline; }
+    .footer-nav a[aria-current="page"] { background: rgba(0, 96, 146, .08); text-decoration: none; }
     .footer-areas {
       margin-top: 14px;
       padding-top: 12px;
@@ -618,6 +618,59 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const path = window.location.pathname.replace(/\/+$/, '') || '/';
+    let currentNavHref = null;
+
+    if (path === '/' || path === '/index.html') {
+      currentNavHref = '/';
+    } else if (path === '/about' || path === '/about.html') {
+      currentNavHref = '/about';
+    } else if (
+      path === '/services' ||
+      path === '/services.html' ||
+      path === '/website' ||
+      path === '/website-creation' ||
+      path === '/website-creation-clarence-valley' ||
+      path === '/website-creation-clarence-valley.html' ||
+      path === '/service-area' ||
+      path === '/service-area.html'
+    ) {
+      currentNavHref = '/services.html';
+    } else if (
+      path === '/slow-internet-wifi-help' ||
+      path === '/slow-internet-wifi-help.html'
+    ) {
+      currentNavHref = '/slow-internet-wifi-help.html';
+    } else if (
+      path === '/cameras' ||
+      path === '/security-camera-installation-yamba' ||
+      path === '/security-camera-installation-yamba.html'
+    ) {
+      currentNavHref = '/security-camera-installation-yamba.html';
+    } else if (
+      path === '/tips' ||
+      path === '/tips/index.html' ||
+      path === '/faq' ||
+      path === '/faq.html' ||
+      path.startsWith('/tips/')
+    ) {
+      currentNavHref = '/tips/';
+    } else if (
+      path === '/contact' ||
+      path === '/contact.html' ||
+      path === '/thanks.html'
+    ) {
+      currentNavHref = '/contact.html';
+    }
+
+    if (currentNavHref) {
+      document.querySelectorAll('.main-nav a, .mobile-menu a, .footer-nav a').forEach((link) => {
+        if (link.getAttribute('href') === currentNavHref) {
+          link.setAttribute('aria-current', 'page');
+        }
+      });
+    }
 
     const menuBtn = document.querySelector('.menu-btn');
     const mobileMenu = document.getElementById('mobileMenu');

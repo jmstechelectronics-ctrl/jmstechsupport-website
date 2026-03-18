@@ -17,12 +17,12 @@
     .brand img{width:150px;display:block}
     nav{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
     nav a{text-decoration:none;font-weight:650;color:rgba(11,16,32,.9);padding:9px 10px;border-radius:12px}
-    nav a:hover{background:rgba(0,96,146,.08)}
+    nav a:hover,nav a[aria-current="page"]{background:rgba(0,96,146,.08)}
     .menu-btn{display:none;width:44px;height:44px;border-radius:12px;border:1px solid rgba(230,235,242,.9);background:rgba(255,255,255,.75);align-items:center;justify-content:center;flex-direction:column;gap:4px;cursor:pointer;padding:0;color:rgba(11,16,32,.85)}
     .menu-btn span{display:block;width:18px;height:2px;background:currentColor;border-radius:2px}
     .mobile-menu{display:none;margin:0;padding:0 10px;border-radius:16px;border:1px solid transparent;background:rgba(255,255,255,.85);box-shadow:none;max-height:0;opacity:0;overflow:hidden;pointer-events:none;transform:translateY(-6px);transition:max-height .28s ease,opacity .2s ease,margin .2s ease,padding .2s ease,transform .2s ease,border-color .2s ease,box-shadow .2s ease}
     .mobile-menu a{display:block;padding:12px;border-radius:12px;font-weight:650;text-decoration:none}
-    .mobile-menu a:hover{background:rgba(0,96,146,.08)}
+    .mobile-menu a:hover,.mobile-menu a[aria-current="page"]{background:rgba(0,96,146,.08)}
     main{padding:34px 0 12px}
     .wrap{max-width:760px;margin:0 auto}
     .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px}
@@ -38,8 +38,8 @@
     .footer-brand{margin:0;font-size:20px}
     .footer-meta{margin:8px 0 0;font-size:13px;color:var(--muted)}
     .footer-nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
-    .footer-nav a{font-size:14px;text-decoration:none}
-    .footer-nav a:hover{text-decoration:underline}
+    .footer-nav a{font-size:14px;text-decoration:none;padding:8px 10px;border-radius:12px}
+    .footer-nav a:hover,.footer-nav a[aria-current="page"]{background:rgba(0,96,146,.08);text-decoration:none}
     .footer-areas{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);line-height:1.5}
     @media (max-width:980px){.main-nav{display:none}.menu-btn{display:inline-flex}.mobile-menu{display:block}.mobile-menu.is-open{max-height:420px;opacity:1;margin:10px 0 12px;padding:10px;border-color:rgba(230,235,242,.9);box-shadow:var(--shadow);pointer-events:auto;transform:translateY(0)}.footer-main{grid-template-columns:1fr}.footer-nav{justify-content:flex-start}}
     @media (max-width:760px){.brand img{width:120px}h1{font-size:33px}}
@@ -57,7 +57,7 @@
           <a href="/slow-internet-wifi-help.html">Slow internet help</a>
           <a href="/security-camera-installation-yamba.html">Security Cameras</a>
           <a href="/tips/">Tips</a>
-          <a href="/contact.html">Contact</a>
+          <a href="/contact.html" aria-current="page">Contact</a>
         </nav>
         <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
           <span></span><span></span><span></span>
@@ -70,7 +70,7 @@
         <a href="/slow-internet-wifi-help.html">Slow internet help</a>
         <a href="/security-camera-installation-yamba.html">Security Cameras</a>
         <a href="/tips/">Tips</a>
-        <a href="/contact.html">Contact</a>
+        <a href="/contact.html" aria-current="page">Contact</a>
       </div>
     </div>
   </header>
@@ -104,7 +104,7 @@
               <a href="/tips/">Tips</a>
               <a href="/service-area.html">Service area</a>
               <a href="/faq.html">FAQ</a>
-              <a href="/contact.html">Contact</a>
+              <a href="/contact.html" aria-current="page">Contact</a>
             </nav>
           </div>
           <p class="footer-areas">JMS Tech Support provides computer repairs, Wi-Fi help and security camera installation across Yamba, Maclean, Iluka, Townsend, Gulmarrad, Grafton and the Clarence Valley.</p>
@@ -115,6 +115,59 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const path = window.location.pathname.replace(/\/+$/, '') || '/';
+    let currentNavHref = null;
+
+    if (path === '/' || path === '/index.html') {
+      currentNavHref = '/';
+    } else if (path === '/about' || path === '/about.html') {
+      currentNavHref = '/about';
+    } else if (
+      path === '/services' ||
+      path === '/services.html' ||
+      path === '/website' ||
+      path === '/website-creation' ||
+      path === '/website-creation-clarence-valley' ||
+      path === '/website-creation-clarence-valley.html' ||
+      path === '/service-area' ||
+      path === '/service-area.html'
+    ) {
+      currentNavHref = '/services.html';
+    } else if (
+      path === '/slow-internet-wifi-help' ||
+      path === '/slow-internet-wifi-help.html'
+    ) {
+      currentNavHref = '/slow-internet-wifi-help.html';
+    } else if (
+      path === '/cameras' ||
+      path === '/security-camera-installation-yamba' ||
+      path === '/security-camera-installation-yamba.html'
+    ) {
+      currentNavHref = '/security-camera-installation-yamba.html';
+    } else if (
+      path === '/tips' ||
+      path === '/tips/index.html' ||
+      path === '/faq' ||
+      path === '/faq.html' ||
+      path.startsWith('/tips/')
+    ) {
+      currentNavHref = '/tips/';
+    } else if (
+      path === '/contact' ||
+      path === '/contact.html' ||
+      path === '/thanks.html'
+    ) {
+      currentNavHref = '/contact.html';
+    }
+
+    if (currentNavHref) {
+      document.querySelectorAll('.main-nav a, .mobile-menu a, .footer-nav a').forEach((link) => {
+        if (link.getAttribute('href') === currentNavHref) {
+          link.setAttribute('aria-current', 'page');
+        }
+      });
+    }
 
     const menuBtn = document.querySelector('.menu-btn');
     const mobileMenu = document.getElementById('mobileMenu');
