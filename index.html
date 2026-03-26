@@ -93,12 +93,31 @@
       padding: 0;
       color: rgba(11,16,32,.85);
     }
-    .menu-btn span {
+    .menu-btn:hover {
+      background: rgba(255,255,255,.92);
+      box-shadow: 0 8px 20px rgba(11, 16, 32, 0.08);
+    }
+    .menu-icon {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .menu-icon span {
       display: block;
       width: 18px;
       height: 2px;
       background: currentColor;
       border-radius: 2px;
+      transition: transform .2s ease, opacity .2s ease;
+    }
+    .menu-btn[aria-expanded="true"] .menu-icon span:nth-child(1) {
+      transform: translateY(6px) rotate(45deg);
+    }
+    .menu-btn[aria-expanded="true"] .menu-icon span:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-btn[aria-expanded="true"] .menu-icon span:nth-child(3) {
+      transform: translateY(-6px) rotate(-45deg);
     }
     .mobile-menu {
       display: none;
@@ -411,7 +430,6 @@
     .footer-credentials{display:grid;gap:4px;max-width:320px;align-content:start}
     .footer-cert{font-size:16px;font-weight:650;line-height:1.35;text-decoration:none;color:rgba(11,16,32,.92)}
     .footer-cert:hover{color:var(--primary-dark)}
-    .footer-abn{margin:0;font-size:13px;color:rgba(11,16,32,.68);line-height:1.45;font-weight:500}
     .footer-links{display:grid;gap:10px;justify-items:end;align-content:start}
     .footer-nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;align-items:flex-start}
     .footer-nav a{font-size:14px;text-decoration:none;padding:8px 10px;border-radius:12px}
@@ -473,6 +491,10 @@
       .faq-card::after {
         background: linear-gradient(90deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.86) 55%, rgba(255,255,255,.40) 100%);
       }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .menu-icon span { transition: none; }
     }
   </style>
 
@@ -537,8 +559,10 @@
           <a href="/contact.html">Contact</a>
         </nav>
 
-        <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-          <span></span><span></span><span></span>
+        <button class="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="menu-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
         </button>
       </div>
 
@@ -691,7 +715,6 @@
           <div class="footer-main">
             <div class="footer-credentials">
               <a class="footer-cert" href="https://www.credly.com/badges/6c52baf0-da9c-4a83-8c62-e63fef74cb77" target="_blank" rel="noopener noreferrer">Google IT Support Certified</a>
-              <p class="footer-abn">ABN 79 773 473 522</p>
             </div>
 
             <div class="footer-links">
@@ -723,7 +746,7 @@
 
           <div class="footer-bottom">
             <p class="footer-areas">JMS Tech Support provides computer repairs, Wi-Fi help and security camera installation across Yamba, Maclean, Iluka, Townsend, Gulmarrad, Grafton and the Clarence Valley.</p>
-            <p class="footer-copy">&copy; <span id="year"></span> JMS Tech Support. All rights reserved.</p>
+            <p class="footer-copy">&copy; <span id="year"></span> JMS Tech Support. All rights reserved. ABN 79 773 473 522</p>
           </div>
         </div>
       </footer>
