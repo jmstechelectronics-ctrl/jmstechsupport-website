@@ -400,7 +400,7 @@
       </div>
 
       <!-- Netlify Forms: email notifications should be enabled in the Netlify dashboard after deploy under Site > Forms. -->
-      <form name="website-client-brief" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/client-brief/thank-you/index.html">
+      <form name="website-client-brief" method="POST" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field" action="/client-brief/thank-you/index.html">
         <input type="hidden" name="form-name" value="website-client-brief" />
         <p hidden>
           <label>Do not fill this in: <input name="bot-field" /></label>
@@ -577,7 +577,29 @@
         </section>
 
         <section>
-          <h2>8. Images</h2>
+          <h2>8. Logo</h2>
+          <p class="section-note">Let us know if you already have a logo ready to go.</p>
+          <fieldset class="field">
+            <legend class="legend">Do you already have a logo?</legend>
+            <div class="check-grid">
+              <label class="option"><input type="radio" name="logo_status" value="Yes, I already have a logo" /> Yes, I already have a logo</label>
+              <label class="option"><input type="radio" name="logo_status" value="No, please create one for me (+$50 upfront)" /> No, please create one for me (+$50 upfront)</label>
+              <label class="option"><input type="radio" name="logo_status" value="Not sure yet" /> Not sure yet</label>
+            </div>
+          </fieldset>
+          <div class="field" id="logoUploadField" hidden>
+            <label for="logo-file">Upload your logo file</label>
+            <input id="logo-file" name="logo_file" type="file" accept=".png,.jpg,.jpeg,.svg,.pdf,.eps,.ai" />
+            <div class="small">Upload the best version you have. PNG, JPG, SVG, PDF, EPS, or AI is fine. Keep the file under 8 MB.</div>
+          </div>
+          <div class="field">
+            <label for="logo-notes">Logo notes</label>
+            <textarea id="logo-notes" name="logo_notes" placeholder="If needed, tell us about colours, style preferences, or anything we should know about your existing logo."></textarea>
+          </div>
+        </section>
+
+        <section>
+          <h2>9. Images</h2>
           <p class="section-note">Most clients prefer that we source the images for them.</p>
           <fieldset class="field">
             <legend class="legend">Image preference</legend>
@@ -591,7 +613,7 @@
         </section>
 
         <section>
-          <h2>9. Website Setup</h2>
+          <h2>10. Website Setup</h2>
           <p class="section-note">This tells us what is already sorted and what still needs doing.</p>
           <fieldset class="field">
             <legend class="legend">Setup status</legend>
@@ -605,7 +627,7 @@
         </section>
 
         <section>
-          <h2>10. Final Notes</h2>
+          <h2>11. Final Notes</h2>
           <p class="section-note">Anything else we should know before we start?</p>
           <div class="field">
             <label for="final-notes">Final notes</label>
@@ -630,6 +652,8 @@
       const form = document.querySelector('form[name="website-client-brief"]');
       const saveStatus = document.getElementById('saveStatus');
       const clearDraftButton = document.getElementById('clearDraftButton');
+      const logoUploadField = document.getElementById('logoUploadField');
+      const logoFileInput = document.getElementById('logo-file');
       const storageKey = 'jms-client-brief-draft-v1';
       const savedAtKey = 'jms-client-brief-draft-saved-at';
 
@@ -639,8 +663,26 @@
         return field.name && !field.disabled && field.name !== 'form-name' && field.name !== 'bot-field';
       });
 
+      const draftableFields = fields.filter((field) => field.type !== 'file');
+
       const updateStatus = (message) => {
         if (saveStatus) saveStatus.textContent = message;
+      };
+
+      const syncLogoUploadVisibility = () => {
+        const selectedLogoStatus = form.querySelector('input[name="logo_status"]:checked');
+        const shouldShowUpload = selectedLogoStatus && selectedLogoStatus.value === 'Yes, I already have a logo';
+
+        if (logoUploadField) {
+          logoUploadField.hidden = !shouldShowUpload;
+        }
+
+        if (logoFileInput) {
+          logoFileInput.required = Boolean(shouldShowUpload);
+          if (!shouldShowUpload) {
+            logoFileInput.value = '';
+          }
+        }
       };
 
       const formatSavedAt = (isoString) => {
@@ -659,7 +701,7 @@
       const collectDraft = () => {
         const draft = {};
 
-        fields.forEach((field) => {
+        draftableFields.forEach((field) => {
           if (field.type === 'checkbox') {
             if (!Array.isArray(draft[field.name])) draft[field.name] = [];
             if (field.checked) draft[field.name].push(field.value);
@@ -696,9 +738,9 @@
 
           const draft = JSON.parse(rawDraft);
 
-          fields.forEach((field) => {
-            const value = draft[field.name];
-            if (value === undefined) return;
+        draftableFields.forEach((field) => {
+          const value = draft[field.name];
+          if (value === undefined) return;
 
             if (field.type === 'checkbox') {
               field.checked = Array.isArray(value) && value.includes(field.value);
@@ -710,11 +752,13 @@
               return;
             }
 
-            field.value = value;
-          });
+          field.value = value;
+        });
+
+          syncLogoUploadVisibility();
 
           const label = formatSavedAt(localStorage.getItem(savedAtKey));
-          updateStatus(label ? `Draft restored from ${label}` : 'Saved draft restored.');
+          updateStatus(label ? `Draft restored from ${label}. Reattach any logo file before submitting.` : 'Saved draft restored. Reattach any logo file before submitting.');
         } catch (error) {
           updateStatus('Saved draft could not be restored.');
         }
@@ -726,13 +770,24 @@
         saveTimer = window.setTimeout(saveDraft, 250);
       };
 
-      fields.forEach((field) => {
+      draftableFields.forEach((field) => {
         field.addEventListener('input', queueSave);
         field.addEventListener('change', queueSave);
       });
 
+      if (logoFileInput) {
+        logoFileInput.addEventListener('change', () => {
+          if (logoFileInput.files && logoFileInput.files.length > 0) {
+            updateStatus('Draft saved on this device. Logo file attached for this session only.');
+          }
+        });
+      }
+
       form.addEventListener('reset', () => {
-        window.setTimeout(saveDraft, 0);
+        window.setTimeout(() => {
+          syncLogoUploadVisibility();
+          saveDraft();
+        }, 0);
       });
 
       form.addEventListener('submit', () => {
@@ -755,6 +810,11 @@
         });
       }
 
+      form.querySelectorAll('input[name="logo_status"]').forEach((field) => {
+        field.addEventListener('change', syncLogoUploadVisibility);
+      });
+
+      syncLogoUploadVisibility();
       restoreDraft();
     })();
   </script>
