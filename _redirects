@@ -23,3 +23,5 @@ http://www.jmstechsupport.com.au/*    https://jmstechsupport.com.au/:splat   301
 /service-area   /service-area.html   301!
 /faq   /faq.html   301!
 /contact   /contact.html   301!
+/client-brief   /client-brief/   301!
+/client-brief/thank-you   /client-brief/thank-you/   301!

@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Private website brief form for JMS Tech Support clients." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://jmstechsupport.com.au/client-brief/" />
+  <title>Website Client Brief | JMS Tech Support</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <style>
+    [hidden] { display: none !important; }
+    :root {
+      --primary: #006092;
+      --primary-dark: #092d5e;
+      --ink: #0b1020;
+      --muted: #5b6475;
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --line: #e6ebf2;
+      --soft: #eef6fb;
+      --success-bg: #e9f6ee;
+      --success-line: #cfe7d6;
+      --success-text: #194b2b;
+      --radius-xl: 26px;
+      --radius-lg: 18px;
+      --shadow: 0 18px 40px rgba(11, 16, 32, 0.10);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1100px 560px at 8% -8%, rgba(0, 96, 146, 0.16), transparent 60%),
+        radial-gradient(900px 560px at 92% 0%, rgba(9, 45, 94, 0.12), transparent 56%),
+        var(--bg);
+      line-height: 1.56;
+    }
+
+    a { color: inherit; }
+
+    .page {
+      max-width: 1020px;
+      margin: 0 auto;
+      padding: 24px 18px 56px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 160px;
+      height: auto;
+      display: block;
+    }
+
+    .private-chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(0, 96, 146, 0.16);
+      background: rgba(255, 255, 255, 0.88);
+      color: var(--primary-dark);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      text-align: center;
+    }
+
+    .hero,
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .hero-top {
+      display: grid;
+      grid-template-columns: minmax(220px, 280px) 1fr;
+      gap: 24px;
+      align-items: center;
+      padding: 28px;
+      background: linear-gradient(135deg, rgba(0, 96, 146, 0.08) 0%, rgba(255, 255, 255, 1) 62%);
+    }
+
+    .logo-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 150px;
+      padding: 24px;
+      border-radius: 24px;
+      border: 1px solid #d6e7f1;
+      background: linear-gradient(180deg, #f7fbfe 0%, #e6f1f8 100%);
+    }
+
+    .logo-box img {
+      width: min(100%, 220px);
+      height: auto;
+      display: block;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2.1rem, 4vw, 3.1rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+    }
+
+    .tagline {
+      margin: 0 0 12px;
+      font-size: 1.08rem;
+      font-weight: 750;
+      color: var(--primary-dark);
+    }
+
+    .intro {
+      margin: 0;
+      max-width: 62ch;
+      color: rgba(11, 16, 32, 0.8);
+    }
+
+    .promise {
+      margin-top: 16px;
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--success-line);
+      background: var(--success-bg);
+      color: var(--success-text);
+      font-weight: 800;
+    }
+
+    .card {
+      padding: 22px;
+    }
+
+    .helper {
+      margin: 0 0 20px;
+      color: rgba(11, 16, 32, 0.78);
+    }
+
+    form {
+      display: grid;
+      gap: 18px;
+    }
+
+    section {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: #fcfeff;
+      padding: 20px;
+    }
+
+    section h2 {
+      margin: 0 0 6px;
+      font-size: 1.15rem;
+      color: var(--primary-dark);
+    }
+
+    .section-note {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .grid.two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .field {
+      display: grid;
+      gap: 8px;
+    }
+
+    fieldset.field {
+      border: 0;
+      margin: 0;
+      padding: 0;
+      min-width: 0;
+    }
+
+    label,
+    .legend {
+      font-size: 0.96rem;
+      font-weight: 750;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      border: 1px solid #ccd9e4;
+      border-radius: 14px;
+      background: #fff;
+      padding: 13px 14px;
+      font: inherit;
+      color: var(--ink);
+    }
+
+    textarea {
+      min-height: 112px;
+      resize: vertical;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: 3px solid rgba(0, 96, 146, 0.18);
+      border-color: var(--primary);
+    }
+
+    .check-grid {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .option {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 12px 14px;
+      border: 1px solid #d7e3ec;
+      border-radius: 14px;
+      background: #fff;
+      font-weight: 500;
+    }
+
+    .option input {
+      margin-top: 3px;
+      accent-color: var(--primary);
+      transform: scale(1.15);
+    }
+
+    .small {
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding-top: 4px;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      padding: 14px 22px;
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .button.primary {
+      color: #fff;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      box-shadow: 0 10px 24px rgba(0, 96, 146, 0.22);
+    }
+
+    .button.secondary {
+      color: var(--primary-dark);
+      background: var(--soft);
+      border: 1px solid #d6e7f1;
+    }
+
+    .footer-note {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        padding: 18px 14px 42px;
+      }
+
+      .topbar,
+      .hero-top,
+      .grid.two,
+      .check-grid,
+      .actions {
+        grid-template-columns: 1fr;
+      }
+
+      .topbar,
+      .actions {
+        display: grid;
+      }
+
+      .hero-top {
+        grid-template-columns: 1fr;
+        padding: 22px;
+      }
+
+      .logo-box {
+        min-height: 110px;
+      }
+
+      .brand img {
+        width: 130px;
+      }
+
+      .card,
+      section {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <a class="brand" href="/" aria-label="JMS Tech Support home">
+        <img src="/logo.png" alt="JMS Tech Support logo" width="811" height="445" />
+      </a>
+      <div class="private-chip">Private client brief</div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-top">
+        <div class="logo-box">
+          <img src="/logo.png" alt="JMS Tech Support logo" width="811" height="445" />
+        </div>
+        <div>
+          <h1>Website Client Brief</h1>
+          <p class="tagline">We come to you.</p>
+          <p class="intro">Fill this out in 5 to 10 minutes so we have the information we need to build your website with less back-and-forth.</p>
+          <div class="promise">We’ll handle the writing unless you want to provide it.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="helper">Use this form to send through the key details for your website. If you are not sure how to word something, just leave simple notes and we can turn them into clean, professional copy.</p>
+
+      <!-- Netlify Forms: email notifications should be enabled in the Netlify dashboard after deploy under Site > Forms. -->
+      <form name="website-client-brief" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/client-brief/thank-you/">
+        <input type="hidden" name="form-name" value="website-client-brief" />
+        <p hidden>
+          <label>Do not fill this in: <input name="bot-field" /></label>
+        </p>
+
+        <section>
+          <h2>1. Business Basics</h2>
+          <p class="section-note">The core details we need to get started.</p>
+          <div class="grid two">
+            <div class="field">
+              <label for="business-name">Business name</label>
+              <input id="business-name" name="business_name" type="text" autocomplete="organization" required />
+            </div>
+            <div class="field">
+              <label for="contact-name">Best contact name</label>
+              <input id="contact-name" name="contact_name" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="service-area">Main service area</label>
+              <input id="service-area" name="service_area" type="text" autocomplete="address-level2" placeholder="Example: Northern Rivers, NSW" />
+            </div>
+            <div class="field">
+              <label for="registered-ndis">Registered NDIS provider?</label>
+              <select id="registered-ndis" name="registered_ndis">
+                <option value="">Select one</option>
+                <option>Yes</option>
+                <option>No</option>
+                <option>In progress</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>2. About Your Business</h2>
+          <p class="section-note">Tell us the basics, or let us write it for you.</p>
+          <div class="field">
+            <label for="about-business">Tell us about your business</label>
+            <textarea id="about-business" name="about_business" placeholder="A few sentences is enough."></textarea>
+          </div>
+          <fieldset class="field">
+            <legend class="legend">How would you like us to handle the About section?</legend>
+            <div class="check-grid">
+              <label class="option"><input type="radio" name="about_preference" value="Use my wording" /> Use my wording</label>
+              <label class="option"><input type="radio" name="about_preference" value="Improve my wording" /> Improve my wording</label>
+              <label class="option"><input type="radio" name="about_preference" value="Use generic professional text" /> Use generic professional text</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="about-must-include">Anything important we should include?</label>
+            <textarea id="about-must-include" name="about_must_include" placeholder="Experience, local background, values, lived experience, qualifications, team size, and anything else that matters."></textarea>
+          </div>
+        </section>
+
+        <section>
+          <h2>3. Services</h2>
+          <p class="section-note">Tick what you offer and tell us if you want to write the service descriptions yourself.</p>
+          <fieldset class="field">
+            <legend class="legend">Services offered</legend>
+            <div class="check-grid">
+              <label class="option"><input type="checkbox" name="services" value="Support Coordination" /> Support Coordination</label>
+              <label class="option"><input type="checkbox" name="services" value="Plan Management" /> Plan Management</label>
+              <label class="option"><input type="checkbox" name="services" value="Daily Living Support" /> Daily Living Support</label>
+              <label class="option"><input type="checkbox" name="services" value="Community Access" /> Community Access</label>
+              <label class="option"><input type="checkbox" name="services" value="Capacity Building" /> Capacity Building</label>
+              <label class="option"><input type="checkbox" name="services" value="Respite" /> Respite</label>
+              <label class="option"><input type="checkbox" name="services" value="Transport" /> Transport</label>
+              <label class="option"><input type="checkbox" name="services" value="Other" /> Other</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="other-services">If other, list them here</label>
+            <input id="other-services" name="other_services" type="text" />
+          </div>
+          <fieldset class="field">
+            <legend class="legend">Service copy preference</legend>
+            <div class="check-grid">
+              <label class="option"><input type="radio" name="services_copy" value="I will provide service wording" /> I will provide service wording</label>
+              <label class="option"><input type="radio" name="services_copy" value="Use generic professional service text" /> Use generic professional service text</label>
+              <label class="option"><input type="radio" name="services_copy" value="Write it from my notes" /> Write it from my notes</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="service-notes">Service notes</label>
+            <textarea id="service-notes" name="service_notes" placeholder="Anything specific you want mentioned for your services."></textarea>
+          </div>
+        </section>
+
+        <section>
+          <h2>4. Service Area</h2>
+          <p class="section-note">Local coverage helps with trust and SEO.</p>
+          <div class="field">
+            <label for="locations">Which towns, suburbs or regions do you service?</label>
+            <textarea id="locations" name="locations" placeholder="Example: Ballina, Lismore, Byron Bay and surrounding areas."></textarea>
+          </div>
+          <fieldset class="field">
+            <legend class="legend">Do you want suburbs listed on the website?</legend>
+            <div class="check-grid">
+              <label class="option"><input type="radio" name="list_suburbs" value="Yes" /> Yes</label>
+              <label class="option"><input type="radio" name="list_suburbs" value="No" /> No</label>
+              <label class="option"><input type="radio" name="list_suburbs" value="Not sure" /> Not sure</label>
+            </div>
+          </fieldset>
+        </section>
+
+        <section>
+          <h2>5. How You Work</h2>
+          <p class="section-note">This helps us capture your tone and approach.</p>
+          <div class="field">
+            <label for="approach">How would you describe your approach?</label>
+            <textarea id="approach" name="approach" placeholder="Example: friendly, practical, calm, structured, flexible, culturally aware, family focused."></textarea>
+          </div>
+          <fieldset class="field">
+            <legend class="legend">Writing preference</legend>
+            <div class="check-grid">
+              <label class="option"><input type="radio" name="approach_copy" value="Use my wording" /> Use my wording</label>
+              <label class="option"><input type="radio" name="approach_copy" value="Improve my wording" /> Improve my wording</label>
+              <label class="option"><input type="radio" name="approach_copy" value="Use generic professional text" /> Use generic professional text</label>
+            </div>
+          </fieldset>
+        </section>
+
+        <section>
+          <h2>6. Contact Preferences</h2>
+          <p class="section-note">So the website directs people the right way.</p>
+          <div class="grid two">
+            <fieldset class="field">
+              <legend class="legend">Preferred contact method</legend>
+              <div class="check-grid">
+                <label class="option"><input type="checkbox" name="contact_method" value="Phone" /> Phone</label>
+                <label class="option"><input type="checkbox" name="contact_method" value="Email" /> Email</label>
+                <label class="option"><input type="checkbox" name="contact_method" value="Contact form" /> Contact form</label>
+                <label class="option"><input type="checkbox" name="contact_method" value="SMS" /> SMS</label>
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <legend class="legend">Preferred website call-to-action</legend>
+              <div class="check-grid">
+                <label class="option"><input type="checkbox" name="cta_preference" value="Send enquiry" /> Send enquiry</label>
+                <label class="option"><input type="checkbox" name="cta_preference" value="Call now" /> Call now</label>
+                <label class="option"><input type="checkbox" name="cta_preference" value="Request a callback" /> Request a callback</label>
+                <label class="option"><input type="checkbox" name="cta_preference" value="Email us" /> Email us</label>
+              </div>
+            </fieldset>
+          </div>
+        </section>
+
+        <section>
+          <h2>7. Trust &amp; Positioning</h2>
+          <p class="section-note">These help us build quick confidence with new visitors.</p>
+          <fieldset class="field">
+            <legend class="legend">Tick anything that applies</legend>
+            <div class="check-grid">
+              <label class="option"><input type="checkbox" name="trust_points" value="Registered NDIS provider" /> Registered NDIS provider</label>
+              <label class="option"><input type="checkbox" name="trust_points" value="Local service" /> Local service</label>
+              <label class="option"><input type="checkbox" name="trust_points" value="Fast response times" /> Fast response times</label>
+              <label class="option"><input type="checkbox" name="trust_points" value="Transparent communication" /> Transparent communication</label>
+              <label class="option"><input type="checkbox" name="trust_points" value="Experienced team" /> Experienced team</label>
+              <label class="option"><input type="checkbox" name="trust_points" value="Family focused" /> Family focused</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="trust-extra">Anything else we should highlight?</label>
+            <textarea id="trust-extra" name="trust_extra"></textarea>
+          </div>
+        </section>
+
+        <section>
+          <h2>8. Images</h2>
+          <p class="section-note">Most clients prefer that we source the images for them.</p>
+          <fieldset class="field">
+            <legend class="legend">Image preference</legend>
+            <div class="check-grid">
+              <label class="option"><input type="radio" name="images_preference" value="Use professional stock images" /> Use professional stock images</label>
+              <label class="option"><input type="radio" name="images_preference" value="I will provide my own images" /> I will provide my own images</label>
+              <label class="option"><input type="radio" name="images_preference" value="Use a mix of both" /> Use a mix of both</label>
+            </div>
+          </fieldset>
+          <p class="small">If you are providing images, we can send you an upload link separately.</p>
+        </section>
+
+        <section>
+          <h2>9. Website Setup</h2>
+          <p class="section-note">This tells us what is already sorted and what still needs doing.</p>
+          <fieldset class="field">
+            <legend class="legend">Setup status</legend>
+            <div class="check-grid">
+              <label class="option"><input type="checkbox" name="setup_status" value="I already have a domain name" /> I already have a domain name</label>
+              <label class="option"><input type="checkbox" name="setup_status" value="I already have business email" /> I already have business email</label>
+              <label class="option"><input type="checkbox" name="setup_status" value="I already have hosting" /> I already have hosting</label>
+              <label class="option"><input type="checkbox" name="setup_status" value="I need help with all setup" /> I need help with all setup</label>
+            </div>
+          </fieldset>
+        </section>
+
+        <section>
+          <h2>10. Final Notes</h2>
+          <p class="section-note">Anything else we should know before we start?</p>
+          <div class="field">
+            <label for="final-notes">Final notes</label>
+            <textarea id="final-notes" name="final_notes" placeholder="Anything extra, special requests, wording preferences, or pages you definitely want included."></textarea>
+          </div>
+        </section>
+
+        <div class="actions">
+          <div class="action-buttons">
+            <button class="button primary" type="submit">Submit website brief</button>
+            <button class="button secondary" type="reset">Clear form</button>
+          </div>
+          <div class="small">Your submission goes directly to JMS Tech Support for review.</div>
+        </div>
+      </form>
+
+      <p class="footer-note">If you are unsure about any section, submit what you can and we will follow up with you if anything needs clarification.</p>
+    </div>
+  </div>
+</body>
+</html>
