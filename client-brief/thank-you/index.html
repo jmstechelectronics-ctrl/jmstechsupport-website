@@ -152,5 +152,18 @@
       <p class="note">If you need to add anything else, reply directly by email or contact JMS Tech Support and we can update the brief with you.</p>
     </div>
   </div>
+  <script>
+    (function () {
+      try {
+        if (sessionStorage.getItem('jms-client-brief-submitted') === 'true') {
+          localStorage.removeItem('jms-client-brief-draft-v1');
+          localStorage.removeItem('jms-client-brief-draft-saved-at');
+          sessionStorage.removeItem('jms-client-brief-submitted');
+        }
+      } catch (error) {
+        // Ignore storage issues on the thank-you page.
+      }
+    })();
+  </script>
 </body>
 </html>

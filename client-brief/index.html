@@ -96,29 +96,12 @@
     }
 
     .hero-top {
-      display: grid;
-      grid-template-columns: minmax(220px, 280px) 1fr;
-      gap: 24px;
-      align-items: center;
-      padding: 28px;
+      padding: 30px 32px;
       background: linear-gradient(135deg, rgba(0, 96, 146, 0.08) 0%, rgba(255, 255, 255, 1) 62%);
     }
 
-    .logo-box {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 150px;
-      padding: 24px;
-      border-radius: 24px;
-      border: 1px solid #d6e7f1;
-      background: linear-gradient(180deg, #f7fbfe 0%, #e6f1f8 100%);
-    }
-
-    .logo-box img {
-      width: min(100%, 220px);
-      height: auto;
-      display: block;
+    .hero-copy {
+      max-width: 720px;
     }
 
     h1 {
@@ -126,13 +109,6 @@
       font-size: clamp(2.1rem, 4vw, 3.1rem);
       line-height: 1.02;
       letter-spacing: -0.04em;
-    }
-
-    .tagline {
-      margin: 0 0 12px;
-      font-size: 1.08rem;
-      font-weight: 750;
-      color: var(--primary-dark);
     }
 
     .intro {
@@ -159,6 +135,46 @@
     .helper {
       margin: 0 0 20px;
       color: rgba(11, 16, 32, 0.78);
+    }
+
+    .draft-tools {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 0 0 20px;
+      padding: 14px 16px;
+      border: 1px solid #d6e7f1;
+      border-radius: 16px;
+      background: var(--soft);
+    }
+
+    .draft-copy {
+      display: grid;
+      gap: 4px;
+    }
+
+    .draft-copy strong {
+      font-size: 0.96rem;
+    }
+
+    .draft-copy span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .draft-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .status {
+      color: var(--primary-dark);
+      font-size: 0.9rem;
+      font-weight: 700;
     }
 
     form {
@@ -303,6 +319,12 @@
       border: 1px solid #d6e7f1;
     }
 
+    .button.ghost {
+      color: var(--ink);
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--line);
+    }
+
     .footer-note {
       margin-top: 14px;
       color: var(--muted);
@@ -315,7 +337,6 @@
       }
 
       .topbar,
-      .hero-top,
       .grid.two,
       .check-grid,
       .actions {
@@ -328,16 +349,15 @@
       }
 
       .hero-top {
-        grid-template-columns: 1fr;
         padding: 22px;
-      }
-
-      .logo-box {
-        min-height: 110px;
       }
 
       .brand img {
         width: 130px;
+      }
+
+      .draft-tools {
+        align-items: flex-start;
       }
 
       .card,
@@ -358,12 +378,8 @@
 
     <div class="hero">
       <div class="hero-top">
-        <div class="logo-box">
-          <img src="/logo.png" alt="JMS Tech Support logo" width="811" height="445" />
-        </div>
-        <div>
+        <div class="hero-copy">
           <h1>Website Client Brief</h1>
-          <p class="tagline">We come to you.</p>
           <p class="intro">Fill this out in 5 to 10 minutes so we have the information we need to build your website with less back-and-forth.</p>
           <div class="promise">We’ll handle the writing unless you want to provide it.</div>
         </div>
@@ -372,6 +388,16 @@
 
     <div class="card">
       <p class="helper">Use this form to send through the key details for your website. If you are not sure how to word something, just leave simple notes and we can turn them into clean, professional copy.</p>
+      <div class="draft-tools">
+        <div class="draft-copy">
+          <strong>Save and come back later</strong>
+          <span>This form autosaves in this browser on this device, so you can close it and return later without an account.</span>
+        </div>
+        <div class="draft-actions">
+          <div class="status" id="saveStatus" aria-live="polite">Draft saving is ready.</div>
+          <button class="button ghost" type="button" id="clearDraftButton">Clear saved draft</button>
+        </div>
+      </div>
 
       <!-- Netlify Forms: email notifications should be enabled in the Netlify dashboard after deploy under Site > Forms. -->
       <form name="website-client-brief" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/client-brief/thank-you/">
@@ -599,5 +625,138 @@
       <p class="footer-note">If you are unsure about any section, submit what you can and we will follow up with you if anything needs clarification.</p>
     </div>
   </div>
+  <script>
+    (function () {
+      const form = document.querySelector('form[name="website-client-brief"]');
+      const saveStatus = document.getElementById('saveStatus');
+      const clearDraftButton = document.getElementById('clearDraftButton');
+      const storageKey = 'jms-client-brief-draft-v1';
+      const savedAtKey = 'jms-client-brief-draft-saved-at';
+
+      if (!form || !window.localStorage) return;
+
+      const fields = Array.from(form.elements).filter((field) => {
+        return field.name && !field.disabled && field.name !== 'form-name' && field.name !== 'bot-field';
+      });
+
+      const updateStatus = (message) => {
+        if (saveStatus) saveStatus.textContent = message;
+      };
+
+      const formatSavedAt = (isoString) => {
+        if (!isoString) return '';
+        const savedDate = new Date(isoString);
+        if (Number.isNaN(savedDate.getTime())) return '';
+
+        return savedDate.toLocaleString('en-AU', {
+          day: 'numeric',
+          month: 'short',
+          hour: 'numeric',
+          minute: '2-digit'
+        });
+      };
+
+      const collectDraft = () => {
+        const draft = {};
+
+        fields.forEach((field) => {
+          if (field.type === 'checkbox') {
+            if (!Array.isArray(draft[field.name])) draft[field.name] = [];
+            if (field.checked) draft[field.name].push(field.value);
+            return;
+          }
+
+          if (field.type === 'radio') {
+            if (field.checked) draft[field.name] = field.value;
+            return;
+          }
+
+          draft[field.name] = field.value;
+        });
+
+        return draft;
+      };
+
+      const saveDraft = () => {
+        try {
+          localStorage.setItem(storageKey, JSON.stringify(collectDraft()));
+          const savedAt = new Date().toISOString();
+          localStorage.setItem(savedAtKey, savedAt);
+          const label = formatSavedAt(savedAt);
+          updateStatus(label ? `Draft saved ${label}` : 'Draft saved on this device.');
+        } catch (error) {
+          updateStatus('Draft could not be saved in this browser.');
+        }
+      };
+
+      const restoreDraft = () => {
+        try {
+          const rawDraft = localStorage.getItem(storageKey);
+          if (!rawDraft) return;
+
+          const draft = JSON.parse(rawDraft);
+
+          fields.forEach((field) => {
+            const value = draft[field.name];
+            if (value === undefined) return;
+
+            if (field.type === 'checkbox') {
+              field.checked = Array.isArray(value) && value.includes(field.value);
+              return;
+            }
+
+            if (field.type === 'radio') {
+              field.checked = value === field.value;
+              return;
+            }
+
+            field.value = value;
+          });
+
+          const label = formatSavedAt(localStorage.getItem(savedAtKey));
+          updateStatus(label ? `Draft restored from ${label}` : 'Saved draft restored.');
+        } catch (error) {
+          updateStatus('Saved draft could not be restored.');
+        }
+      };
+
+      let saveTimer = null;
+      const queueSave = () => {
+        window.clearTimeout(saveTimer);
+        saveTimer = window.setTimeout(saveDraft, 250);
+      };
+
+      fields.forEach((field) => {
+        field.addEventListener('input', queueSave);
+        field.addEventListener('change', queueSave);
+      });
+
+      form.addEventListener('reset', () => {
+        window.setTimeout(saveDraft, 0);
+      });
+
+      form.addEventListener('submit', () => {
+        try {
+          sessionStorage.setItem('jms-client-brief-submitted', 'true');
+        } catch (error) {
+          // Ignore session storage issues and allow submit to continue.
+        }
+      });
+
+      if (clearDraftButton) {
+        clearDraftButton.addEventListener('click', () => {
+          const confirmed = window.confirm('Clear the saved draft from this device?');
+          if (!confirmed) return;
+
+          form.reset();
+          localStorage.removeItem(storageKey);
+          localStorage.removeItem(savedAtKey);
+          updateStatus('Saved draft cleared.');
+        });
+      }
+
+      restoreDraft();
+    })();
+  </script>
 </body>
 </html>
