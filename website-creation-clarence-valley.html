@@ -15,7 +15,7 @@
     .container{max-width:1100px;margin:0 auto;padding:0 20px}
     header{position:sticky;top:0;z-index:50;background:rgba(246,248,251,.88);backdrop-filter:blur(10px);border-bottom:1px solid rgba(230,235,242,.8)}
     .topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0}
-    .brand img{width:150px;display:block}
+    .brand img{width:190px;display:block}
     nav{display:flex;gap:10px;flex-wrap:wrap}
     nav a{text-decoration:none;color:rgba(11,16,32,.9);font-weight:650;padding:9px 10px;border-radius:12px}
     nav a:hover,nav a[aria-current="page"]{background:rgba(0,96,146,.08)}
@@ -24,20 +24,44 @@
     .panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
     h1{margin:0 0 10px;font-size:40px;line-height:1.08;letter-spacing:-.6px}
     .lead{margin:0;color:rgba(11,16,32,.78)}
-    .price-anchor{margin:12px 0 4px;font-size:32px;line-height:1.1;font-weight:850;letter-spacing:-.5px;color:var(--primary-dark)}
-    .price-note{margin:0;color:rgba(11,16,32,.74);font-weight:600}
+    .hero-panel{display:grid;grid-template-columns:.86fr 1.14fr;gap:28px;align-items:center;padding:52px}
+    .hero-copy{min-width:0;max-width:520px}
+    .hero-copy h1{margin-bottom:16px;font-size:39px;line-height:1.22;max-width:none}
+    .hero-copy .lead{max-width:460px;font-size:16px;line-height:1.68}
+    .hero-trust{margin:18px 0 0;color:var(--muted);font-size:14px;font-weight:600}
+    .hero-visual{min-width:0;display:flex;justify-content:flex-end}
+    .hero-image-wrap{display:block}
+    .hero-image-wrap img{display:block;width:100%;max-width:100%;height:auto;object-fit:contain}
     .section-title{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:12px}
     .section-title h2{margin:0;font-size:28px;letter-spacing:-.4px}
     .section-title p{margin:0;color:var(--muted);font-weight:600}
     .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
     .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
-    .pill{display:inline-flex;padding:7px 10px;border-radius:999px;background:rgba(0,96,146,.10);border:1px solid rgba(0,96,146,.18);color:var(--primary-dark);font-weight:800;font-size:12px;margin-bottom:8px}
+    .pill{display:inline-flex;align-self:flex-start;padding:7px 10px;border-radius:999px;background:rgba(0,96,146,.10);border:1px solid rgba(0,96,146,.18);color:var(--primary-dark);font-weight:800;font-size:12px;margin-bottom:8px}
     h3{margin:2px 0 8px;font-size:22px;letter-spacing:-.3px}
     .card p{margin:0;color:rgba(11,16,32,.76)}
     .checklist{margin:0;padding-left:20px;color:rgba(11,16,32,.82)}
     .checklist li{margin:6px 0}
+    .why-matters-section{display:flex;flex-direction:column;gap:18px}
+    .stats-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .stat-card{background:#fff;border:1px solid var(--line);border-top:4px solid rgba(0,96,146,.16);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;display:flex;flex-direction:column;justify-content:flex-start}
+    .stat-value{margin:0 0 8px;font-size:42px;line-height:1;font-weight:850;letter-spacing:-.8px;color:var(--primary-dark)}
+    .stat-text{margin:0;color:rgba(11,16,32,.76);line-height:1.45}
+    .stats-source{margin:0;font-size:.78rem;line-height:1.4;color:rgba(20,40,60,.68)}
+    .why-matters-summary{display:flex;flex-direction:column;justify-content:flex-start}
+    .why-matters-copy h3{margin:2px 0 10px;line-height:1.2}
+    .why-matters-copy p{margin:0 0 12px;color:rgba(11,16,32,.76)}
+    .why-matters-copy .checklist{margin:0;padding-left:20px}
     .card-media{width:100%;height:250px;object-fit:cover;border-radius:14px;border:1px solid var(--line);display:block}
+    .package-card{display:grid;grid-template-columns:1fr;gap:18px;align-items:start}
+    .package-copy{min-width:0;display:block}
+    .package-visual{display:flex;order:-1;align-items:stretch;justify-content:stretch;min-width:0}
+    .package-image{position:relative;display:block;width:100%;max-width:none;height:clamp(320px,42vw,460px);overflow:hidden;border-radius:12px}
+    .package-image img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:left center;border-radius:12px}
+    .package-features{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 32px;margin:20px 0 22px;padding:0;color:rgba(11,16,32,.82)}
+    .package-features li{position:relative;padding-left:28px;margin:0;line-height:1.45}
+    .package-features li::before{content:"\2713";position:absolute;left:0;top:.05em;font-size:.95rem;font-weight:700;color:#2f6f91;opacity:.9}
     .actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 14px;border-radius:14px;text-decoration:none;font-weight:750;border:1px solid transparent}
     .btn-primary{color:#fff;background:linear-gradient(135deg,var(--primary),var(--primary-dark))}
@@ -72,13 +96,25 @@
     .mobile-menu a:hover,.mobile-menu a[aria-current="page"]{background:rgba(0,96,146,.08)}
 
     @media (max-width:980px){
-      .grid-2,.grid-3{grid-template-columns:1fr}
-      .brand img{width:120px}
+      .grid-2,.grid-3,.stats-grid{grid-template-columns:1fr}
+      .hero-panel{grid-template-columns:1fr;gap:22px;padding:24px}
+      .hero-copy{max-width:none}
+      .hero-copy h1{font-size:36px;max-width:none}
+      .hero-copy .lead{max-width:none;font-size:16px}
+      .hero-visual{justify-content:stretch}
+      .package-image{height:340px;min-height:340px}
+      .brand img{width:150px}
       h1{font-size:34px}
       .main-nav{display:none}
       .menu-btn{display:inline-flex}
       .mobile-menu{display:block}
       .mobile-menu.is-open{max-height:420px;opacity:1;margin:10px 0 12px;padding:10px;border-color:rgba(230,235,242,.9);box-shadow:var(--shadow);pointer-events:auto;transform:translateY(0)}
+    }
+    @media (max-width:768px){
+      .package-features{grid-template-columns:1fr;gap:10px}
+    }
+    @media (max-width:900px){
+      .stats-grid{grid-template-columns:1fr}
     }
   </style>
 
@@ -137,12 +173,12 @@
   <header>
     <div class="container">
       <div class="topbar">
-        <a class="brand" href="/"><img src="logo.png" alt="JMS Tech Support logo" /></a>
+        <a class="brand" href="/"><img src="assets/JMSwdlogo.png" alt="JMS Web Design logo" /></a>
         <nav class="main-nav" aria-label="Primary">
           <a href="/">Home</a>
           <a href="/about">About</a>
-          <a href="/services.html" aria-current="page">Services</a>
-          <a href="/slow-internet-wifi-help.html">Slow internet help</a>
+          <a href="/services.html">Services</a>
+          <a href="/website-creation-clarence-valley.html" aria-current="page">Websites</a>
           <a href="/security-camera-installation-yamba.html">Security Cameras</a>
           <a href="/tips/">Tips</a>
           <a href="/contact.html">Contact</a>
@@ -154,8 +190,8 @@
       <div class="mobile-menu" id="mobileMenu" hidden>
         <a href="/">Home</a>
         <a href="/about">About</a>
-        <a href="/services.html" aria-current="page">Services</a>
-        <a href="/slow-internet-wifi-help.html">Slow internet help</a>
+        <a href="/services.html">Services</a>
+        <a href="/website-creation-clarence-valley.html" aria-current="page">Websites</a>
         <a href="/security-camera-installation-yamba.html">Security Cameras</a>
         <a href="/tips/">Tips</a>
         <a href="/contact.html">Contact</a>
@@ -166,45 +202,55 @@
   <main>
     <div class="container">
       <section>
-        <div class="panel">
-          <h1>Get Your Business Showing Up on Google</h1>
-          <p class="lead">Simple, professional websites for tradies and small businesses across Australia. Built to help customers find your business on Google and contact you easily.</p>
-          <p class="price-anchor">$349 upfront + $49/month</p>
-          <p class="price-note">Minimum 6-month term. Includes website, hosting, domain setup, one business email address and minor updates.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="tel:0418160226">Call 0418 160 226</a>
-            <a class="btn btn-ghost" href="/contact.html">Request website quote</a>
+        <div class="panel hero-panel">
+          <div class="hero-copy">
+            <h1>Get a professional website that builds trust and brings you more calls.</h1>
+            <p class="lead">Simple, professional websites for tradies and small businesses. Built to look credible, load fast, and make it easy for customers to get in touch.</p>
+            <p class="hero-trust">Mobile-friendly &#8226; Fast-loading &#8226; Easy to update</p>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-image-wrap">
+              <picture>
+                <source type="image/webp" srcset="assets/mockupsnobkg-800.webp 800w, assets/mockupsnobkg-1280.webp 1280w" sizes="(max-width: 980px) calc(100vw - 84px), 560px" />
+                <img src="assets/mockupsnobkg.png" width="1536" height="1024" alt="Mockup showing polished small-business website designs." loading="eager" fetchpriority="high" decoding="async" />
+              </picture>
+            </div>
           </div>
         </div>
       </section>
 
       <section>
         <div class="section-title">
-          <h2>Why every local business needs a website</h2>
-          <p>Visibility, trust, and enquiries</p>
+          <h2>Why a website matters</h2>
+          <p>Trust, visibility, and enquiries</p>
         </div>
-        <div class="grid-2">
-          <div class="card">
+        <div class="why-matters-section">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <p class="stat-value">56%</p>
+              <p class="stat-text">would struggle to verify a business&rsquo;s identity without its own website</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-value">85%</p>
+              <p class="stat-text">consider contact information and opening hours important when researching a local business</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-value">54%</p>
+              <p class="stat-text">visit a business&rsquo;s website after reading positive reviews</p>
+            </div>
+          </div>
+          <div class="card why-matters-copy why-matters-summary">
             <div class="pill">Why this matters</div>
-            <h3>Customers search before they call</h3>
+            <h3>People check you online before they contact you</h3>
+            <p>Most customers do not go from hearing your name to making contact in one step. They usually look you up first, check whether you seem legitimate, and look for a clear next step. A proper website helps with all three.</p>
             <ul class="checklist">
-              <li>Most customers search Google when they need a local service</li>
-              <li>If your business is not online, customers usually call someone else</li>
-              <li>A website helps Google understand what your business does and where you work</li>
-              <li>A clean website builds trust before someone even contacts you</li>
+              <li>Builds trust faster</li>
+              <li>Gives people the details they want</li>
+              <li>Supports reviews and Google visibility</li>
+              <li>Makes it easier to turn interest into enquiries</li>
             </ul>
           </div>
-          <div class="card">
-            <div class="pill">Real searches</div>
-            <h3>Examples your customers type</h3>
-            <ul class="checklist">
-              <li>electrician Yamba</li>
-              <li>plumber Maclean</li>
-              <li>landscaper Clarence Valley</li>
-              <li>handyman near me</li>
-            </ul>
-            <p style="margin-top:8px;">Your website gives Google and customers a clear page to land on when these searches happen.</p>
-          </div>
+          <p class="stats-source">Sources: BrightLocal Consumer Search Behavior (2025), BrightLocal Local Consumer Review Survey (2026), Verisign / Weebly small business web presence research.</p>
         </div>
       </section>
 
@@ -260,26 +306,35 @@
           <h2>Simple Website Package</h2>
           <p>Clear scope, clear pricing</p>
         </div>
-        <div class="card">
-          <div class="pill">Package</div>
-          <h3>Professional one-page business website</h3>
-          <p style="margin-bottom:10px;"><strong>$349 upfront + $49/month</strong></p>
-          <ul class="checklist">
-            <li>Mobile-friendly design</li>
-            <li>Clear service information</li>
-            <li>Contact form for enquiries</li>
-            <li>Basic Google search setup</li>
-            <li>Fast loading website</li>
-            <li>Local SEO structure</li>
-            <li>Hosting included</li>
-            <li>Domain setup included</li>
-            <li>One business email address included</li>
-            <li>Minor updates included</li>
-          </ul>
-          <p style="margin-top:10px;">Minimum 6-month term applies. Larger changes or extra pages quoted separately.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="tel:0418160226">Call 0418 160 226</a>
-            <a class="btn btn-ghost" href="/contact.html">Request website quote</a>
+        <div class="card package-card">
+          <div class="package-copy">
+            <div class="pill">Package</div>
+            <h3>Professional one-page business website</h3>
+            <p style="margin-bottom:10px;"><strong>$349 upfront + $49/month</strong></p>
+            <ul class="package-features">
+              <li>Mobile-friendly design</li>
+              <li>Clear service information</li>
+              <li>Contact form for enquiries</li>
+              <li>Basic Google search setup</li>
+              <li>Fast loading website</li>
+              <li>Local SEO structure</li>
+              <li>Hosting included</li>
+              <li>Domain setup included</li>
+              <li>One business email address included</li>
+              <li>Minor updates included</li>
+            </ul>
+            <p style="margin-top:10px;">Minimum 6-month term applies. Larger changes or extra pages quoted separately.</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="tel:0418160226">Call 0418 160 226</a>
+              <a class="btn btn-ghost" href="/contact.html">Request website quote</a>
+            </div>
+          </div>
+
+          <div class="package-visual">
+            <picture class="package-image">
+              <source type="image/webp" srcset="assets/wcswp-640.webp 640w, assets/wcswp-960.webp 960w, assets/wcswp-1280.webp 1280w, assets/wcswp-1536.webp 1536w" sizes="(max-width: 980px) calc(100vw - 76px), 100vw" />
+              <img src="assets/wcswp.png" width="1536" height="1024" alt="Clean laptop displaying a simple business website on a light neutral background." loading="lazy" decoding="async" />
+            </picture>
           </div>
         </div>
       </section>
@@ -321,7 +376,7 @@
             <div class="footer-links">
               <nav class="footer-nav" aria-label="Footer">
               <a href="/about">About</a>
-              <a href="/services.html" aria-current="page">Services</a>
+              <a href="/services.html">Services</a>
               <a href="/security-camera-installation-yamba.html">Security Cameras</a>
               <a href="/tips/">Tips</a>
               <a href="/faq.html">FAQ</a>
@@ -368,14 +423,17 @@
     } else if (
       path === '/services' ||
       path === '/services.html' ||
-      path === '/website' ||
-      path === '/website-creation' ||
-      path === '/website-creation-clarence-valley' ||
-      path === '/website-creation-clarence-valley.html' ||
       path === '/service-area' ||
       path === '/service-area.html'
     ) {
       currentNavHref = '/services.html';
+    } else if (
+      path === '/website' ||
+      path === '/website-creation' ||
+      path === '/website-creation-clarence-valley' ||
+      path === '/website-creation-clarence-valley.html'
+    ) {
+      currentNavHref = '/website-creation-clarence-valley.html';
     } else if (
       path === '/slow-internet-wifi-help' ||
       path === '/slow-internet-wifi-help.html'
