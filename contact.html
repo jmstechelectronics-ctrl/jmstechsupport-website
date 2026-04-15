@@ -36,14 +36,9 @@
     .panel{padding:24px}
     .card{padding:20px}
     .kicker{display:inline-flex;align-items:center;padding:7px 11px;border-radius:999px;background:rgba(0,96,146,.10);border:1px solid rgba(0,96,146,.18);color:var(--primary-dark);font-size:12px;font-weight:800;letter-spacing:.02em;text-transform:uppercase}
-    .section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:14px}
-    .section-heading h2{margin:0;font-size:28px;letter-spacing:-.4px}
-    .section-heading p{margin:0;color:var(--muted);font-weight:600}
     .hero-shell{background:linear-gradient(145deg,rgba(255,255,255,.86),rgba(255,255,255,.72));border:1px solid rgba(230,235,242,.95);border-radius:28px;box-shadow:0 18px 40px rgba(11,16,32,.10);padding:16px}
-    .hero-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(320px,.92fr);gap:16px;align-items:stretch}
-    .hero-copy,.hero-side{background:rgba(255,255,255,.88);border:1px solid rgba(230,235,242,.95);border-radius:22px;box-shadow:var(--shadow)}
+    .hero-copy{background:rgba(255,255,255,.88);border:1px solid rgba(230,235,242,.95);border-radius:22px;box-shadow:var(--shadow)}
     .hero-copy{padding:clamp(24px,4vw,38px)}
-    .hero-side{padding:22px;display:flex;flex-direction:column;gap:16px}
     h1{margin:12px 0 12px;font-size:clamp(36px,5.2vw,54px);line-height:1.04;letter-spacing:-.8px}
     .lead{margin:0;color:rgba(11,16,32,.78);font-size:19px;max-width:58ch}
     .hero-note{margin:16px 0 0;color:rgba(11,16,32,.78);font-weight:650}
@@ -54,35 +49,11 @@
     .btn-soft{background:rgba(0,96,146,.08);border-color:rgba(0,96,146,.14);color:var(--primary-dark)}
     .btn:focus-visible,
     nav a:focus-visible,
-    .contact-card a:focus-visible,
     input:focus-visible,
     textarea:focus-visible,
     select:focus-visible{outline:3px solid rgba(0,96,146,.22);outline-offset:2px}
-    .hero-side h2{margin:0;font-size:24px;letter-spacing:-.3px}
-    .hero-side p{margin:0;color:rgba(11,16,32,.76)}
-    .hero-method-list{display:grid;gap:10px}
-    .hero-method{padding:12px 14px;border-radius:16px;background:rgba(246,248,251,.92);border:1px solid rgba(230,235,242,.95)}
-    .hero-method strong{display:block;font-size:14px}
-    .hero-method span{display:block;margin-top:2px;color:var(--muted);font-size:13px}
-    .response-card{padding:16px 18px;border-radius:16px;background:linear-gradient(145deg,rgba(0,96,146,.08),rgba(9,45,94,.06));border:1px solid rgba(0,96,146,.12)}
-    .response-card strong{display:block;font-size:15px}
-    .response-card p{margin:6px 0 0;color:rgba(11,16,32,.78);font-size:14px}
-    .quick-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-    .contact-card{display:flex;flex-direction:column;gap:12px;min-height:100%}
-    .contact-card h3{margin:0;font-size:24px;letter-spacing:-.3px}
-    .contact-card p{margin:0;color:rgba(11,16,32,.76)}
-    .card-tag{display:inline-flex;align-self:flex-start;padding:7px 10px;border-radius:999px;background:rgba(9,45,94,.06);border:1px solid rgba(9,45,94,.10);color:var(--primary-dark);font-size:12px;font-weight:800}
-    .contact-detail{display:inline-flex;align-self:flex-start;padding:10px 12px;border-radius:14px;background:rgba(246,248,251,.95);border:1px solid rgba(230,235,242,.95);font-weight:780;word-break:break-word}
-    .contact-card .actions{margin-top:auto}
     .actions{display:flex;gap:10px;flex-wrap:wrap}
-    .trust-strip{display:flex;flex-wrap:wrap;gap:10px;padding:16px 18px}
-    .trust-pill{display:inline-flex;align-items:center;padding:9px 12px;border-radius:999px;background:rgba(255,255,255,.9);border:1px solid rgba(230,235,242,.95);font-size:13px;font-weight:760;color:rgba(11,16,32,.82)}
-    .steps-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-    .step-card{padding:20px}
-    .step-number{width:38px;height:38px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;font-weight:850;margin-bottom:12px;box-shadow:0 10px 18px rgba(0,96,146,.20)}
-    .step-card h3{margin:0 0 8px;font-size:20px;letter-spacing:-.2px}
-    .step-card p{margin:0;color:rgba(11,16,32,.76)}
-    .contact-layout{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(300px,.92fr);gap:16px;align-items:start}
+    .contact-layout{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(280px,.88fr);gap:16px;align-items:start}
     .form-panel{padding:24px}
     .form-panel h2{margin:0 0 8px;font-size:28px;letter-spacing:-.4px}
     .form-panel p{margin:0;color:rgba(11,16,32,.76)}
@@ -97,10 +68,9 @@
     textarea{min-height:160px;resize:vertical}
     .field-note{font-size:12px;color:var(--muted)}
     .full{grid-column:1 / -1}
-    .form-actions{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-    .form-actions p{margin:0;color:var(--muted);font-size:13px}
+    .form-actions{margin-top:16px}
     .side-stack{display:grid;gap:14px}
-    .proof-card,.area-card,.contact-sidebar-card{padding:20px}
+    .proof-card,.area-card{padding:20px}
     .proof-top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:14px}
     .google-proof{display:flex;align-items:center;gap:12px}
     .google-proof img{width:28px;height:28px;display:block;object-fit:contain}
@@ -112,10 +82,10 @@
     .proof-quote{margin:0;color:rgba(11,16,32,.82);font-size:15px;line-height:1.7}
     .proof-author{margin:12px 0 0;color:var(--muted);font-size:13px;font-weight:700}
     .mini-link{display:inline-flex;align-items:center;margin-top:14px;color:var(--primary-dark);font-weight:750;text-decoration:underline;text-underline-offset:2px}
-    .area-card h3,.contact-sidebar-card h3{margin:0 0 8px;font-size:22px;letter-spacing:-.3px}
-    .area-card p,.contact-sidebar-card p{margin:0;color:rgba(11,16,32,.76)}
-    .area-list{margin:12px 0 0;padding-left:18px;color:rgba(11,16,32,.8)}
-    .area-list li{margin:6px 0}
+    .area-card h3{margin:0 0 8px;font-size:22px;letter-spacing:-.3px}
+    .area-card p{margin:0;color:rgba(11,16,32,.76)}
+    .area-list{margin:12px 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+    .area-list li{display:inline-flex;padding:7px 10px;border-radius:999px;background:rgba(246,248,251,.95);border:1px solid rgba(230,235,242,.95);font-size:13px;font-weight:700;color:rgba(11,16,32,.8)}
     .site-footer{padding:22px 0 40px;color:rgba(11,16,32,.72)}
     .footer-panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
     .footer-main{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 24px;align-items:start}
@@ -140,7 +110,7 @@
     .mobile-menu a{display:block;padding:12px;border-radius:12px;font-weight:650;text-decoration:none}
     .mobile-menu a:hover,.mobile-menu a[aria-current="page"]{background:rgba(0,96,146,.08)}
     @media (max-width:980px){
-      .hero-grid,.contact-layout,.quick-grid,.steps-grid,.form-grid{grid-template-columns:1fr}
+      .contact-layout,.form-grid{grid-template-columns:1fr}
       .brand img{width:120px}
       h1{font-size:36px}
       .main-nav{display:none}
@@ -161,12 +131,10 @@
     }
     @media (max-width:760px){
       main{padding-top:22px}
-      .panel,.card,.form-panel,.proof-card,.area-card,.contact-sidebar-card{padding:18px}
+      .panel,.card,.form-panel,.proof-card,.area-card{padding:18px}
       .hero-copy{padding:22px}
       .hero-actions,.actions,.form-actions{flex-direction:column;align-items:stretch}
       .btn{width:100%}
-      .trust-strip{padding:14px}
-      .section-heading{flex-direction:column;align-items:flex-start}
     }
   </style>
 </head>
@@ -200,113 +168,16 @@
     <div class="container">
       <section>
         <div class="hero-shell">
-          <div class="hero-grid">
-            <div class="hero-copy">
-              <span class="kicker">Local tech support</span>
-              <h1>Contact JMS Tech Support</h1>
-              <p class="lead">Call for urgent issues, text for quick questions, or use the form when you want to send quote details or explain the job properly.</p>
-              <p class="hero-note">Clear advice, no jargon, and practical local support across the Clarence Valley.</p>
-              <div class="hero-actions">
-                <a class="btn btn-primary" href="tel:0418160226">Call now</a>
-                <a class="btn btn-ghost" href="#quote-form">Send request</a>
-                <a class="btn btn-soft" href="sms:0418160226">Text now</a>
-              </div>
+          <div class="hero-copy">
+            <span class="kicker">Local tech support</span>
+            <h1>Contact JMS Tech Support</h1>
+            <p class="lead">Call for urgent issues, text for quick questions, or use the form for quotes and detailed job requests.</p>
+            <p class="hero-note">Clear advice, no jargon, and practical local support across the Clarence Valley.</p>
+            <div class="hero-actions">
+              <a class="btn btn-ghost" href="tel:0418160226">Call now</a>
+              <a class="btn btn-primary" href="#quote-form">Send request</a>
+              <a class="btn btn-soft" href="sms:0418160226">Text now</a>
             </div>
-
-            <div class="hero-side">
-              <div>
-                <h2>Best way to get help</h2>
-                <p>If the problem is urgent, calling is fastest. If it is a simple question, a text is easy. If you want a quote or need to explain the job, use the form below.</p>
-              </div>
-              <div class="hero-method-list" aria-label="Best contact methods">
-                <div class="hero-method">
-                  <strong>Urgent problem?</strong>
-                  <span>Call 0418 160 226 for the quickest response.</span>
-                </div>
-                <div class="hero-method">
-                  <strong>Quick question?</strong>
-                  <span>Send a text if you want a simple check before booking.</span>
-                </div>
-                <div class="hero-method">
-                  <strong>Need a quote?</strong>
-                  <span>Use the form for slower internet, computer issues, cameras, or anything with more detail.</span>
-                </div>
-              </div>
-              <div class="response-card">
-                <strong>You will know what to do next.</strong>
-                <p>We review the issue, reply with the clearest next step, and help you book support or get a straightforward quote.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section aria-labelledby="quick-contact-heading">
-        <div class="section-heading">
-          <h2 id="quick-contact-heading">Quick contact options</h2>
-          <p>Choose the path that fits the job.</p>
-        </div>
-        <div class="quick-grid">
-          <div class="card contact-card">
-            <span class="card-tag">Urgent support</span>
-            <h3>Call now</h3>
-            <p>Best for urgent support, active internet issues, or jobs you want to sort out quickly.</p>
-            <span class="contact-detail">0418 160 226</span>
-            <div class="actions">
-              <a class="btn btn-primary" href="tel:0418160226">Call 0418 160 226</a>
-            </div>
-          </div>
-          <div class="card contact-card">
-            <span class="card-tag">Quick question</span>
-            <h3>Text now</h3>
-            <p>Useful for quick questions, suburb checks, or sending a short message before booking.</p>
-            <span class="contact-detail">0418 160 226</span>
-            <div class="actions">
-              <a class="btn btn-ghost" href="sms:0418160226">Text now</a>
-            </div>
-          </div>
-          <div class="card contact-card">
-            <span class="card-tag">Non-urgent</span>
-            <h3>Email now</h3>
-            <p>Best for non-urgent enquiries, attachments, or if you prefer sending details in writing.</p>
-            <span class="contact-detail">josh@jmstechsupport.com.au</span>
-            <div class="actions">
-              <a class="btn btn-ghost" href="mailto:josh@jmstechsupport.com.au">Email now</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="panel trust-strip" aria-label="Trust points">
-          <span class="trust-pill">Local Clarence Valley service</span>
-          <span class="trust-pill">Clear practical support</span>
-          <span class="trust-pill">No jargon</span>
-          <span class="trust-pill">Google reviews 5.0</span>
-          <span class="trust-pill">We come to you</span>
-        </div>
-      </section>
-
-      <section aria-labelledby="next-steps-heading">
-        <div class="section-heading">
-          <h2 id="next-steps-heading">What happens next</h2>
-          <p>A simple process from first contact to booked support.</p>
-        </div>
-        <div class="steps-grid">
-          <div class="card step-card">
-            <span class="step-number">1</span>
-            <h3>Send the issue or quote details</h3>
-            <p>Call, text, email, or use the form depending on how urgent the problem is and how much detail you need to send.</p>
-          </div>
-          <div class="card step-card">
-            <span class="step-number">2</span>
-            <h3>We review it and reply clearly</h3>
-            <p>We look at what you have sent and come back with the best next step, whether that is advice, a quote, or a booking.</p>
-          </div>
-          <div class="card step-card">
-            <span class="step-number">3</span>
-            <h3>We book support or confirm the quote</h3>
-            <p>You get a straightforward path forward without being bounced around or left guessing what to do next.</p>
           </div>
         </div>
       </section>
@@ -315,8 +186,8 @@
         <div class="contact-layout">
           <div class="panel form-panel" id="quote-form">
             <h2>Request support or a quote</h2>
-            <p>Use the form if you want to explain the issue properly, ask for a quote, or send through details for a slower internet, computer, or camera job.</p>
-            <div class="form-helper">The more detail you include, the faster we can give you the right advice or quote.</div>
+            <p>Use the form for quotes, detailed job requests, or anything that is easier to explain in writing.</p>
+            <div class="form-helper">The more detail you include, the easier it is to give you the right advice or quote.</div>
             <form class="quote-form" name="general-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
               <input type="hidden" name="form-name" value="general-quote">
               <p hidden><label>Do not fill this in: <input name="bot-field"></label></p>
@@ -368,8 +239,6 @@
               </div>
               <div class="form-actions">
                 <button class="btn btn-primary" type="submit">Send request</button>
-                <a class="btn btn-ghost" href="sms:0418160226">Text instead</a>
-                <p>Urgent problem? Call <strong>0418 160 226</strong>.</p>
               </div>
             </form>
           </div>
@@ -406,15 +275,6 @@
                 <li>Gulmarrad</li>
               </ul>
               <p>If you are just outside those areas, still get in touch and we can confirm availability.</p>
-            </div>
-
-            <div class="card contact-sidebar-card">
-              <h3>Need help fast?</h3>
-              <p>For urgent issues, do not wait on email. Call now for the quickest response or text if you want a fast suburb or service check before booking.</p>
-              <div class="actions" style="margin-top:14px;">
-                <a class="btn btn-primary" href="tel:0418160226">Call now</a>
-                <a class="btn btn-ghost" href="sms:0418160226">Text now</a>
-              </div>
             </div>
           </div>
         </div>
