@@ -78,7 +78,7 @@
     .faq .q{font-size:20px;margin:0 0 6px}
     .footer{margin-top:10px;font-size:13px;color:var(--muted)}
 
-        .site-footer{padding:22px 0 40px;color:rgba(11,16,32,.72)}
+        .site-footer{padding:22px 0 24px;color:rgba(11,16,32,.72)}
     .footer-panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
     .footer-main{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 24px;align-items:start}
     .footer-credentials{display:grid;gap:8px;max-width:240px;align-content:start;justify-items:start}
@@ -182,7 +182,12 @@
   <header>
     <div class="container">
       <div class="topbar">
-        <a class="brand" href="/"><img src="assets/JMSwdlogo.png" alt="JMS Web Design logo" /></a>
+        <a class="brand" href="/">
+          <picture>
+            <source type="image/webp" srcset="assets/JMSwdlogo-190.webp 190w, assets/JMSwdlogo-380.webp 380w" sizes="(max-width: 980px) 150px, 190px" />
+            <img src="assets/JMSwdlogo-380.png" width="380" height="130" alt="JMS Web Design logo" loading="eager" fetchpriority="high" decoding="async" />
+          </picture>
+        </a>
         <nav class="main-nav" aria-label="Primary">
           <a href="/">Home</a>
           <a href="/about">About</a>
