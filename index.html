@@ -332,6 +332,12 @@
       text-underline-offset: 2px;
       font-size: 14px;
     }
+    .service-price {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -.2px;
+    }
     .area-map-card {
       position: relative;
       overflow: hidden;
@@ -747,6 +753,8 @@
     .footer-social svg{width:20px;height:20px;display:block}
     .footer-bottom{margin-top:12px;padding-top:12px;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 18px;align-items:center}
     .footer-areas{margin:0;font-size:13px;color:var(--muted);line-height:1.5}
+    .footer-about{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+    .footer-about p{margin:0;font-size:14px;color:var(--muted);line-height:1.6;max-width:600px}
     .footer-copy{margin:0;font-size:13px;color:var(--muted);text-align:right;white-space:nowrap}
     @media (max-width:860px){.footer-main{grid-template-columns:1fr;gap:12px}.footer-credentials{justify-items:center;max-width:none;text-align:center}.footer-newsletter{max-width:none;text-align:center}.footer-newsletter-form{max-width:300px;margin:0 auto}.footer-links{justify-items:start;gap:8px}.footer-nav,.footer-social{justify-content:flex-start}.footer-bottom{grid-template-columns:1fr;gap:8px}.footer-copy{text-align:left;white-space:normal}}
 
@@ -919,7 +927,8 @@
               <h1>Local IT support that actually solves the problem.</h1>
               <p class="lead">Fast, practical help for slow internet, Wi-Fi dropouts, computer issues and security cameras across Yamba, Maclean and the Clarence Valley.</p>
               <div class="hero-actions">
-                <a class="btn btn-primary" href="tel:0418160226">Call 0418 160 226</a>
+                <a class="btn btn-primary" href="/contact.html">Book online</a>
+                <a class="btn btn-ghost" href="tel:0418160226">Call 0418 160 226</a>
                 <a class="btn btn-ghost" href="/contact.html">Request support</a>
               </div>
               <div class="trust-badges" aria-label="Trust highlights">
@@ -959,6 +968,7 @@
               <div class="pill">General IT</div>
               <h3>Computer and device support</h3>
               <p>PC/laptop fixes, email problems, printer setup, software issues and general troubleshooting for home and business.</p>
+              <span class="service-price">From $99</span>
               <span class="service-link">Learn more</span>
             </div>
           </a>
@@ -968,6 +978,7 @@
               <div class="pill">Wi-Fi / NBN</div>
               <h3>Slow internet and Wi-Fi help</h3>
               <p>Dropouts, dead zones, buffering and NBN troubleshooting. We isolate the bottleneck and fix it properly.</p>
+              <span class="service-price">From $99</span>
               <span class="service-link">Learn more</span>
             </div>
           </a>
@@ -977,6 +988,7 @@
               <div class="pill">Security cameras</div>
               <h3>Camera installation and setup</h3>
               <p>Clean installs, app setup, motion zones, playback training and Wi-Fi optimisation for reliable performance.</p>
+              <span class="service-price">From $199</span>
               <span class="service-link">Learn more</span>
             </div>
           </a>
@@ -1002,11 +1014,12 @@
               <p>See suburbs we cover across Clarence Valley and how to request support outside the core zones.</p>
             </div>
           </a>
-          <a class="card faq-card" href="https://jmswebdesign.com.au/">
+          <a class="card faq-card" href="https://jmswebdesign.com.au/" style="background:linear-gradient(145deg,#f0f7fc 0%,#e6f0f8 100%);border-color:rgba(0,96,146,.3)">
             <div class="faq-card-content">
-              <div class="pill">Websites</div>
+              <div class="pill" style="background:rgba(0,96,146,.15);color:var(--primary-dark)">Websites</div>
               <h3>Simple website creation</h3>
               <p>Affordable websites for tradies and small businesses. Built to help customers find you on Google and contact you fast.</p>
+              <span style="display:inline-flex;align-items:center;gap:4px;margin-top:8px;font-weight:750;font-size:14px;color:var(--primary-dark);text-decoration:underline;text-underline-offset:2px">From $499 → See pricing</span>
             </div>
           </a>
         </div>
@@ -1222,6 +1235,10 @@
                 </a>
               </nav>
             </div>
+          </div>
+
+          <div class="footer-about">
+            <p>Josh — local IT technician servicing the Clarence Valley. Every job comes with a 100% satisfaction guarantee. If it's not right, I'll come back and fix it. No fuss.</p>
           </div>
 
           <div class="footer-bottom">
