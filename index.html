@@ -1069,6 +1069,22 @@
                 <div class="reviews-slide">
                   <article class="review-card">
                     <div class="review-author">
+                      <span class="review-avatar" aria-hidden="true">W</span>
+                      <div>
+                        <h3 class="review-name">Wendi Moffitt</h3>
+                        <p class="review-meta">
+                          <span>Google review</span>
+                        </p>
+                      </div>
+                    </div>
+                    <span class="review-stars" aria-label="5 out of 5 stars">★★★★★</span>
+                    <p class="review-copy">"Josh was very professional, he knew what he was talking about. Each time he turned up when he said he would."</p>
+                  </article>
+                </div>
+
+                <div class="reviews-slide">
+                  <article class="review-card">
+                    <div class="review-author">
                       <span class="review-avatar" aria-hidden="true">T</span>
                       <div>
                         <h3 class="review-name">Tom McGirr</h3>
@@ -1326,20 +1342,10 @@
       const canCarousel = () => originalCount > perView;
 
       const buildTrack = () => {
-        if (!canCarousel()) {
-          track.innerHTML = originalSlidesMarkup.join('');
-          slides = Array.from(track.children);
-          cloneCount = 0;
-          currentIndex = 0;
-          return;
-        }
-
-        cloneCount = Math.min(perView, originalCount);
-        const headClones = originalSlidesMarkup.slice(-cloneCount);
-        const tailClones = originalSlidesMarkup.slice(0, cloneCount);
-        track.innerHTML = [...headClones, ...originalSlidesMarkup, ...tailClones].join('');
+        track.innerHTML = originalSlidesMarkup.join('');
         slides = Array.from(track.children);
-        currentIndex = cloneCount + logicalIndex;
+        cloneCount = 0;
+        currentIndex = logicalIndex;
       };
 
       const render = (animate = true) => {
@@ -1353,9 +1359,8 @@
       };
 
       const updateControls = () => {
-        const isStatic = !canCarousel();
-        prevButton.disabled = isStatic;
-        nextButton.disabled = isStatic;
+        prevButton.disabled = !canCarousel() || logicalIndex <= 0;
+        nextButton.disabled = !canCarousel() || logicalIndex >= maxIndex;
       };
 
       const updateDots = () => {
@@ -1418,11 +1423,11 @@
         if (isTransitioning) return;
 
         if (index < 0) {
-          logicalIndex = (logicalIndex - 1 + originalCount) % originalCount;
-          currentIndex -= 1;
+          logicalIndex = 0;
+          currentIndex = 0;
         } else if (index >= originalCount) {
-          logicalIndex = (logicalIndex + 1) % originalCount;
-          currentIndex += 1;
+          logicalIndex = maxIndex;
+          currentIndex = maxIndex;
         } else {
           const forwardSteps = (index - logicalIndex + originalCount) % originalCount;
           const backwardSteps = (logicalIndex - index + originalCount) % originalCount;
