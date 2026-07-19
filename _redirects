@@ -24,3 +24,6 @@ http://www.jmstechsupport.com.au/*    https://jmstechsupport.com.au/:splat   301
 /contact   /contact.html   301!
 /client-brief   /client-brief/index.html   200
 /client-brief/thank-you   /client-brief/thank-you/index.html   200
+/tips/stop-tech-support-scams-yamba   /tips/stop-tech-support-scams-yamba.html   301!
+/tips/starlink-vs-nbn-clarence-valley   /tips/starlink-vs-nbn-clarence-valley.html   301!
+/tips/wifi-extender-vs-mesh-system   /tips/wifi-extender-vs-mesh-system.html   301!

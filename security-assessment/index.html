@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Home Security Assessment — JMS Tech Support</title>
+<meta name="description" content="Free 10-minute home security assessment. We walk your property, score your setup, and show you where a criminal sees an opportunity. Yamba & surrounds.">
+<link rel="canonical" href="https://jmstechsupport.com.au/security-assessment/">
+<meta property="og:title" content="Free Home Security Assessment — JMS Tech Support">
+<meta property="og:description" content="Free 10-minute home security walkthrough. C-grade or A-grade? Find out in ten minutes.">
+<meta property="og:url" content="https://jmstechsupport.com.au/security-assessment/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://jmstechsupport.com.au/assets/hero/hero-collage.png">
+<style>
+/* ===== Design Tokens — JMS Tech Brand ===== */
+:root {
+  --blue: #006092;
+  --navy: #092d5e;
+  --ink: #0b1020;
+  --muted: #5b6475;
+  --dim: #8a909e;
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --line: #e6ebf2;
+  --accent: #d62828;
+  --accent-soft: rgba(214,40,40,0.06);
+  --radius: 18px;
+  --radius-sm: 10px;
+  --shadow: 0 4px 20px rgba(11,16,32,0.06);
+  --shadow-lg: 0 10px 40px rgba(11,16,32,0.10);
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font);
+  color: var(--ink);
+  background: radial-gradient(800px 400px at 80% 0%, rgba(0,96,146,0.10), transparent 60%),
+              var(--bg);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; }
+h1 { font-size: clamp(36px, 5vw, 54px); line-height: 1.08; }
+h2 { font-size: clamp(24px, 3vw, 34px); line-height: 1.15; }
+h3 { font-size: 18px; }
+
+.container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+section { padding: 64px 0; }
+
+/* ===== Header ===== */
+header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(12px);
+  position: sticky; top: 0; z-index: 50;
+}
+.header-inner {
+  max-width: 960px; margin: 0 auto; padding: 14px 24px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.header-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.header-logo strong { color: var(--navy); font-size: 16px; }
+.header-cta {
+  background: var(--blue); color: #fff; text-decoration: none;
+  padding: 8px 20px; border-radius: 6px;
+  font-size: 14px; font-weight: 600;
+  transition: background 0.2s;
+}
+.header-cta:hover { background: var(--navy); }
+
+/* ===== Hero ===== */
+.hero { padding: 60px 0 40px; text-align: center; }
+.score-card {
+  display: inline-flex; align-items: center; gap: 12px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(214,40,40,0.15);
+  padding: 8px 20px; border-radius: var(--radius-sm);
+  font-size: 14px; font-weight: 700; color: var(--accent);
+  margin-bottom: 20px;
+}
+.score-grade {
+  background: var(--accent); color: #fff;
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; font-weight: 900;
+}
+.hero h1 { margin-bottom: 14px; }
+.hero p {
+  font-size: 17px; color: var(--muted);
+  max-width: 580px; margin: 0 auto 32px;
+}
+.hero-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--accent); color: #fff;
+  padding: 15px 34px; border-radius: 8px;
+  font-size: 16px; font-weight: 700; text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.hero-cta:hover { background: #b71c1c; transform: translateY(-1px); }
+
+/* ===== Steps ===== */
+.steps-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  margin-top: 40px;
+}
+.step {
+  text-align: center;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 36px 24px;
+  box-shadow: var(--shadow);
+}
+.step-num {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: var(--blue); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 20px; font-weight: 800;
+}
+.step h3 { margin-bottom: 8px; }
+.step p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+/* ===== Crime stats ===== */
+.stats-section { background: var(--navy); color: #fff; }
+.stats-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+.stat {
+  text-align: center; padding: 24px;
+  background: rgba(255,255,255,0.06);
+  border-radius: var(--radius);
+}
+.stat-num { font-size: 42px; font-weight: 900; margin-bottom: 4px; }
+.stat-label { font-size: 14px; opacity: 0.7; }
+.stat-src { font-size: 11px; margin-top: 8px; opacity: 0.4; }
+
+/* ===== What we check ===== */
+.check-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
+}
+.check-item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 20px 24px;
+  display: flex; align-items: flex-start; gap: 14px;
+  box-shadow: var(--shadow);
+}
+.check-icon {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: rgba(0,96,146,0.10);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0;
+}
+.check-item h4 { font-size: 15px; margin-bottom: 4px; }
+.check-item p { font-size: 13px; color: var(--muted); }
+
+/* ===== Pricing ===== */
+.pricing-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 40px;
+  max-width: 440px; margin: 0 auto;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+.pricing-card h3 { margin-bottom: 4px; }
+.pricing-price { font-size: 48px; font-weight: 900; color: var(--blue); margin: 16px 0; }
+.pricing-price span { font-size: 16px; color: var(--muted); font-weight: 400; }
+.pricing-desc { font-size: 14px; color: var(--muted); margin-bottom: 24px; }
+.pricing-features { list-style: none; text-align: left; margin-bottom: 28px; }
+.pricing-features li {
+  font-size: 14px; padding: 8px 0;
+  display: flex; align-items: center; gap: 10px;
+}
+.pricing-features li::before {
+  content: "✓"; color: #2e7d32; font-weight: 700; flex-shrink: 0;
+}
+
+/* ===== Booking ===== */
+.booking-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 40px;
+  max-width: 520px; margin: 0 auto;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+.booking-card h2 { margin-bottom: 8px; }
+.booking-card p { color: var(--muted); margin-bottom: 28px; font-size: 15px; }
+.booking-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #25D366; color: #fff;
+  padding: 15px 34px; border-radius: 8px;
+  font-size: 16px; font-weight: 700; text-decoration: none;
+  transition: opacity 0.2s;
+}
+.booking-cta:hover { opacity: 0.9; }
+.booking-or { color: var(--dim); margin: 16px 0; font-size: 13px; }
+
+/* ===== Footer ===== */
+footer {
+  border-top: 1px solid var(--line);
+  padding: 32px 24px; text-align: center;
+  color: var(--dim); font-size: 13px;
+}
+footer a { color: var(--blue); text-decoration: none; }
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .steps-grid, .stats-grid, .check-grid { grid-template-columns: 1fr; }
+  .hero { padding: 40px 0 24px; }
+  section { padding: 40px 0; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="https://jmstechsupport.com.au" class="header-logo">
+      <strong>JMS Tech Support</strong>
+    </a>
+    <a href="#book" class="header-cta">Book Assessment</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="score-card">
+      <span class="score-grade">C−</span>
+      Most homes score below acceptable
+    </div>
+    <h1>Is your home an<br>easy target?</h1>
+    <p>10-minute walkthrough. We score your setup, spot the gaps, and tell you exactly what a criminal sees.</p>
+    <a href="#book" class="hero-cta">
+      Get Your Free Assessment
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- How it works -->
+<section>
+  <div class="container">
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Walkthrough</h3>
+        <p>We spend 10 minutes walking your property. Entry points, sight lines, blind spots — we check what a burglar checks.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Scorecard</h3>
+        <p>You get a simple A-F security grade. C-grade or below means gaps. Most homes we walk score a C− on first visit.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Recommendation</h3>
+        <p>No hard sell. We tell you what's urgent, what can wait, and what you can fix yourself. Hardware options if you want them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Crime stats -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-num" id="stat-breakins">—</div>
+        <div class="stat-label">Break & Enter incidents<br>in your postcode (2025)</div>
+        <div class="stat-src">Source: BOCSAR NSW</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">60%</div>
+        <div class="stat-label">Of burglaries are<br>opportunistic</div>
+        <div class="stat-src">Source: AIC</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">48%</div>
+        <div class="stat-label">Entry via unlocked<br>or unsecured door/window</div>
+        <div class="stat-src">Source: NSW Police</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What we check -->
+<section>
+  <div class="container">
+    <h2 style="text-align:center;margin-bottom:40px;">What we check in 10 minutes</h2>
+    <div class="check-grid">
+      <div class="check-item">
+        <div class="check-icon">📷</div>
+        <div>
+          <h4>Entry point visibility</h4>
+          <p>Which doors and windows are visible from the street? Which are hidden?</p>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">🔦</div>
+        <div>
+          <h4>Lighting & blind spots</h4>
+          <p>Motion sensor coverage, dark corners, side paths — where would someone hide?</p>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">🔐</div>
+        <div>
+          <h4>Lock & barrier audit</h4>
+          <p>Deadbolts, window locks, screen doors — fast check on what's actually doing the job.</p>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">📡</div>
+        <div>
+          <h4>Camera & sensor gaps</h4>
+          <p>If you have cameras, we check coverage, blind zones, and placement. If you don't, we show you where they'd help.</p>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">🔊</div>
+        <div>
+          <h4>Noise & neighbour lines</h4>
+          <p>Would a neighbour hear a break-in? We check sight lines from adjacent properties.</p>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">📋</div>
+        <div>
+          <h4>Written scorecard</h4>
+          <p>You walk away with a grade and a checklist. What's urgent, what can wait, what you can DIY.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section style="background:#fff;">
+  <div class="container">
+    <h2 style="text-align:center;margin-bottom:32px;">If you want hardware, here's what it costs</h2>
+    <div class="pricing-card">
+      <h3>Camera Install</h3>
+      <p style="color:var(--muted);font-size:14px;">Tapo C615G or equivalent — supplied & fitted</p>
+      <div class="pricing-price">$450<span>/camera</span></div>
+      <p class="pricing-desc">Two-camera kit from $800. Includes Wi-Fi setup, app walkthrough, and mounting.</p>
+      <ul class="pricing-features">
+        <li>1080p outdoor-rated camera</li>
+        <li>Motion detection & smartphone alerts</li>
+        <li>Wi-Fi setup & app configuration</li>
+        <li>Wall/ceiling mount with cable routing</li>
+        <li>30-day follow-up check</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Booking -->
+<section id="book">
+  <div class="container">
+    <div class="booking-card">
+      <h2>Book your free assessment</h2>
+      <p>Text or call Josh. We'll find 10 minutes that works. Yamba, Maclean, Iluka & surrounds.</p>
+      <a href="sms:0418160226?body=Hey%20Josh%2C%20I'd%20like%20a%20free%20home%20security%20assessment.%20My%20address%20is..." class="booking-cta">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10h8M8 14h6"/></svg>
+        Text Josh — 0418 160 226
+      </a>
+      <p class="booking-or">or call the same number</p>
+      <p style="font-size:12px;color:var(--dim);">Free assessment. No obligation. JMS Tech Support — ABN 79 773 473 522.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p><strong>JMS Tech Support</strong> &copy; 2026 · Yamba, NSW · <a href="https://jmstechsupport.com.au">jmstechsupport.com.au</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
