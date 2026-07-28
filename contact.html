@@ -10,6 +10,7 @@
 
     gtag("config", "G-QKY2Z0N0C1");
   </script>
+  <script defer src="/assets/meta-lead-tracking.js"></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Contact JMS Tech Support for local IT support, slow internet troubleshooting and security camera installation across Yamba, Maclean, Grafton and the Clarence Valley." />
@@ -204,9 +205,11 @@
             <h2>Request support or a quote</h2>
             <p>Use the form for quotes, detailed job requests, or anything that is easier to explain in writing.</p>
             <div class="form-helper">The more detail you include, the easier it is to give you the right advice or quote.</div>
-            <form class="quote-form" name="general-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+            <form class="quote-form" name="general-quote" method="POST" action="https://formsubmit.co/josh@jmstechsupport.com.au">
               <input type="hidden" name="form-name" value="general-quote">
-              <p hidden><label>Do not fill this in: <input name="bot-field"></label></p>
+              <input type="hidden" name="_next" value="https://jmstechsupport.com.au/contact-thanks.html">
+              <input type="hidden" name="_captcha" value="false">
+              <p hidden><label>Do not fill this in: <input name="_honey" autocomplete="off" tabindex="-1"></label></p>
               <div class="form-grid">
                 <div class="field">
                   <label for="name">Name</label>
@@ -256,6 +259,7 @@
               <div class="form-actions">
                 <button class="btn btn-primary" type="submit">Send request</button>
               </div>
+              <p class="field-note" style="margin-top:12px"><a href="/privacy.html">Privacy policy</a></p>
             </form>
           </div>
 
