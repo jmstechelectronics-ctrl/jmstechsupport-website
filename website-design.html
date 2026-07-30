@@ -5,34 +5,165 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Website Design — JMS Tech Support</title>
   <meta name="description" content="Website creation is handled by JMS Web Design, our dedicated web design arm. Starter sites from $349 once + $29/month." />
-  <meta http-equiv="refresh" content="5;url=https://jmswebdesign.com.au/" />
+  <meta http-equiv="refresh" content="8;url=https://jmswebdesign.com.au/" />
   <link rel="canonical" href="https://jmswebdesign.com.au/" />
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f6f8fb;color:#102033;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px}
-    .card{background:#fff;border-radius:18px;padding:40px 36px;max-width:520px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,.06)}
-    .badge{display:inline-block;background:#e8f0fe;color:#1a73e8;font-size:13px;font-weight:600;padding:4px 14px;border-radius:99px;margin-bottom:20px}
-    h1{font-size:26px;letter-spacing:-.4px;margin-bottom:12px}
-    p{color:rgba(16,32,51,.72);line-height:1.55;margin-bottom:16px}
-    .offer{background:#f0f7ff;border-radius:12px;padding:16px 20px;margin:20px 0}
-    .offer strong{font-size:20px;color:#102033}
-    .offer span{color:rgba(16,32,51,.6);font-size:14px}
-    .btn{display:inline-block;background:#1a73e8;color:#fff;text-decoration:none;padding:12px 28px;border-radius:10px;font-weight:600;font-size:15px;margin-top:8px}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+      color:#102033;
+      display:flex;align-items:center;justify-content:center;
+      min-height:100vh;padding:24px;
+      background:radial-gradient(ellipse at 50% 30%, #e8f2fc 0%, #f6f8fb 60%);
+    }
+    .card{
+      background:#fff;
+      border-radius:18px;padding:40px 36px 32px;
+      max-width:540px;width:100%;
+      text-align:center;
+      box-shadow:0 2px 24px rgba(0,0,0,.07),0 8px 48px rgba(20,60,120,.06);
+      animation:card-enter .55s ease-out both;
+    }
+    @keyframes card-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+    .badge{
+      display:inline-block;
+      background:#e8f0fe;color:#1a73e8;
+      font-size:13px;font-weight:600;
+      padding:4px 16px;border-radius:99px;
+      margin-bottom:24px;
+      transition:background .3s,color .3s;
+    }
+    .badge.leaving{background:#fef3c7;color:#b45309}
+    .badge.ready{background:#dcfce7;color:#166534}
+
+    .handoff{
+      display:flex;align-items:center;justify-content:center;
+      gap:0;margin-bottom:8px;
+      font-weight:600;font-size:15px;
+    }
+    .brand-left{color:#102033;flex-shrink:0}
+    .brand-right{color:#1a73e8;flex-shrink:0;transition:transform .25s}
+    .brand-right.pulse{transform:scale(1.08)}
+
+    .path-wrap{
+      flex:1;min-width:40px;max-width:120px;
+      display:flex;align-items:center;
+      margin:0 8px;position:relative;
+      height:20px;
+    }
+    .path-line{
+      width:100%;height:2px;background:#dce5f0;border-radius:1px;
+      position:relative;overflow:visible;
+    }
+    .path-line::before{
+      content:'';position:absolute;top:0;left:0;height:100%;width:0;
+      background:#1a73e8;border-radius:1px;
+      animation:draw-line 8s linear forwards;
+    }
+    @keyframes draw-line{to{width:100%}}
+
+    .dot{
+      width:10px;height:10px;border-radius:50%;
+      background:#1a73e8;
+      position:absolute;top:50%;left:0;
+      transform:translate(-50%,-50%);
+      z-index:1;
+      box-shadow:0 0 0 3px rgba(26,115,232,.18);
+      animation:travel-dot 8s linear forwards;
+    }
+    @keyframes travel-dot{to{left:100%}}
+    .dot.arrived{background:#166534;box-shadow:0 0 0 4px rgba(22,101,52,.2)}
+
+    .subhead{font-size:14px;color:rgba(16,32,51,.55);margin-bottom:16px}
+
+    .offer{
+      background:#f0f7ff;border-radius:12px;
+      padding:14px 20px;margin:0 0 20px;
+    }
+    .offer strong{font-size:19px;color:#102033}
+    .offer span{color:rgba(16,32,51,.55);font-size:14px}
+
+    .btn{
+      display:inline-block;background:#1a73e8;color:#fff;
+      text-decoration:none;padding:13px 32px;border-radius:10px;
+      font-weight:600;font-size:15px;margin-bottom:14px;
+      transition:background .2s;
+    }
     .btn:hover{background:#1557b0}
-    .note{font-size:13px;color:rgba(16,32,51,.45);margin-top:20px}
+
+    .progress-track{
+      width:100%;max-width:280px;height:4px;
+      background:#e8edf3;border-radius:2px;
+      margin:0 auto;overflow:hidden;
+    }
+    .progress-fill{
+      height:100%;width:0;background:#1a73e8;border-radius:2px;
+      animation:fill-bar 8s linear forwards;
+    }
+    @keyframes fill-bar{to{width:100%}}
+
+    @media (prefers-reduced-motion:reduce){
+      .card{animation:none;transform:none}
+      .path-line::before{animation:none;width:100%}
+      .dot{animation:none;left:100%}
+      .progress-fill{animation:none;width:100%}
+      .brand-right.pulse{transform:none}
+    }
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="badge">JMS Web Design</div>
-    <h1>Website design is handled by our sister company</h1>
-    <p>JMS Web Design is our dedicated web design arm. Same owner, same phone number, same approach — real websites for real businesses, no agencies and no ticket queues.</p>
+    <div class="badge" id="badge">JMS Web Design</div>
+
+    <div class="handoff">
+      <span class="brand-left">JMS Tech Support</span>
+      <div class="path-wrap">
+        <div class="path-line"></div>
+        <div class="dot" id="dot"></div>
+      </div>
+      <span class="brand-right" id="brandRight">JMS Web Design</span>
+    </div>
+
+    <p class="subhead">Same owner, same phone number, same approach — real websites for real businesses, no agencies and no ticket queues.</p>
+
     <div class="offer">
       <strong>$349 once + $29/month</strong><br />
       <span>Domain, hosting, email and ongoing support included. Live in 48 hours.</span>
     </div>
-    <a class="btn" href="https://jmswebdesign.com.au/">Go to JMS Web Design</a>
-    <div class="note">Redirecting in 5 seconds…</div>
+
+    <a class="btn" href="https://jmswebdesign.com.au/" id="btn">Visit JMS Web Design now</a>
+
+    <div class="progress-track">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
   </div>
+
+  <script>
+    const badge = document.getElementById('badge');
+    const brandRight = document.getElementById('brandRight');
+    const dot = document.getElementById('dot');
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+    if (!prefersReduced) {
+      setTimeout(() => {
+        badge.textContent = 'Taking you there…';
+        badge.classList.add('leaving');
+      }, 4000);
+
+      setTimeout(() => {
+        dot.classList.add('arrived');
+        brandRight.classList.add('pulse');
+        badge.textContent = 'Ready';
+        badge.classList.remove('leaving');
+        badge.classList.add('ready');
+      }, 7200);
+    }
+
+    // Replace history so back button goes to services, not back here to re-redirect
+    setTimeout(() => {
+      window.location.replace('https://jmswebdesign.com.au/');
+    }, 8000);
+  </script>
 </body>
 </html>
