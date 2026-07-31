@@ -1,0 +1,212 @@
+- generic [ref=f34e1]:
+  - generic [ref=f34e2]:
+    - banner [ref=f34e4]:
+      - generic [ref=f34e5]:
+        - generic [ref=f34e6]:
+          - button [ref=f34e1036] [cursor=pointer]
+          - link [ref=f34e1037] [cursor=pointer]:
+            - /url: ./search-console?resource_id=sc-domain%3Ajmstechsupport.com.au
+        - generic [ref=f34e10]:
+          - search [ref=f34e350]:
+            - generic [ref=f34e356]:
+              - textbox [disabled] [ref=f34e357]: Inspect any URL in 'jmstechsupport.com.au'
+              - combobox [ref=f34e1038]
+            - button [ref=f34e1039] [cursor=pointer]
+          - generic [ref=f34e11]:
+            - generic [ref=f34e13]:
+              - button [ref=f34e1040] [cursor=pointer]:
+                - generic [ref=f34e16]: 
+              - button [ref=f34e1041] [cursor=pointer]
+            - button [ref=f34e1042] [cursor=pointer]:
+              - generic [ref=f34e99]:
+                - generic [ref=f34e100]: 
+                - generic [ref=f34e830]: "1"
+        - generic [ref=f34e26]:
+          - button [ref=f34e1043] [cursor=pointer]
+          - button [ref=f34e1044] [cursor=pointer]
+    - dialog [ref=f34e1045]:
+      - navigation [ref=f34e1046]:
+        - button [ref=f34e1047] [cursor=pointer]:
+          - combobox [ref=f34e1049]: jmstechsupport.com.au
+          - generic [ref=f34e386]: 
+        - generic [ref=f34e387]:
+          - generic [ref=f34e388]:
+            - generic [ref=f34e389]:
+              - link [ref=f34e1050] [cursor=pointer]:
+                - /url: ./search-console?resource_id=sc-domain%3Ajmstechsupport.com.au
+                - generic [ref=f34e392]: home
+                - generic [ref=f34e394]: Overview
+              - link [ref=f34e1051] [cursor=pointer]:
+                - /url: ./search-console/performance/insights?resource_id=sc-domain%3Ajmstechsupport.com.au
+                - generic [ref=f34e399]: lightbulb_2
+                - generic [ref=f34e401]: Insights
+              - link [ref=f34e1052] [cursor=pointer]:
+                - /url: ./search-console/performance/search-analytics?resource_id=sc-domain%3Ajmstechsupport.com.au
+                - generic [ref=f34e406]: trending_up
+                - generic [ref=f34e408]: Performance
+              - button [ref=f34e1053] [cursor=pointer]:
+                - generic [ref=f34e413]: search
+                - generic [ref=f34e415]: URL inspection
+            - generic [ref=f34e420]:
+              - generic [ref=f34e422]:
+                - generic [ref=f34e423]: Indexing
+                - button [expanded] [ref=f34e1054] [cursor=pointer]:
+                  - generic [ref=f34e428]: keyboard_arrow_up
+              - generic [ref=f34e433]:
+                - link [ref=f34e1055] [cursor=pointer]:
+                  - /url: ./search-console/index?resource_id=sc-domain%3Ajmstechsupport.com.au
+                  - generic [ref=f34e436]: file_copy
+                  - generic [ref=f34e438]: Pages
+                - link [ref=f34e1056] [cursor=pointer]:
+                  - /url: ./search-console/sitemaps?resource_id=sc-domain%3Ajmstechsupport.com.au
+                  - generic [ref=f34e443]: account_tree
+                  - generic [ref=f34e445]: Sitemaps
+                - link [ref=f34e1057] [cursor=pointer]:
+                  - /url: ./search-console/removals?resource_id=sc-domain%3Ajmstechsupport.com.au
+                  - generic [ref=f34e450]: visibility_off
+                  - generic [ref=f34e452]: Removals
+            - generic [ref=f34e457]:
+              - generic [ref=f34e459]:
+                - generic [ref=f34e460]: Experience
+                - button [expanded] [ref=f34e1058] [cursor=pointer]:
+                  - generic [ref=f34e465]: keyboard_arrow_up
+              - generic [ref=f34e470]:
+                - link [ref=f34e1059] [cursor=pointer]:
+                  - /url: ./search-console/core-web-vitals?resource_id=sc-domain%3Ajmstechsupport.com.au
+                  - generic [ref=f34e473]: speed
+                  - generic [ref=f34e475]: Core web vitals
+                - link [ref=f34e1060] [cursor=pointer]:
+                  - /url: ./search-console/https?resource_id=sc-domain%3Ajmstechsupport.com.au
+                  - generic [ref=f34e480]: lock
+                  - generic [ref=f34e482]: HTTPS
+            - generic [ref=f34e489]:
+              - generic [ref=f34e490]: Security & Manual Actions
+              - button [ref=f34e1061] [cursor=pointer]:
+                - generic [ref=f34e495]: keyboard_arrow_down
+            - generic [ref=f34e497]:
+              - link [ref=f34e1062] [cursor=pointer]:
+                - /url: ./search-console/links?resource_id=sc-domain%3Ajmstechsupport.com.au
+                - generic [ref=f34e500]: link_2
+                - generic [ref=f34e502]: Links
+              - link [ref=f34e1063] [cursor=pointer]:
+                - /url: ./search-console/achievements?resource_id=sc-domain%3Ajmstechsupport.com.au
+                - generic [ref=f34e507]: trophy
+                - generic [ref=f34e509]: Achievements
+              - link [ref=f34e1064] [cursor=pointer]:
+                - /url: ./search-console/settings?resource_id=sc-domain%3Ajmstechsupport.com.au
+                - generic [ref=f34e514]: settings
+                - generic [ref=f34e516]: Settings
+          - generic [ref=f34e519]:
+            - generic [ref=f34e521]:
+              - button [ref=f34e1065] [cursor=pointer]:
+                - generic [ref=f34e524]: feedback
+                - generic [ref=f34e526]: Submit feedback
+              - button [ref=f34e1066] [cursor=pointer]:
+                - generic [ref=f34e531]: info
+                - generic [ref=f34e533]: About Search Console
+            - generic [ref=f34e538]:
+              - link [ref=f34e1067] [cursor=pointer]:
+                - /url: https://myaccount.google.com/privacypolicy?hl=en-GB
+                - text: Privacy
+              - link [ref=f34e1068] [cursor=pointer]:
+                - /url: https://myaccount.google.com/termsofservice?hl=en-GB
+                - text: Terms
+    - generic [ref=f34e859]:
+      - generic [ref=f34e860]: https://jmstechsupport.com.au/services.html
+      - generic [ref=f34e868]:
+        - generic [ref=f34e870]:
+          - navigation [ref=f34e1069]:
+            - heading [level=1] [ref=f34e1070]: URL Inspection
+          - button [ref=f34e1071] [cursor=pointer]:
+            - generic [ref=f34e882]: Test live URL
+        - main [ref=f34e885]:
+          - generic [ref=f34e886]:
+            - generic [ref=f34e888]:
+              - generic [ref=f34e889]:
+                - generic [ref=f34e890]: info
+                - generic [ref=f34e891]:
+                  - generic [ref=f34e892]: URL is not on Google
+                  - generic [ref=f34e893]:
+                    - text: This page is not indexed. Pages that aren't indexed can't be served on Google. See the details below to learn why it wasn't indexed.
+                    - link [ref=f34e1072] [cursor=pointer]:
+                      - /url: https://support.google.com/webmasters/answer/9012289#url_not_on_google
+                      - text: Learn more
+              - generic [ref=f34e897]:
+                - button [disabled] [ref=f34e1073]:
+                  - generic [ref=f34e903]: View crawled page
+                - generic [ref=f34e907]:
+                  - generic [ref=f34e908]: Page changed?
+                  - button [ref=f34e1074] [cursor=pointer]:
+                    - generic [ref=f34e913]: Request indexing
+            - generic [ref=f34e922]:
+              - button [expanded] [ref=f34e1075] [cursor=pointer]:
+                - generic [ref=f34e924]:
+                  - generic [ref=f34e926]:
+                    - generic [ref=f34e927]: info
+                    - generic [ref=f34e929]:
+                      - generic [ref=f34e930]: Page indexing
+                      - generic [ref=f34e931]: "Page is not indexed: Page with redirect"
+                  - generic [ref=f34e932]: 
+              - generic [ref=f34e938]:
+                - generic [ref=f34e939]:
+                  - generic [ref=f34e940]:
+                    - generic [ref=f34e941]: Discovery
+                    - generic [ref=f34e942]:
+                      - generic [ref=f34e943]: Sitemaps
+                      - generic [ref=f34e944]: No referring sitemaps detected
+                    - generic [ref=f34e946]:
+                      - generic [ref=f34e947]: Referring page
+                      - generic [ref=f34e949]:
+                        - generic [ref=f34e950]: https://jmstechsupport.com.au/services
+                        - generic [ref=f34e951]: https://www.jmstechsupport.com.au/sitemap.xml
+                  - generic [ref=f34e952]:
+                    - generic [ref=f34e953]: Crawl
+                    - generic [ref=f34e954]:
+                      - generic [ref=f34e955]: Last crawl
+                      - generic [ref=f34e956]: 27 Jul 2026, 02:50:02
+                    - generic [ref=f34e958]:
+                      - generic [ref=f34e959]: Crawled as
+                      - generic [ref=f34e960]: Googlebot smartphone
+                    - generic [ref=f34e962]:
+                      - generic [ref=f34e963]: Crawl allowed?
+                      - generic [ref=f34e964]: "Yes"
+                    - generic [ref=f34e966]:
+                      - generic [ref=f34e967]: Page fetch
+                      - generic [ref=f34e968]: Successful
+                    - generic [ref=f34e970]:
+                      - generic [ref=f34e971]: Indexing allowed?
+                      - generic [ref=f34e972]: "Yes"
+                  - generic [ref=f34e974]:
+                    - generic [ref=f34e975]: Indexing
+                    - generic [ref=f34e976]:
+                      - generic [ref=f34e977]: User-declared canonical
+                      - generic [ref=f34e978]: https://jmstechsupport.com.au/services.html
+                    - generic [ref=f34e981]:
+                      - generic [ref=f34e983]:
+                        - generic [ref=f34e984]: Google-selected canonical
+                        - button [ref=f34e1076] [cursor=pointer]:
+                          - generic [ref=f34e988]: 
+                      - generic [ref=f34e989]: info
+                      - generic [ref=f34e991]:
+                        - generic [ref=f34e992]: https://jmstechsupport.com.au/services
+                        - button [ref=f34e1077] [cursor=pointer]:
+                          - generic [ref=f34e998]: inspect
+                - generic [ref=f34e1002]:
+                  - link [ref=f34e1078] [cursor=pointer]:
+                    - /url: https://support.google.com/webmasters/answer/7440203#page_with_redirect
+                    - generic [ref=f34e1007]: Learn More
+                  - link [ref=f34e1079] [cursor=pointer]:
+                    - /url: ./search-console/index/drilldown?resource_id=sc-domain%3Ajmstechsupport.com.au&item_key=CAMYCyAC
+                    - generic [ref=f34e1014]: open report
+            - generic [ref=f34e1018]: Enhancements and experience
+            - generic [ref=f34e1019]: Only indexed URLs can have enhancements
+    - dialog "Retrieving data from Google Index" [ref=f34e1081]:
+      - generic [ref=f34e1083]:
+        - generic [ref=f34e1084]: Retrieving data from Google Index
+        - progressbar "Retrieving data from Google Index" [ref=f34e1086]
+        - button "Cancel" [active] [ref=f34e1091] [cursor=pointer]
+  - generic [ref=f34e348]: URL Inspection
+  - iframe [ref=f34e719]:
+    - generic [ref=f38e6]:
+      - text: protected by
+      - strong [ref=f38e7]: reCAPTCHA

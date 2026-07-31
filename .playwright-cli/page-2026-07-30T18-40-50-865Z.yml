@@ -1,0 +1,54 @@
+- generic [ref=f18e2]:
+  - banner [ref=f18e4]:
+    - generic [ref=f18e5]:
+      - button [ref=f18e60] [cursor=pointer]
+      - generic [ref=f18e13]:
+        - button [ref=f18e61] [cursor=pointer]:
+          - generic [ref=f18e16]: 
+        - button [ref=f18e62] [cursor=pointer]
+      - generic [ref=f18e26]:
+        - button [ref=f18e63] [cursor=pointer]
+        - button [ref=f18e64] [cursor=pointer]
+  - generic [ref=f18e42]:
+    - generic [ref=f18e43]: 
+    - generic [ref=f18e45]: Oops, you don't have access to this property
+    - generic [ref=f18e46]:
+      - generic [ref=f18e47]:
+        - text: "Signed in as:"
+        - generic [ref=f18e48]: menadool.js@gmail.com
+      - generic [ref=f18e49]:
+        - text: "Property:"
+        - generic [ref=f18e50]: jmswebdesign.com.au
+      - generic [ref=f18e51]: Sign in with an account that can access this property, or request access from a property owner.
+      - generic [ref=f18e52]: Otherwise
+      - button [ref=f18e65] [cursor=pointer]:
+        - generic [ref=f18e56]: Verify your ownership
+  - dialog "Verify domain ownership via DNS record jmswebdesign.com.au" [ref=f18e78]:
+    - heading "Verify domain ownership via DNS record jmswebdesign.com.au" [level=1] [ref=f18e80]:
+      - text: Verify domain ownership via DNS record
+      - generic [ref=f18e81]: jmswebdesign.com.au
+    - generic [ref=f18e86]:
+      - generic [ref=f18e87]:
+        - generic [ref=f18e88]:
+          - generic [ref=f18e89]: "1"
+          - generic [ref=f18e90]: "Instructions for:"
+        - listbox [ref=f18e94] [cursor=pointer]:
+          - option "Any DNS provider"
+          - option "Cloudflare.com" [selected] [ref=f18e95]
+      - generic [ref=f18e96]:
+        - generic [ref=f18e98]:
+          - generic [ref=f18e99]: "2"
+          - generic [ref=f18e100]: Press start verification below to verify with a few easy steps by authorising Google to access your DNS account on Cloudflare.com
+        - generic [ref=f18e102]:
+          - generic [ref=f18e103]: "3"
+          - generic [ref=f18e104]: Please wait for verification to complete before closing this tab.
+      - generic [ref=f18e105]:
+        - generic [ref=f18e106]: 
+        - generic [ref=f18e107]:
+          - text: Can’t verify via domain name provider?For more verification methods,
+          - generic [ref=f18e108] [cursor=pointer]: try a URL prefix property instead
+    - generic [ref=f18e109]:
+      - button "Remove property" [ref=f18e110] [cursor=pointer]
+      - generic [ref=f18e114]:
+        - button "Verify later" [ref=f18e115] [cursor=pointer]
+        - button "Start verification" [active] [ref=f18e119] [cursor=pointer]

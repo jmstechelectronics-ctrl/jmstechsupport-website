@@ -1,0 +1,7 @@
+- main [ref=f76e2]:
+  - region [ref=f76e3]:
+    - img "JMS Web Design" [ref=f76e4]
+    - heading "Thanks. We have your details." [level=1] [ref=f76e5]
+    - paragraph [ref=f76e6]: We will look over what you sent and come back with a practical next step.
+    - link "Back to JMS Web Design" [ref=f76e7] [cursor=pointer]:
+      - /url: /

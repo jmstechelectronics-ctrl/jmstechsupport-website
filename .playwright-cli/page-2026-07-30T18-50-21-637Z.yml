@@ -1,0 +1,150 @@
+- generic [ref=f42e2]:
+  - banner [ref=f42e4]:
+    - generic [ref=f42e5]:
+      - button "Main menu" [ref=f42e7] [cursor=pointer]
+      - generic [ref=f42e10]:
+        - search [ref=f42e12]:
+          - button "Search" [ref=f42e13] [cursor=pointer]
+        - generic [ref=f42e17]:
+          - generic [ref=f42e19]:
+            - button "Help" [ref=f42e21] [cursor=pointer]:
+              - generic [ref=f42e22]: 
+            - button "User settings" [ref=f42e26] [cursor=pointer]
+          - button "Messages" [ref=f42e33] [cursor=pointer]:
+            - generic [ref=f42e34]: 
+      - generic [ref=f42e38]:
+        - button "Google apps" [ref=f42e42] [cursor=pointer]
+        - 'button "Google Account: Josh Slater (menadool.js@gmail.com)" [ref=f42e48] [cursor=pointer]'
+  - generic [ref=f42e53]:
+    - navigation "Breadcrumbs" [ref=f42e58]:
+      - heading "Overview" [level=1] [ref=f42e61]
+    - main [ref=f42e65]:
+      - generic [ref=f42e66]:
+        - generic [ref=f42e71]:
+          - generic [ref=f42e72]:
+            - generic [ref=f42e73]: lightbulb_outline
+            - generic [ref=f42e74]: Get insights into your site's Search performance
+          - generic [ref=f42e77]:
+            - generic [ref=f42e79]: chevron_right
+            - generic [ref=f42e80]: Explore your insights
+            - link "Explore your insights" [ref=f42e81] [cursor=pointer]:
+              - /url: ./search-console/performance/insights?resource_id=sc-domain%3Aleaddrop.com.au
+        - generic [ref=f42e83]:
+          - generic [ref=f42e84]:
+            - generic [ref=f42e85]: Performance
+            - generic [ref=f42e88]:
+              - generic [ref=f42e90]: chevron_right
+              - generic [ref=f42e91]: Full report
+              - link "Full report" [ref=f42e92] [cursor=pointer]:
+                - /url: ./search-console/performance/search-analytics?resource_id=sc-domain%3Aleaddrop.com.au
+          - generic [ref=f42e95]:
+            - generic [ref=f42e96]: 0 total web search clicks
+            - img [ref=f42e104]:
+              - generic [ref=f42e105]:
+                - generic [ref=f42e106]:
+                  - generic [ref=f42e107]: 23/06/2026
+                  - generic [ref=f42e109]: 28/06/2026
+                  - generic [ref=f42e111]: 03/07/2026
+                  - generic [ref=f42e113]: 08/07/2026
+                  - generic [ref=f42e115]: 13/07/2026
+                  - generic [ref=f42e117]: 18/07/2026
+                  - generic [ref=f42e119]: 23/07/2026
+                  - generic [ref=f42e121]: 28/07/2026
+                - generic [ref=f42e123]:
+                  - generic [ref=f42e124]: "3"
+                  - generic [ref=f42e126]: "2"
+                  - generic [ref=f42e128]: "1"
+                  - generic [ref=f42e130]: "0"
+        - generic [ref=f42e135]:
+          - generic [ref=f42e136]:
+            - generic [ref=f42e137]: Indexing
+            - generic [ref=f42e140]:
+              - generic [ref=f42e142]: chevron_right
+              - generic [ref=f42e143]: Full report
+              - link "Full report" [ref=f42e144] [cursor=pointer]:
+                - /url: ./search-console/index?resource_id=sc-domain%3Aleaddrop.com.au
+          - generic [ref=f42e147]:
+            - generic [ref=f42e149]:
+              - generic [ref=f42e150]: 1 not indexed page
+              - generic [ref=f42e153]: 3 indexed pages
+            - img [ref=f42e159]:
+              - generic [ref=f42e160]:
+                - generic [ref=f42e161]:
+                  - generic [ref=f42e162]: 01/05/2026
+                  - generic [ref=f42e164]: 13/05/2026
+                  - generic [ref=f42e166]: 25/05/2026
+                  - generic [ref=f42e168]: 06/06/2026
+                  - generic [ref=f42e170]: 18/06/2026
+                  - generic [ref=f42e172]: 30/06/2026
+                  - generic [ref=f42e174]: 12/07/2026
+                  - generic [ref=f42e176]: 24/07/2026
+                - generic [ref=f42e178]:
+                  - generic [ref=f42e179]: "3"
+                  - generic [ref=f42e181]: "2"
+                  - generic [ref=f42e183]: "1"
+                  - generic [ref=f42e185]: "0"
+        - generic [ref=f42e201]:
+          - generic [ref=f42e202]: Experience
+          - table [ref=f42e207]:
+            - rowgroup [ref=f42e208]:
+              - row [ref=f42e209]:
+                - columnheader "Type" [ref=f42e210]
+                - columnheader [ref=f42e211]
+                - columnheader "Good" [ref=f42e212]
+                - columnheader "Needs improvement" [ref=f42e213]
+                - columnheader "Poor" [ref=f42e214]
+                - columnheader "Trend" [ref=f42e215]
+                - columnheader [ref=f42e216]
+            - rowgroup [ref=f42e217]:
+              - row [ref=f42e218]:
+                - cell "Core web vitals" [ref=f42e219]
+                - cell "Mobile Desktop" [ref=f42e222]:
+                  - generic [ref=f42e224]:
+                    - generic [ref=f42e225]: Mobile
+                    - generic [ref=f42e226]: Desktop
+                - cell "No data No data" [ref=f42e227]:
+                  - generic [ref=f42e228]:
+                    - generic [ref=f42e229]: No data
+                    - generic [ref=f42e230]: No data
+                - cell "No data No data" [ref=f42e231]:
+                  - generic [ref=f42e232]:
+                    - generic [ref=f42e233]: No data
+                    - generic [ref=f42e234]: No data
+                - cell "No data No data" [ref=f42e235]:
+                  - generic [ref=f42e236]:
+                    - generic [ref=f42e237]: No data
+                    - generic [ref=f42e238]: No data
+                - cell [ref=f42e239]
+              - row [ref=f42e240]:
+                - columnheader [ref=f42e241]
+                - columnheader [ref=f42e242]
+                - columnheader "HTTPS" [ref=f42e243]
+                - columnheader [ref=f42e244]
+                - columnheader "Non-HTTPS" [ref=f42e245]
+                - columnheader [ref=f42e246]
+                - columnheader [ref=f42e247]
+              - row [ref=f42e248]:
+                - cell "HTTPS" [ref=f42e249]
+                - cell [ref=f42e252]
+                - cell "1" [ref=f42e253]
+                - cell [ref=f42e256]
+                - cell "0" [ref=f42e257]
+                - cell [ref=f42e260]
+                - cell [ref=f42e265]:
+                  - button "Open report" [ref=f42e268] [cursor=pointer]:
+                    - generic [ref=f42e269]: chevron_right
+        - generic [ref=f42e271]:
+          - generic [ref=f42e272]: Enhancements
+          - generic [ref=f42e274]:
+            - table [ref=f42e277]:
+              - rowgroup [ref=f42e278]:
+                - row [ref=f42e279]:
+                  - columnheader "Type" [ref=f42e280]
+                  - columnheader "Valid" [ref=f42e281]
+                  - columnheader "Invalid" [ref=f42e282]
+                  - columnheader "Trend" [ref=f42e283]
+                  - columnheader [ref=f42e284]
+            - generic [ref=f42e286]:
+              - text: No enhancements yet.
+              - link "Learn more" [ref=f42e287] [cursor=pointer]:
+                - /url: https://developers.google.com/search/docs/guides/search-gallery

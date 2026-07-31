@@ -1,0 +1,478 @@
+- generic [ref=f69e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=f69e1310] [cursor=pointer]
+      - link "Accessibility help" [ref=f69e1311] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-AU
+  - generic [ref=f69e8]:
+    - search [ref=f69e9]:
+      - generic [ref=f69e12]:
+        - link [ref=f69e1312] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&ictx=0&sa=X&ved=0ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQpYkNCAo
+          - img "Go to Google Home" [ref=f69e1313]
+        - generic [ref=f69e19]:
+          - combobox "Search" [ref=f69e1314]: jms tech support jms tech support
+          - generic [ref=f69e23]:
+            - button "Clear" [ref=f69e1315] [cursor=pointer]
+            - generic [ref=f69e30]:
+              - button "Search by voice" [ref=f69e1316] [cursor=pointer]
+              - button "Search by image" [ref=f69e1317] [cursor=pointer]
+        - button "Search" [ref=f69e1318] [cursor=pointer]
+    - generic [ref=f69e42]:
+      - button "Share" [ref=f69e1319] [cursor=pointer]
+      - generic [ref=f69e49]:
+        - button "Google apps" [ref=f69e1320] [cursor=pointer]
+        - 'button "Google Account: Josh Slater (menadool.js@gmail.com)" [ref=f69e1321] [cursor=pointer]'
+  - generic [ref=f69e59]:
+    - navigation [ref=f69e65]:
+      - generic [ref=f69e71]:
+        - list [ref=f69e72]:
+          - listitem [ref=f69e73]:
+            - link "All" [disabled] [ref=f69e1322]
+          - listitem [ref=f69e77]:
+            - link "Images" [ref=f69e1323] [cursor=pointer]:
+              - /url: /search?sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEiVEEKhGMS6J6qOai58Kp-6LWKI-B9MUO4L5hSNevGTt_P775rRrm5ckCWnpRJ0Z_bEDXKPd0OlqjGKBMJSUhQwnJq6joUWfVDIJb-ha_GXmJ3UJfEoXi3KNzyhly1aIL0j5_Fw&q=jms+tech+support&sa=X&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQtKgLegQIGhAB
+          - listitem [ref=f69e81]:
+            - link "Videos" [ref=f69e1324] [cursor=pointer]:
+              - /url: /search?sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&udm=7&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEiVEEKhGMS6J6qOai58Kp-6LWKI-B9MUO4L5hSNevGTt_P775rRrm5ckCWnpRJ0Z_bEDXKPd0OlqjGKBMJSUhQwnJq6joUWfVDIJb-ha_GXmJ3UJfEoXi3KNzyhly1aIL0j5_Fw&q=jms+tech+support&sa=X&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQtKgLegQIHxAB
+          - listitem [ref=f69e85]:
+            - link "Shopping" [ref=f69e1325] [cursor=pointer]:
+              - /url: /search?sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEiVEEKhGMS6J6qOai58Kp-6LWKI-B9MUO4L5hSNevGTt_P775rRrm5ckCWnpRJ0Z_bEDXKPd0OlqjGKBMJSUhQwnJq6joUWfVDIJb-ha_GXmJ3UJfEoXi3KNzyhly1aIL0j5_Fw&q=jms+tech+support&ved=1t:220175&ictx=111
+          - listitem [ref=f69e89]:
+            - link "Forums" [ref=f69e1326] [cursor=pointer]:
+              - /url: /search?sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&udm=18&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEiVEEKhGMS6J6qOai58Kp-6LWKI-B9MUO4L5hSNevGTt_P775rRrm5ckCWnpRJ0Z_bEDXKPd0OlqjGKBMJSUhQwnJq6joUWfVDIJb-ha_GXmJ3UJfEoXi3KNzyhly1aIL0j5_Fw&q=jms+tech+support&sa=X&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQs6gLegQIHBAB
+          - listitem [ref=f69e93]:
+            - link "Short videos" [ref=f69e1327] [cursor=pointer]:
+              - /url: /search?sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEiVEEKhGMS6J6qOai58Kp-6LWKI-B9MUO4L5hSNevGTt_P775rRrm5ckCWnpRJ0Z_bEDXKPd0OlqjGKBMJSUhQwnJq6joUWfVDIJb-ha_GXmJ3UJfEoXi3KNzyhly1aIL0j5_Fw&q=jms+tech+support&sa=X&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQs6gLegQIHhAB
+          - listitem [ref=f69e97]:
+            - button [ref=f69e1328] [cursor=pointer]:
+              - generic "More filters" [ref=f69e1329]: More
+        - button "Tools" [ref=f69e1330] [cursor=pointer]
+    - heading "Search Results" [level=1] [ref=f69e1331]
+    - main [ref=f69e120]:
+      - generic [ref=f69e124]:
+        - generic [ref=f69e127]:
+          - heading "Web result with site links" [level=2] [ref=f69e1332]
+          - generic [ref=f69e129]:
+            - generic [ref=f69e133]:
+              - generic [ref=f69e135]:
+                - link "JMS Tech Support | Local IT Support in Yamba, Maclean ... jmstechsupport.com.au https://jmstechsupport.com.au" [ref=f69e1333] [cursor=pointer]:
+                  - /url: https://jmstechsupport.com.au/
+                  - heading "JMS Tech Support | Local IT Support in Yamba, Maclean ..." [level=3] [ref=f69e1334]
+                  - generic [ref=f69e144]:
+                    - generic [ref=f69e145]: jmstechsupport.com.au
+                    - generic [ref=f69e147]: https://jmstechsupport.com.au
+                - button "About this result" [ref=f69e1335] [cursor=pointer]
+              - generic [ref=f69e158]:
+                - text: On-site
+                - emphasis [ref=f69e159]: tech help
+                - text: for homes and small businesses in Yamba, Maclean and Clarence Valley. We fix slow internet, Wi-Fi issues, computer problems, printer setup ...
+            - group "Personalised recommendations based on your history" [ref=f69e1336]:
+              - rowgroup [ref=f69e161]:
+                - row [ref=f69e1337]:
+                  - cell [ref=f69e1338]:
+                    - generic [ref=f69e169]:
+                      - generic [ref=f69e170]:
+                        - heading [level=3] [ref=f69e1339]:
+                          - link "Services" [ref=f69e1340] [cursor=pointer]:
+                            - /url: https://jmstechsupport.com.au/services
+                        - button "Manage your page visits for Services" [ref=f69e1341] [cursor=pointer]
+                      - generic [ref=f69e181]: JMS Tech Support services in Yamba, Maclean and Clarence ...
+                - row [ref=f69e1342]:
+                  - cell [ref=f69e1343]:
+                    - generic [ref=f69e189]:
+                      - heading [level=3] [ref=f69e1344]:
+                        - link [ref=f69e1345] [cursor=pointer]:
+                          - /url: https://jmstechsupport.com.au/service-area.html
+                      - generic [ref=f69e194]: JMS Tech Support service areas across Clarence Valley ...
+                - row [ref=f69e1346]:
+                  - cell [ref=f69e1347]:
+                    - link "More results from jmstechsupport.com.au »" [ref=f69e1348] [cursor=pointer]:
+                      - /url: /search?q=jms+tech+support+site:jmstechsupport.com.au&sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&sa=X&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQrAN6BAgPEAE
+        - generic [ref=f69e200]:
+          - generic [ref=f69e201]:
+            - generic [ref=f69e204]:
+              - generic [ref=f69e208]:
+                - generic [ref=f69e216]:
+                  - generic [ref=f69e217]:
+                    - button [active] [ref=f69e220] [cursor=pointer]
+                    - link "Add photos" [ref=f69e1349] [cursor=pointer]:
+                      - /url: "#"
+                    - link "Add photos" [ref=f69e1350] [cursor=pointer]:
+                      - /url: "#"
+                  - generic [ref=f69e230]:
+                    - link [ref=f69e1351] [cursor=pointer]:
+                      - /url: /maps/place/JMS+Tech+Support/data=!4m2!3m1!1s0x0:0xaccf526cc90a0e4b?sa=X&ved=1t:2428&ictx=111
+                      - img "Map of JMS Tech Support" [ref=f69e1352]
+                    - link [ref=f69e1353] [cursor=pointer]:
+                      - /url: /maps/place/JMS+Tech+Support/data=!4m2!3m1!1s0x0:0xaccf526cc90a0e4b?sa=X&ved=1t:2428&ictx=111
+                      - img "Map of JMS Tech Support" [ref=f69e1354]
+                - generic [ref=f69e242]:
+                  - heading "JMS Tech Support" [level=2] [ref=f69e1355]
+                  - generic [ref=f69e247]:
+                    - generic [ref=f69e248]:
+                      - text: "5.0"
+                      - img "Rated 5.0 out of 5," [ref=f69e1356]
+                      - button "5 Google reviews" [ref=f69e1357] [cursor=pointer]
+                      - text: Computer service
+                    - generic "You manage this Business Profile" [ref=f69e1358]
+                - generic [ref=f69e273]:
+                  - generic [ref=f69e285]:
+                    - link "Website" [ref=f69e1359] [cursor=pointer]:
+                      - /url: https://jmstechsupport.com.au/
+                    - button "Saved – JMS Tech Support" [pressed] [ref=f69e1360] [cursor=pointer]:
+                      - generic [ref=f69e300]: Saved
+                    - button "Share" [ref=f69e1361] [cursor=pointer]
+                    - button "Call" [ref=f69e1362] [cursor=pointer]
+                  - generic [ref=f69e320]:
+                    - generic [ref=f69e323]:
+                      - generic [ref=f69e324]:
+                        - link "Phone" [ref=f69e1363] [cursor=pointer]:
+                          - /url: /search?sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&q=jms+tech+support+phone&ludocid=12452262121885535819&sa=X&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQ6BN6BAg4EAI
+                        - text: ":"
+                      - link "Call phone number 0418 160 226" [ref=f69e1364] [cursor=pointer]:
+                        - /url: "#"
+                        - text: 0418 160 226
+                    - generic [ref=f69e329]:
+                      - generic [ref=f69e330]:
+                        - link "Hours" [ref=f69e1365] [cursor=pointer]:
+                          - /url: /search?sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&q=jms+tech+support+hours&ludocid=12452262121885535819&sa=X&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQ6BN6BAg1EAI
+                        - text: ":"
+                      - button "Closed · Opens 9 am" [ref=f69e1366]
+                    - button "Edit your business information" [ref=f69e1367] [cursor=pointer]
+                    - generic [ref=f69e350]:
+                      - heading "Google Ads can help your business grow" [level=3] [ref=f69e1368]
+                      - generic [ref=f69e354]:
+                        - generic [ref=f69e355]:
+                          - generic [ref=f69e356]:
+                            - text: Get $600 in Google Ads credit when you spend $600. Offer for new advertisers only.
+                            - link "Terms and Conditions apply" [ref=f69e1369] [cursor=pointer]:
+                              - /url: https://ads.google.com/intl/en_au/home/terms-and-conditions/incentives/?bc=AU&bid=s500g500%7Cib:6653296821%7C
+                          - generic [ref=f69e360]:
+                            - generic [ref=f69e365]: Start advertising
+                            - link "Start advertising" [ref=f69e1370] [cursor=pointer]:
+                              - /url: https://ads.google.com/aw/campaigns/new/express?ocid=8292930132&euid=1629883905&__u=9972460345&cbdbId=u-4681827479167443282&sf=AWX_GMB&authuser=0&utm_campaign=en-xs-ip-gmb_aw_serp_kp-sf-dw-uao-s500g500%7Cib:6653296821%7Cib:9279461727%7Cib:7966379274%7C-unqsi-CMbrwMWM-5UDFX-SRgQdyn0jNA-unqsi-acce&subid=en-xs-ip-gmb_aw_serp_kp-sf-dw-uao-s500g500%7Cib:6653296821%7Cib:9279461727%7Cib:7966379274%7C-unqsi-CMbrwMWM-5UDFX-SRgQdyn0jNA-unqsi-acce&utm_medium=et&utm_source=gmb
+                        - link [ref=f69e368] [cursor=pointer]:
+                          - /url: https://ads.google.com/aw/campaigns/new/express?ocid=8292930132&euid=1629883905&__u=9972460345&cbdbId=u-4681827479167443282&sf=AWX_GMB&authuser=0&utm_campaign=en-xs-ip-gmb_aw_serp_kp-sf-dw-uao-s500g500%7Cib:6653296821%7Cib:9279461727%7Cib:7966379274%7C-unqsi-CMbrwMWM-5UDFX-SRgQdyn0jNA-unqsi-acce&subid=en-xs-ip-gmb_aw_serp_kp-sf-dw-uao-s500g500%7Cib:6653296821%7Cib:9279461727%7Cib:7966379274%7C-unqsi-CMbrwMWM-5UDFX-SRgQdyn0jNA-unqsi-acce&utm_medium=et&utm_source=gmb
+                    - generic [ref=f69e412]:
+                      - text: "Areas served:"
+                      - button "Clarence Valley Council and nearby areas" [ref=f69e1371] [cursor=pointer]
+                  - generic [ref=f69e422]:
+                    - generic [ref=f69e423]:
+                      - text: "Appointments:"
+                      - generic [ref=f69e424]:
+                        - link "app.google" [ref=f69e1372] [cursor=pointer]:
+                          - /url: https://calendar.app.google/hPFLS5i4YYTkuU886
+                        - text: ","
+                        - link "jmstechsupport.com.au" [ref=f69e1373] [cursor=pointer]:
+                          - /url: https://jmstechsupport.com.au/
+                    - button "About these providers" [ref=f69e1374] [cursor=pointer]:
+                      - generic [ref=f69e429]: Providers
+                  - generic [ref=f69e440]:
+                    - generic [ref=f69e441]:
+                      - heading "Reviews" [level=3] [ref=f69e1375]
+                      - button "More info" [ref=f69e1376] [cursor=pointer]
+                      - generic [ref=f69e451]:
+                        - button "Get more reviews" [ref=f69e1377] [cursor=pointer]
+                        - link "Add a photo" [ref=f69e1378] [cursor=pointer]:
+                          - /url: "#"
+                    - generic [ref=f69e456]:
+                      - text: "5.0"
+                      - img "Rated 5.0 out of 5," [ref=f69e1379]
+                      - button "5 Google reviews" [ref=f69e1380] [cursor=pointer]
+                  - generic [ref=f69e469]:
+                    - generic [ref=f69e470]:
+                      - heading "From JMS Tech Support" [level=3] [ref=f69e1381]
+                      - button "Report description" [ref=f69e1382]
+                    - generic [ref=f69e477]:
+                      - text: "\"JMS Tech Support provides on-site tech support and security camera installation in Yamba, Maclean and across the Clarence Valley. We specialise in Wi-Fi troubleshooting, computer repairs, small business IT support and professional CCTV installation...."
+                      - button "Show more" [ref=f69e1383] [cursor=pointer]: More
+                  - generic [ref=f69e490]:
+                    - heading "Update your customers" [level=3] [ref=f69e1384]
+                    - generic [ref=f69e492]: Keep your customers up to date about your business
+                    - button "Add update" [ref=f69e1385]
+                  - generic [ref=f69e510]:
+                    - heading "Profiles" [level=3] [ref=f69e1386]
+                    - generic [ref=f69e512]:
+                      - link "YouTube" [ref=f69e1387] [cursor=pointer]:
+                        - /url: https://www.youtube.com/@JMSTechSupport
+                      - link "Facebook" [ref=f69e1388] [cursor=pointer]:
+                        - /url: http://facebook.com/jmstechit
+                      - link "Instagram" [ref=f69e1389] [cursor=pointer]:
+                        - /url: http://instagram.com/jmstechsupport
+              - link "About this data" [ref=f69e1390] [cursor=pointer]:
+                - /url: https://support.google.com/local-listings?p=how_google_sources
+            - generic [ref=f69e547]:
+              - generic [ref=f69e550]:
+                - link "JMS Tech Support | Townsend NSW Facebook · JMS Tech Support 90+ followers" [ref=f69e1391] [cursor=pointer]:
+                  - /url: https://www.facebook.com/jmstechit/
+                  - heading "JMS Tech Support | Townsend NSW" [level=3] [ref=f69e1392]
+                  - generic [ref=f69e559]:
+                    - generic [ref=f69e560]: Facebook · JMS Tech Support
+                    - generic [ref=f69e562]: 90+ followers
+                - button "About this result" [ref=f69e1393] [cursor=pointer]
+              - generic [ref=f69e572]:
+                - generic [ref=f69e573]:
+                  - text: We fix the tech that makes you want to throw the remote.
+                  - emphasis [ref=f69e574]: Local IT support in Maclean, Yamba, Grafton and surrounds
+                  - text: for computers, security cameras, Wi-Fi, TVs ...
+                - link "Read more" [ref=f69e1394] [cursor=pointer]:
+                  - /url: https://www.facebook.com/jmstechit/#:~:text=We%20fix%20the%20tech%20that,plain%20English%20and%20house%20calls.
+          - region "Your business on Google" [ref=f69e1395]:
+            - generic [ref=f69e584]:
+              - generic [ref=f69e594]:
+                - heading "Your business on Google" [level=2] [ref=f69e1396]
+                - link [ref=f69e1397] [cursor=pointer]:
+                  - /url: "#mpd=promote/performance"
+              - button "Profile strength Complete info" [ref=f69e1398] [cursor=pointer]:
+                - generic [ref=f69e607]: Profile strength
+                - link "Complete info" [ref=f69e1399]:
+                  - /url: "#mpd=setup/complete?flowType=3"
+              - button "See Business Profile settings and support" [ref=f69e1400] [cursor=pointer]
+            - region "Business Profile actions" [ref=f69e1401]:
+              - list "Business Profile actions" [ref=f69e1402]:
+                - listitem [ref=f69e627]:
+                  - button "Edit profile" [ref=f69e1403] [cursor=pointer]
+                - listitem [ref=f69e634]:
+                  - button "Read reviews" [ref=f69e1404] [cursor=pointer]
+                - listitem [ref=f69e641]:
+                  - button "Photos" [ref=f69e1405] [cursor=pointer]
+                - listitem [ref=f69e648]:
+                  - button "Posts" [ref=f69e1406] [cursor=pointer]
+                - listitem [ref=f69e656]:
+                  - button "Performance" [ref=f69e1407] [cursor=pointer]
+                - listitem [ref=f69e664]:
+                  - link "Advertise (opens in new window)" [ref=f69e1408] [cursor=pointer]:
+                    - /url: https://ads.google.com/aw/campaigns/new/express?ocid=8292930132&euid=1629883905&__u=9972460345&cbdbId=u-4681827479167443282&sf=AWX_GMB&authuser=0&utm_campaign=AU-en-xs-ip-gmb_aw_serp_ia2_ca-sf-dw-uao-s500g500%7Cib%3A6653296821%7Cib%3A9279461727%7Cib%3A7966379274%7C-unqsi-CNaX2saM-5UDFTAl0AUdst4DHQ-unqsi-uao-agembe-acce&subid=AU-en-xs-ip-gmb_aw_serp_ia2_ca-sf-dw-uao-s500g500%7Cib%3A6653296821%7Cib%3A9279461727%7Cib%3A7966379274%7C-unqsi-CNaX2saM-5UDFTAl0AUdst4DHQ-unqsi-uao-agembe-acce&utm_medium=et&utm_source=gmb
+                    - generic [ref=f69e670]: Advertise
+                - listitem [ref=f69e671]:
+                  - button "Edit products" [ref=f69e1409] [cursor=pointer]
+                - listitem [ref=f69e680]:
+                  - button "Edit services" [ref=f69e1410] [cursor=pointer]
+                - listitem [ref=f69e688]:
+                  - button "Bookings" [ref=f69e1411] [cursor=pointer]
+                - listitem [ref=f69e696]:
+                  - button "Ask for reviews" [ref=f69e1412] [cursor=pointer]
+                - listitem [ref=f69e703]:
+                  - button "Profiles" [ref=f69e1413] [cursor=pointer]
+            - generic [ref=f69e712]:
+              - list [ref=f69e714]:
+                - generic [ref=f69e715]:
+                  - generic [ref=f69e716]:
+                    - button "Get custom email" [ref=f69e1414] [cursor=pointer]:
+                      - generic [ref=f69e721]: Set up business email @your-business.com with Google Workspace
+                    - button "More actions for Get custom email" [ref=f69e1415] [cursor=pointer]
+                  - generic [ref=f69e732]:
+                    - button "Complete your profile" [ref=f69e1416] [cursor=pointer]:
+                      - generic [ref=f69e737]: Add details and get discovered by more customers
+                    - button "More actions for Complete your profile" [ref=f69e1417] [cursor=pointer]
+                  - generic [ref=f69e748]:
+                    - button "Add new photos" [ref=f69e1418] [cursor=pointer]:
+                      - generic [ref=f69e753]: Recent photos can increase trust in your business
+                    - button "More actions for Add new photos" [ref=f69e1419] [cursor=pointer]
+                  - generic [ref=f69e764]:
+                    - button "View your 2026 record" [ref=f69e1420] [cursor=pointer]:
+                      - generic [ref=f69e769]: 88 people saw your profile in their search results last month
+                    - button "More actions for View your 2026 record" [ref=f69e1421] [cursor=pointer]
+                  - generic [ref=f69e780]:
+                    - button "Get more reviews" [ref=f69e1422] [cursor=pointer]:
+                      - generic [ref=f69e785]: Share your review form with past customers
+                    - button "More actions for Get more reviews" [ref=f69e1423] [cursor=pointer]
+                  - generic [ref=f69e796]:
+                    - button "Create an offer" [ref=f69e1424] [cursor=pointer]:
+                      - generic [ref=f69e801]: Let customers know about your sales and discounts
+                    - button "More actions for Create an offer" [ref=f69e1425] [cursor=pointer]
+                  - generic [ref=f69e812]:
+                    - button "Add address autocomplete" [ref=f69e1426] [cursor=pointer]:
+                      - generic [ref=f69e817]: Help customers enter the right address for a faster checkout
+                    - button "More actions for Add address autocomplete" [ref=f69e1427] [cursor=pointer]
+                  - generic [ref=f69e828]:
+                    - button "Add update" [ref=f69e1428] [cursor=pointer]:
+                      - generic [ref=f69e833]: Share the latest from your business
+                    - button "More actions for Add update" [ref=f69e1429] [cursor=pointer]
+                  - generic [ref=f69e844]:
+                    - button "Claim your credit" [ref=f69e1430] [cursor=pointer]:
+                      - generic [ref=f69e849]: Reach more customers with your $600 ads credit. New advertiser offer only
+                    - button "More actions for Claim your credit" [ref=f69e1431] [cursor=pointer]
+              - button [ref=f69e860] [cursor=pointer]
+            - link "Only managers of this profile can see this" [ref=f69e1432] [cursor=pointer]:
+              - /url: https://support.google.com/business?p=business_on_search&hl=en-AU&sa=X&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQybwEegQIMhAc
+            - generic:
+              - generic:
+                - button
+          - generic [ref=f69e870]:
+            - generic [ref=f69e873]:
+              - link "JMS TECH SUPPORT in Townsend 2463 NSW - Localsearch localsearch.com.au https://www.localsearch.com.au › profile › jms-tech-sup..." [ref=f69e1433] [cursor=pointer]:
+                - /url: https://www.localsearch.com.au/profile/jms-tech-support/cmqcydhmq000102la6mohdi4p
+                - heading "JMS TECH SUPPORT in Townsend 2463 NSW - Localsearch" [level=3] [ref=f69e1434]
+                - generic [ref=f69e882]:
+                  - generic [ref=f69e883]: localsearch.com.au
+                  - generic [ref=f69e885]: https://www.localsearch.com.au › profile › jms-tech-sup...
+              - button "About this result" [ref=f69e1435] [cursor=pointer]
+            - generic [ref=f69e896]:
+              - emphasis [ref=f69e897]: Fast, practical help for slow internet, Wi-Fi dropouts, computer issues and security cameras
+              - text: across Yamba, Maclean and the Clarence Valley. We come to you.
+          - generic [ref=f69e901]:
+            - generic [ref=f69e904]:
+              - link "JMS Tech Newcastle - Professional IT Support & Computer ... jmstech.com.au https://jmstech.com.au" [ref=f69e1436] [cursor=pointer]:
+                - /url: https://jmstech.com.au/
+                - heading "JMS Tech Newcastle - Professional IT Support & Computer ..." [level=3] [ref=f69e1437]
+                - generic [ref=f69e913]:
+                  - generic [ref=f69e914]: jmstech.com.au
+                  - generic [ref=f69e916]: https://jmstech.com.au
+              - button "About this result" [ref=f69e1438] [cursor=pointer]
+            - generic [ref=f69e927]:
+              - emphasis [ref=f69e928]: JMS Tech offers fast, reliable IT support
+              - text: for homes and small businesses in Newcastle. From computer repairs and WiFi fixes to data backups and security ...
+          - generic [ref=f69e932]:
+            - generic [ref=f69e935]:
+              - link "JMS Tech Support (@jmstechsupport) Instagram · jmstechsupport 220+ followers" [ref=f69e1439] [cursor=pointer]:
+                - /url: https://www.instagram.com/jmstechsupport/
+                - heading "JMS Tech Support (@jmstechsupport)" [level=3] [ref=f69e1440]
+                - generic [ref=f69e944]:
+                  - generic [ref=f69e945]: Instagram · jmstechsupport
+                  - generic [ref=f69e947]: 220+ followers
+              - button "About this result" [ref=f69e1441] [cursor=pointer]
+            - generic [ref=f69e957]:
+              - generic [ref=f69e958]:
+                - emphasis [ref=f69e959]: Local mobile tech help in the Clarence Valley
+                - text: . 13+ yrs experience. Security camera installation • PC help • TV & phone. We come to you.
+              - link "Read more" [ref=f69e1442] [cursor=pointer]:
+                - /url: https://www.instagram.com/jmstechsupport/#:~:text=Local%20mobile%20tech%20help%20in,We%20come%20to%20you.
+          - generic [ref=f69e964]:
+            - generic [ref=f69e967]:
+              - link "JMS Tech Support (@jmstechit) - Videos Facebook https://www.facebook.com › ... › JMS Tech Support" [ref=f69e1443] [cursor=pointer]:
+                - /url: https://www.facebook.com/jmstechit/videos/
+                - heading "JMS Tech Support (@jmstechit) - Videos" [level=3] [ref=f69e1444]
+                - generic [ref=f69e976]:
+                  - generic [ref=f69e977]: Facebook
+                  - generic [ref=f69e979]: https://www.facebook.com › ... › JMS Tech Support
+              - button "About this result" [ref=f69e1445] [cursor=pointer]
+            - generic [ref=f69e989]:
+              - generic [ref=f69e990]:
+                - emphasis [ref=f69e991]: Local IT support in Maclean, Yamba, Grafton and surrounds
+                - text: for computers, security cameras, Wi-Fi, TVs and phones — with patience, plain English and house calls.
+              - link "Read more" [ref=f69e1446] [cursor=pointer]:
+                - /url: https://www.facebook.com/jmstechit/videos/#:~:text=Local%20IT%20support%20in%20Maclean%2C,plain%20English%20and%20house%20calls.
+          - generic [ref=f69e996]:
+            - generic [ref=f69e999]:
+              - link "10 BEST IT Services & Support in Yamba NSW 2464 localsearch.com.au https://www.localsearch.com.au › ... › Y" [ref=f69e1447] [cursor=pointer]:
+                - /url: https://www.localsearch.com.au/find/it-services-support/yamba-nsw
+                - heading "10 BEST IT Services & Support in Yamba NSW 2464" [level=3] [ref=f69e1448]
+                - generic [ref=f69e1008]:
+                  - generic [ref=f69e1009]: localsearch.com.au
+                  - generic [ref=f69e1011]: https://www.localsearch.com.au › ... › Y
+              - button "About this result" [ref=f69e1449] [cursor=pointer]
+            - generic [ref=f69e1022]:
+              - emphasis [ref=f69e1023]: JMS Tech Support
+              - text: Open Website 0418 16 0226. Opens 9:00 am Mon Website 0417 46 1774
+          - generic [ref=f69e1027]:
+            - generic [ref=f69e1030]:
+              - link "Hello Maclean & Yamba! JMS Tech Support is ... Instagram · jmstechsupport 7 likes · 6 months ago" [ref=f69e1450] [cursor=pointer]:
+                - /url: https://www.instagram.com/p/DUE1P0WEm8c/
+                - heading "Hello Maclean & Yamba! JMS Tech Support is ..." [level=3] [ref=f69e1451]
+                - generic [ref=f69e1039]:
+                  - generic [ref=f69e1040]: Instagram · jmstechsupport
+                  - generic [ref=f69e1042]: 7 likes · 6 months ago
+              - button "About this result" [ref=f69e1452] [cursor=pointer]
+            - generic [ref=f69e1052]:
+              - generic [ref=f69e1053]:
+                - text: "Our services include: Voice ☁️ Hosting Internet Hardware Let's simplify your tech life! Call us on"
+                - emphasis [ref=f69e1054]: 1300 775 442
+                - text: or visit www ...
+              - link "Read more" [ref=f69e1453] [cursor=pointer]:
+                - /url: https://www.instagram.com/p/DUE1P0WEm8c/#:~:text=Our%20services%20include%3A,see%20how%20we%20can%20help.
+          - generic [ref=f69e1059]:
+            - generic [ref=f69e1062]:
+              - link "Computer Repairs Service Upgrades in Maclean, NSW 2463 Yellow Pages AU https://www.yellowpages.com.au › Maclean, NSW" [ref=f69e1454] [cursor=pointer]:
+                - /url: https://www.yellowpages.com.au/maclean-nsw-2463/computer-repairs-service-upgrades
+                - heading "Computer Repairs Service Upgrades in Maclean, NSW 2463" [level=3] [ref=f69e1455]
+                - generic [ref=f69e1071]:
+                  - generic [ref=f69e1072]: Yellow Pages AU
+                  - generic [ref=f69e1074]: https://www.yellowpages.com.au › Maclean, NSW
+              - button "About this result" [ref=f69e1456] [cursor=pointer]
+            - generic [ref=f69e1084]:
+              - generic [ref=f69e1085]:
+                - text: Lower Clarence Computers · 14B River Street, Maclean, NSW, 2463 ; Sanna Computing · Serving Maclean, NSW 2463 ;
+                - emphasis [ref=f69e1086]: JMS Tech Support
+                - text: · Serving Maclean, NSW 2463.
+              - link "Read more" [ref=f69e1457] [cursor=pointer]:
+                - /url: https://www.yellowpages.com.au/maclean-nsw-2463/computer-repairs-service-upgrades#:~:text=Lower%20Clarence%20Computers&text=14B%20River%20Street%2C%20Maclean%2C%20NSW%2C,2463&text=Sanna%20Computing&text=Serving%20Maclean%2C%20NSW%202463&text=JMS%20Tech%20Support&text=Serving%20Maclean%2C%20NSW%202463
+          - generic [ref=f69e1092]:
+            - heading "People also ask" [level=2] [ref=f69e1458]
+            - button "What does it mean for technical support?" [ref=f69e1459] [cursor=pointer]
+      - generic [ref=f69e1111]:
+        - generic [ref=f69e1116]:
+          - heading "People also search for" [level=2] [ref=f69e1460]
+          - generic [ref=f69e1120]:
+            - generic [ref=f69e1121]:
+              - link "Jms tech support nsw" [ref=f69e1461] [cursor=pointer]:
+                - /url: /search?sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&q=Jms+tech+support+nsw&sa=X&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQ1QJ6BAhQEAE
+              - link "Computer repairs near me" [ref=f69e1462] [cursor=pointer]:
+                - /url: /search?sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&q=Computer+repairs+near+me&sa=X&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQ1QJ6BAhUEAE
+            - generic [ref=f69e1150]:
+              - link "Mayfield computer repairs" [ref=f69e1463] [cursor=pointer]:
+                - /url: /search?sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&q=Mayfield+computer+repairs&sa=X&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQ1QJ6BAhTEAE
+              - link "Newcastle pc repair" [ref=f69e1464] [cursor=pointer]:
+                - /url: /search?sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&q=Newcastle+pc+repair&sa=X&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQ1QJ6BAhSEAE
+        - navigation [ref=f69e1179]:
+          - heading "Page navigation" [level=1] [ref=f69e1465]
+          - text: "1"
+          - link "Page 2" [ref=f69e1466] [cursor=pointer]:
+            - /url: /search?q=jms+tech+support&sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&ei=86BratSWKs-jvr0PwObduA4&start=10&sa=N&sstk=AU9db-BKIGb6tWZAEpgF6vEPfyUGTOT9CDNWRHKmLPttPJ28VquuwGKIxjvQzrp8ZmTsga6LTBt35XOf-B6yVDwN-H1wnwQOGCoH6A&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQ8tMDegQIXhAE
+            - text: "2"
+          - link "Page 3" [ref=f69e1467] [cursor=pointer]:
+            - /url: /search?q=jms+tech+support&sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&ei=86BratSWKs-jvr0PwObduA4&start=20&sa=N&sstk=AU9db-BKIGb6tWZAEpgF6vEPfyUGTOT9CDNWRHKmLPttPJ28VquuwGKIxjvQzrp8ZmTsga6LTBt35XOf-B6yVDwN-H1wnwQOGCoH6A&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQ8tMDegQIXhAG
+            - text: "3"
+          - link "Page 4" [ref=f69e1468] [cursor=pointer]:
+            - /url: /search?q=jms+tech+support&sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&ei=86BratSWKs-jvr0PwObduA4&start=30&sa=N&sstk=AU9db-BKIGb6tWZAEpgF6vEPfyUGTOT9CDNWRHKmLPttPJ28VquuwGKIxjvQzrp8ZmTsga6LTBt35XOf-B6yVDwN-H1wnwQOGCoH6A&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQ8tMDegQIXhAI
+            - text: "4"
+          - link "Page 5" [ref=f69e1469] [cursor=pointer]:
+            - /url: /search?q=jms+tech+support&sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&ei=86BratSWKs-jvr0PwObduA4&start=40&sa=N&sstk=AU9db-BKIGb6tWZAEpgF6vEPfyUGTOT9CDNWRHKmLPttPJ28VquuwGKIxjvQzrp8ZmTsga6LTBt35XOf-B6yVDwN-H1wnwQOGCoH6A&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQ8tMDegQIXhAK
+            - text: "5"
+          - link "Page 6" [ref=f69e1470] [cursor=pointer]:
+            - /url: /search?q=jms+tech+support&sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&ei=86BratSWKs-jvr0PwObduA4&start=50&sa=N&sstk=AU9db-BKIGb6tWZAEpgF6vEPfyUGTOT9CDNWRHKmLPttPJ28VquuwGKIxjvQzrp8ZmTsga6LTBt35XOf-B6yVDwN-H1wnwQOGCoH6A&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQ8tMDegQIXhAM
+            - text: "6"
+          - link "Page 7" [ref=f69e1471] [cursor=pointer]:
+            - /url: /search?q=jms+tech+support&sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&ei=86BratSWKs-jvr0PwObduA4&start=60&sa=N&sstk=AU9db-BKIGb6tWZAEpgF6vEPfyUGTOT9CDNWRHKmLPttPJ28VquuwGKIxjvQzrp8ZmTsga6LTBt35XOf-B6yVDwN-H1wnwQOGCoH6A&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQ8tMDegQIXhAO
+            - text: "7"
+          - link "Page 8" [ref=f69e1472] [cursor=pointer]:
+            - /url: /search?q=jms+tech+support&sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&ei=86BratSWKs-jvr0PwObduA4&start=70&sa=N&sstk=AU9db-BKIGb6tWZAEpgF6vEPfyUGTOT9CDNWRHKmLPttPJ28VquuwGKIxjvQzrp8ZmTsga6LTBt35XOf-B6yVDwN-H1wnwQOGCoH6A&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQ8tMDegQIXhAQ
+            - text: "8"
+          - link "Page 9" [ref=f69e1473] [cursor=pointer]:
+            - /url: /search?q=jms+tech+support&sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&ei=86BratSWKs-jvr0PwObduA4&start=80&sa=N&sstk=AU9db-BKIGb6tWZAEpgF6vEPfyUGTOT9CDNWRHKmLPttPJ28VquuwGKIxjvQzrp8ZmTsga6LTBt35XOf-B6yVDwN-H1wnwQOGCoH6A&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQ8tMDegQIXhAS
+            - text: "9"
+          - link "Page 10" [ref=f69e1474] [cursor=pointer]:
+            - /url: /search?q=jms+tech+support&sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&ei=86BratSWKs-jvr0PwObduA4&start=90&sa=N&sstk=AU9db-BKIGb6tWZAEpgF6vEPfyUGTOT9CDNWRHKmLPttPJ28VquuwGKIxjvQzrp8ZmTsga6LTBt35XOf-B6yVDwN-H1wnwQOGCoH6A&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQ8tMDegQIXhAU
+            - text: "10"
+          - heading [level=2] [ref=f69e1475]:
+            - link "Next" [ref=f69e1476] [cursor=pointer]:
+              - /url: /search?q=jms+tech+support&sca_esv=f745035f8560aefd&sxsrf=APpeQntgkZBtX7T-HyBz6tTWWCVdFr9qSg:1785438451698&ei=86BratSWKs-jvr0PwObduA4&start=10&sa=N&sstk=AU9db-BKIGb6tWZAEpgF6vEPfyUGTOT9CDNWRHKmLPttPJ28VquuwGKIxjvQzrp8ZmTsga6LTBt35XOf-B6yVDwN-H1wnwQOGCoH6A&ved=2ahUKEwiU3LnFjPuVAxXPka8BHUBzF-cQ8NMDegQIXhAW
+      - navigation
+    - contentinfo [ref=f69e1206]:
+      - heading "Footer links" [level=1] [ref=f69e1477]
+      - generic [ref=f69e1211]:
+        - generic [ref=f69e1216]:
+          - generic [ref=f69e1217]: Results are personalised
+          - generic [ref=f69e1218]: "-"
+          - link "Try without personalisation" [ref=f69e1478] [cursor=pointer]:
+            - /url: https://www.google.com/search?q=jms+tech+support&sca_esv=f745035f8560aefd&sxsrf=APpeQnvMqrElvv2Ys7uY0KztIfJiVzltWQ:1785438446048&source=hp&ei=7qBratxA187V7w-KnsGhDw&iflsig=ABILxe8AAAAAamuu_hL-lM4CYcfp8G4W9sFxRXmhisj4&oq=jms+tech&gs_lp=Egdnd3Mtd2l6IghqbXMgdGVjaCoCCAAyBBAjGCcyBBAjGCcyCxAuGIAEGMcBGK8BMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgsQLhiABBjHARivAUicElAAWJAHcAB4AJABAJgBvgGgAcsKqgEDMC44uAEDyAEA-AEBmAIIoALqCsICCBAAGIAEGLEDwgIOEC4YgAQYsQMYxwEY0QPCAg4QLhiABBiKBRixAxiDAcICDhAuGMcBGLEDGNEDGIAEwgIOEAAYgAQYigUYsQMYgwHCAggQLhixAxiABMICCxAAGIAEGLEDGIMBwgILEC4YgAQYsQMYgwHCAhMQLhiABBiKBRixAxjHARjRAxgKwgILEAAYgAQYigUYsQPCAgUQLhiABJgDAJIHAzAuOKAHymiyBwMwLji4B-oKwgcFMC43LjHIBxaACAE&sclient=gws-wiz&peek_pws=0
+        - generic [ref=f69e1223]:
+          - text: Australia
+          - generic [ref=f69e1225]:
+            - button "Townsend, New South Wales - Based on your places (Home)" [ref=f69e1479] [cursor=pointer]:
+              - generic [ref=f69e1228]: Townsend, New South Wales
+              - generic [ref=f69e1230]:
+                - text: "-"
+                - generic [ref=f69e1231]: Based on your places (Home)
+            - text: "-"
+            - button "Update location" [ref=f69e1480] [cursor=pointer]
+        - generic [ref=f69e1236]:
+          - link "Help" [ref=f69e1481] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-AU&fg=1
+          - link "Send feedback" [ref=f69e1482] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=f69e1483] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-AU&fg=1
+          - link "Terms" [ref=f69e1484] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-AU&fg=1

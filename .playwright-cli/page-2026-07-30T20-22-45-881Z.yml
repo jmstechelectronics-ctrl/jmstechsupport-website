@@ -1,0 +1,276 @@
+- generic [active] [ref=f81e1]:
+  - banner [ref=f81e2]:
+    - generic [ref=f81e3]:
+      - generic [ref=f81e4]:
+        - link "JMS Web Design home" [ref=f81e5] [cursor=pointer]:
+          - /url: /
+          - img "JMS Web Design" [ref=f81e7]
+        - button "Open menu" [ref=f81e8] [cursor=pointer]
+      - generic:
+        - link "Websites":
+          - /url: "#websites"
+        - link "How It Works":
+          - /url: "#how-it-works"
+        - link "Recent Builds":
+          - /url: "#recent-builds"
+        - link "Pricing":
+          - /url: "#package"
+        - link "FAQ":
+          - /url: "#faq"
+        - link "Contact":
+          - /url: "#contact"
+  - main [ref=f81e12]:
+    - generic [ref=f81e13]:
+      - region [ref=f81e14]:
+        - generic [ref=f81e15]:
+          - generic [ref=f81e16]:
+            - paragraph [ref=f81e17]: Websites for local businesses
+            - heading "Still using Facebook as your website?" [level=1] [ref=f81e18]
+            - paragraph [ref=f81e19]: Australian owned. Built locally. Supporting tradies across the country.
+            - paragraph [ref=f81e20]: A professional website for your trade business — $349 once, $29 a month. Live in 48 hours. Built by someone who actually answers the phone and is still there a year later when you need something changed. No agencies. No ticket queues. No bullshit.
+            - generic [ref=f81e21]:
+              - link "Send your Facebook page" [ref=f81e22] [cursor=pointer]:
+                - /url: "#contact"
+              - link "See packages" [ref=f81e23] [cursor=pointer]:
+                - /url: "#package"
+          - generic "Example website designs" [ref=f81e25]:
+            - img "Example builder website mockup for Harbourline Building Co" [ref=f81e27]
+            - img "Example electrical website mockup for Northshore Electrical" [ref=f81e29]
+            - img "Example disability support website mockup for BrightPath Care" [ref=f81e31]
+      - region [ref=f81e32]:
+        - generic [ref=f81e33]:
+          - paragraph [ref=f81e34]: What your business could look like
+          - heading "Clear, professional and easy to trust." [level=2] [ref=f81e35]
+          - paragraph [ref=f81e36]: "The design changes to suit your business. The goal stays the same: explain what you do and make the next step obvious."
+        - generic [ref=f81e37]:
+          - article [ref=f81e38]:
+            - img "Example builder website mockup for Harbourline Building Co" [ref=f81e41]
+            - heading "Harbourline Building Co" [level=3] [ref=f81e42]
+            - paragraph [ref=f81e43]: A confident builder website with clear services and a direct quote pathway.
+          - article [ref=f81e44]:
+            - img "Example electrical website mockup for Northshore Electrical" [ref=f81e47]
+            - heading "Northshore Electrical" [level=3] [ref=f81e48]
+            - paragraph [ref=f81e49]: A polished electrical services layout built around trust and enquiries.
+          - article [ref=f81e50]:
+            - img "Example disability support website mockup for BrightPath Care" [ref=f81e53]
+            - heading "BrightPath Care" [level=3] [ref=f81e54]
+            - paragraph [ref=f81e55]: A warm, professional support website with clear next steps.
+        - generic [ref=f81e56]:
+          - generic [ref=f81e57]:
+            - strong [ref=f81e58]: You do not need to arrive with a finished brief.
+            - paragraph [ref=f81e59]: Your Facebook page, photos and service list are enough to get the first version moving.
+          - link "Send what you have" [ref=f81e60] [cursor=pointer]:
+            - /url: "#contact"
+      - region [ref=f81e61]:
+        - generic [ref=f81e62]:
+          - heading "How it works" [level=2] [ref=f81e63]
+          - paragraph [ref=f81e64]: Simple from the start. Send what you have and weâ€™ll handle the website side.
+        - generic [ref=f81e65]:
+          - generic [ref=f81e66]:
+            - heading "Send what you have" [level=3] [ref=f81e67]
+            - paragraph [ref=f81e68]: Your Facebook page, business details, service list and photos are enough. No technical prep needed.
+          - generic [ref=f81e69]:
+            - heading "We build the first version" [level=3] [ref=f81e70]
+            - paragraph [ref=f81e71]: We turn your information into a clean, mobile-friendly website with a clear enquiry path.
+          - generic [ref=f81e72]:
+            - heading "You review and approve it" [level=3] [ref=f81e73]
+            - paragraph [ref=f81e74]: You review it and request changes. Once approved, we get the website, domain and email connected properly.
+      - region [ref=f81e75]:
+        - generic [ref=f81e76]:
+          - heading "Full setup includes" [level=2] [ref=f81e77]
+          - paragraph [ref=f81e78]: Your website is not just a page on the internet. The Full Setup includes the practical bits too â€” domain, hosting, business email and the basics that make your business easier to find and trust.
+        - generic [ref=f81e79]:
+          - article [ref=f81e80]:
+            - heading "One-page website" [level=3] [ref=f81e84]
+            - paragraph [ref=f81e85]: A clear site that explains who you are, what you do and how people contact you.
+          - article [ref=f81e86]:
+            - heading "Domain setup" [level=3] [ref=f81e91]
+            - paragraph [ref=f81e92]: Help choosing and setting up a proper .com.au domain for your business.
+          - article [ref=f81e93]:
+            - heading "Business email" [level=3] [ref=f81e98]
+            - paragraph [ref=f81e99]: An address like info@yourbusiness.com.au instead of relying on Gmail or Hotmail.
+          - article [ref=f81e100]:
+            - heading "Hosting" [level=3] [ref=f81e104]
+            - paragraph [ref=f81e105]: Reliable website hosting included on the monthly plan.
+          - article [ref=f81e106]:
+            - heading "Contact form" [level=3] [ref=f81e110]
+            - paragraph [ref=f81e111]: A simple enquiry form so customers can reach you without hunting around.
+          - article [ref=f81e112]:
+            - heading "Mobile-friendly layout" [level=3] [ref=f81e116]
+            - paragraph [ref=f81e117]: Designed to read clearly and work properly on phones, tablets and desktops.
+          - article [ref=f81e118]:
+            - heading "Google and local SEO basics" [level=3] [ref=f81e123]
+            - paragraph [ref=f81e124]: Search-friendly structure, page details and local service wording set up properly.
+          - article [ref=f81e125]:
+            - heading "Minor updates included" [level=3] [ref=f81e130]
+            - paragraph [ref=f81e131]: Small wording, photo and service changes are included on the monthly plan.
+      - region [ref=f81e132]:
+        - generic [ref=f81e133]:
+          - heading "Recent builds" [level=2] [ref=f81e134]
+          - paragraph [ref=f81e135]: A few examples of websites and digital projects we've delivered.
+        - generic [ref=f81e136]:
+          - heading "Local business websites" [level=3] [ref=f81e137]
+          - generic [ref=f81e138]:
+            - article [ref=f81e139]:
+              - img "A360 Disability Solutions website homepage" [ref=f81e141]
+              - generic [ref=f81e142]:
+                - generic [ref=f81e143]: Disability support
+                - heading "A360 Disability Solutions" [level=4] [ref=f81e144]
+                - paragraph [ref=f81e145]: Website for an NDIS-focused disability support business.
+                - link "View A360 website" [ref=f81e146] [cursor=pointer]:
+                  - /url: https://a360ds.com.au
+            - article [ref=f81e147]:
+              - img "JMS Tech Support website homepage" [ref=f81e149]
+              - generic [ref=f81e150]:
+                - generic [ref=f81e151]: Local service business
+                - heading "JMS Tech Support" [level=4] [ref=f81e152]
+                - paragraph [ref=f81e153]: Local tech support website for home users and small businesses.
+                - link "View JMS Tech Support" [ref=f81e154] [cursor=pointer]:
+                  - /url: https://jmstechsupport.com.au
+        - generic [ref=f81e155]:
+          - heading "Other technical builds" [level=3] [ref=f81e156]
+          - generic [ref=f81e157]:
+            - article [ref=f81e158]:
+              - img "LeadDrop lead generation platform homepage" [ref=f81e160]
+              - generic [ref=f81e161]:
+                - generic [ref=f81e162]: Lead generation
+                - heading "LeadDrop" [level=4] [ref=f81e163]
+                - paragraph [ref=f81e164]: Lead generation platform delivering trade leads from community conversations.
+                - link "View LeadDrop" [ref=f81e165] [cursor=pointer]:
+                  - /url: https://leaddrop.com.au
+            - article [ref=f81e166]:
+              - img "ClawGauge crypto market monitoring dashboard" [ref=f81e168]
+              - generic [ref=f81e169]:
+                - generic [ref=f81e170]: Technical project
+                - heading "ClawGauge" [level=4] [ref=f81e171]
+                - paragraph [ref=f81e172]: A technical dashboard project for crypto market monitoring.
+                - link "View ClawGauge" [ref=f81e173] [cursor=pointer]:
+                  - /url: https://clawgauge.com
+      - region [ref=f81e174]:
+        - generic [ref=f81e175]:
+          - generic [ref=f81e176]:
+            - paragraph [ref=f81e177]: Facebook recommendation
+            - heading "Trusted by local businesses" [level=2] [ref=f81e178]
+            - paragraph [ref=f81e179]: A360 Disability Solutions recommended the process after getting a clear, practical website that helped bring their online presence to life without the tech stress.
+            - paragraph [ref=f81e180]: Before JMS Web Design became the dedicated web design arm, this work was delivered through JMS Tech Support.
+            - paragraph [ref=f81e181]: Want your business to feel this clear online?
+            - link "Send your Facebook page" [ref=f81e183] [cursor=pointer]:
+              - /url: "#contact"
+            - link "View A360 Disability Solutions website" [ref=f81e184] [cursor=pointer]:
+              - /url: https://a360ds.com.au/
+          - img "Facebook recommendation from Danae at A360 Disability Solutions for JMS Tech Support website work" [ref=f81e187]
+      - region [ref=f81e188]:
+        - generic [ref=f81e189]:
+          - heading "Straightforward website pricing" [level=2] [ref=f81e190]
+          - paragraph [ref=f81e191]: No vague agency package names. Two clear options.
+        - generic [ref=f81e192]:
+          - article [ref=f81e193]:
+            - generic [ref=f81e194]:
+              - generic [ref=f81e195]: Most popular
+              - heading "Single Page" [level=3] [ref=f81e196]
+              - paragraph [ref=f81e197]: One scrolling page with everything your trade business needs to look professional and get leads.
+              - paragraph [ref=f81e198]: $349 once + $29/month
+              - paragraph [ref=f81e199]: Live in 48 hours. 14-day money-back guarantee.
+              - list [ref=f81e200]:
+                - listitem [ref=f81e201]: ✓ Hero, services, about, gallery, contact form
+                - listitem [ref=f81e202]: ✓ Live in 48 hours
+                - listitem [ref=f81e203]: ✓ 14-day money-back guarantee
+                - listitem [ref=f81e204]: ✓ Domain, hosting, mobile-friendly included
+                - listitem [ref=f81e205]: ✓ Google SEO basics
+              - link "Send your Facebook page" [ref=f81e207] [cursor=pointer]:
+                - /url: "#contact"
+          - article [ref=f81e208]:
+            - generic [ref=f81e209]:
+              - generic [ref=f81e210]: Custom
+              - heading "Custom Build" [level=3] [ref=f81e211]
+              - paragraph [ref=f81e212]: Multi-page bespoke website built to your exact requirements.
+              - paragraph [ref=f81e213]: Quoted + $35/month
+              - list [ref=f81e214]:
+                - listitem [ref=f81e215]: ✓ Multi-page bespoke build
+                - listitem [ref=f81e216]: ✓ Booking, galleries, service areas â€” whatever the job needs
+                - listitem [ref=f81e217]: ✓ 2–3 weeks
+                - listitem [ref=f81e218]: ✓ Ongoing support included
+              - link "Ask for a custom quote" [ref=f81e220] [cursor=pointer]:
+                - /url: "#contact"
+        - generic [ref=f81e221]:
+          - heading "What happens next?" [level=3] [ref=f81e222]
+          - generic [ref=f81e223]:
+            - generic [ref=f81e224]:
+              - heading "Send your Facebook page" [level=4] [ref=f81e225]
+              - paragraph [ref=f81e226]: We check what you already have and what your business needs.
+            - generic [ref=f81e227]:
+              - heading "We build the first version" [level=4] [ref=f81e228]
+              - paragraph [ref=f81e229]: Your services, photos and contact details become a clean one-page website.
+            - generic [ref=f81e230]:
+              - heading "You review it" [level=4] [ref=f81e231]
+              - paragraph [ref=f81e232]: You review it and request changes before it goes live.
+            - generic [ref=f81e233]:
+              - heading "Website live in 48 hours" [level=4] [ref=f81e234]
+              - paragraph [ref=f81e235]: Once approved, everything goes live â€” domain, hosting, email sorted.
+      - region [ref=f81e236]:
+        - generic [ref=f81e237]:
+          - heading "Website FAQ" [level=2] [ref=f81e238]
+          - paragraph [ref=f81e239]: Quick answers
+        - list [ref=f81e240]:
+          - listitem [ref=f81e241]:
+            - button "Can I update my website later?" [ref=f81e242] [cursor=pointer]
+          - listitem [ref=f81e245]:
+            - button "Do I need to supply all the wording?" [ref=f81e246] [cursor=pointer]
+          - listitem [ref=f81e249]:
+            - button "Do I need a domain already?" [ref=f81e250] [cursor=pointer]
+          - listitem [ref=f81e253]:
+            - button "Can you set up business email?" [ref=f81e254] [cursor=pointer]
+          - listitem [ref=f81e257]:
+            - button "Can you build from my Facebook page?" [ref=f81e258] [cursor=pointer]
+          - listitem [ref=f81e261]:
+            - button "What is build-only?" [ref=f81e262] [cursor=pointer]
+      - region [ref=f81e265]:
+        - generic [ref=f81e266]:
+          - heading "Send your Facebook page" [level=2] [ref=f81e267]
+          - paragraph [ref=f81e268]: We'll look at what you already have and come back with a practical next step. No technical brief needed.
+          - generic [ref=f81e269]:
+            - textbox "Your name" [ref=f81e270]
+            - textbox "Your email" [ref=f81e271]
+            - textbox "Your phone" [ref=f81e272]:
+              - /placeholder: Your phone (optional)
+            - textbox "Your Facebook page or profile link" [ref=f81e273]
+            - textbox "What does your business do?" [ref=f81e274]
+            - button "Send my details" [ref=f81e275] [cursor=pointer]
+          - paragraph [ref=f81e276]:
+            - link "Privacy policy" [ref=f81e277] [cursor=pointer]:
+              - /url: /privacy.html
+      - generic [ref=f81e279]:
+        - generic [ref=f81e280]:
+          - generic [ref=f81e281]:
+            - img "JMS Web Design" [ref=f81e283]
+            - paragraph [ref=f81e284]: JMS Web Design â€” Australian owned. Websites for tradies & small businesses
+            - paragraph [ref=f81e285]:
+              - link "0418 160 226" [ref=f81e286] [cursor=pointer]:
+                - /url: tel:0418160226
+          - generic [ref=f81e287]:
+            - navigation "Footer" [ref=f81e288]:
+              - link "Websites" [ref=f81e289] [cursor=pointer]:
+                - /url: "#websites"
+              - link "How It Works" [ref=f81e290] [cursor=pointer]:
+                - /url: "#how-it-works"
+              - link "Recent Builds" [ref=f81e291] [cursor=pointer]:
+                - /url: "#recent-builds"
+              - link "Pricing" [ref=f81e292] [cursor=pointer]:
+                - /url: "#package"
+              - link "FAQ" [ref=f81e293] [cursor=pointer]:
+                - /url: "#faq"
+              - link "Contact" [ref=f81e294] [cursor=pointer]:
+                - /url: "#contact"
+              - link "Privacy" [ref=f81e295] [cursor=pointer]:
+                - /url: /privacy.html
+              - link "Terms" [ref=f81e296] [cursor=pointer]:
+                - /url: /terms.html
+            - generic [ref=f81e297]:
+              - link "Facebook" [ref=f81e298] [cursor=pointer]:
+                - /url: https://www.facebook.com/jmswebdesign.com.au/
+              - link "Instagram" [ref=f81e301] [cursor=pointer]:
+                - /url: https://www.instagram.com/jmswebdesign.com.au/
+        - generic [ref=f81e304]:
+          - paragraph [ref=f81e305]: Australian owned. Websites for tradies & small businesses.
+          - paragraph [ref=f81e306]: © 2026 JMS Web Design. All rights reserved.
+  - button "Back to top": ↑

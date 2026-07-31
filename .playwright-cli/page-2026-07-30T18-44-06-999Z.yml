@@ -1,0 +1,24 @@
+- generic [ref=f30e2]:
+  - banner [ref=f30e4]:
+    - generic [ref=f30e5]:
+      - button "Main menu" [ref=f30e7] [cursor=pointer]
+      - generic [ref=f30e13]:
+        - button "Help" [ref=f30e15] [cursor=pointer]:
+          - generic [ref=f30e16]: 
+        - button "User settings" [ref=f30e20] [cursor=pointer]
+      - generic [ref=f30e26]:
+        - button "Google apps" [ref=f30e30] [cursor=pointer]
+        - 'button "Google Account: Josh Slater (menadool.js@gmail.com)" [ref=f30e36] [cursor=pointer]'
+  - generic [ref=f30e42]:
+    - generic [ref=f30e43]: 
+    - generic [ref=f30e45]: Oops, you don't have access to this property
+    - generic [ref=f30e46]:
+      - generic [ref=f30e47]:
+        - text: "Signed in as:"
+        - generic [ref=f30e48]: menadool.js@gmail.com
+      - generic [ref=f30e49]:
+        - text: "Property:"
+        - generic [ref=f30e50]: jmstechsupport.com.au
+      - generic [ref=f30e51]: Sign in with an account that can access this property, or request access from a property owner.
+      - generic [ref=f30e52]: Otherwise
+      - button "Verify your ownership" [ref=f30e54] [cursor=pointer]

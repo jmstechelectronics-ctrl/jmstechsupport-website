@@ -1,0 +1,33 @@
+[     388ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'. @ :0
+[    2072ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://www.instagram.com/jmswebdesign.com.au/:0
+[    2335ms] [LOG] 
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.cdninstagram.com/rsrc.php/v4iZvR4/yt/l/en_US/evL6ANyjc9cbVMwazDVz7m.js:8
+[    2335ms] [LOG] 
+%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px;  @ https://static.cdninstagram.com/rsrc.php/v4iZvR4/yt/l/en_US/evL6ANyjc9cbVMwazDVz7m.js:8
+[    2335ms] [LOG] 
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px;  @ https://static.cdninstagram.com/rsrc.php/v4iZvR4/yt/l/en_US/evL6ANyjc9cbVMwazDVz7m.js:8
+[    2335ms] [LOG] 
+%c  @ https://static.cdninstagram.com/rsrc.php/v4iZvR4/yt/l/en_US/evL6ANyjc9cbVMwazDVz7m.js:8
+[    9607ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://www.instagram.com/accounts/login/?source=desktop_dynamic_landing_dialog:0
+[   48591ms] [ERROR] ErrorUtils caught an error:
+
+signal is aborted without reason [Caught in: Passkey authentication failed]
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. {column: 2854, clientTime: 1785443084, extra: Object, guardList: Array(0), hash: mpzxns} @ https://static.cdninstagram.com/rsrc.php/v4/yH/r/9sDL02NfWBc.js:79
+[   48776ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ https://static.cdninstagram.com/rsrc.php/v4iZvR4/yt/l/en_US/evL6ANyjc9cbVMwazDVz7m.js:86
+[   95454ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'. @ :0
+[   96675ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://www.instagram.com/accounts/onetap/:0
+[   97054ms] [LOG] 
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.cdninstagram.com/rsrc.php/v4if0s4/y2/l/en_US-j/lVrEHqMZCw0SspBHLH3lcGq4O9A4c7SOjevL6ANyjc9cJcXfG2AoXtH0dD9gEEs2XTEOMLU1PZtNsc7iXjGPvlQ-HXKVjtVPZv0iLX4PZxqJ0eddi5TnEqbo5Cdq-ncqoaDzrrCxjEFdRGjiFGHh9ozlMIeulWM2_p2afswhUn827ED1j5LnKPyIm1o6aGHgQxrtu9Xw2EYWhuenwy9Cv35c7Xl7ZGb_DTJiYKAAGK-rvBHU1eLB3_VNT82X2phhshD5-sc1lGAi7aOZiAIQqP2W9xWp-2pKzMGU-W7GsTMMsiJC02ezXAcYaJjSymA.js:379
+[   97054ms] [LOG] 
+%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px;  @ https://static.cdninstagram.com/rsrc.php/v4if0s4/y2/l/en_US-j/lVrEHqMZCw0SspBHLH3lcGq4O9A4c7SOjevL6ANyjc9cJcXfG2AoXtH0dD9gEEs2XTEOMLU1PZtNsc7iXjGPvlQ-HXKVjtVPZv0iLX4PZxqJ0eddi5TnEqbo5Cdq-ncqoaDzrrCxjEFdRGjiFGHh9ozlMIeulWM2_p2afswhUn827ED1j5LnKPyIm1o6aGHgQxrtu9Xw2EYWhuenwy9Cv35c7Xl7ZGb_DTJiYKAAGK-rvBHU1eLB3_VNT82X2phhshD5-sc1lGAi7aOZiAIQqP2W9xWp-2pKzMGU-W7GsTMMsiJC02ezXAcYaJjSymA.js:379
+[   97054ms] [LOG] 
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px;  @ https://static.cdninstagram.com/rsrc.php/v4if0s4/y2/l/en_US-j/lVrEHqMZCw0SspBHLH3lcGq4O9A4c7SOjevL6ANyjc9cJcXfG2AoXtH0dD9gEEs2XTEOMLU1PZtNsc7iXjGPvlQ-HXKVjtVPZv0iLX4PZxqJ0eddi5TnEqbo5Cdq-ncqoaDzrrCxjEFdRGjiFGHh9ozlMIeulWM2_p2afswhUn827ED1j5LnKPyIm1o6aGHgQxrtu9Xw2EYWhuenwy9Cv35c7Xl7ZGb_DTJiYKAAGK-rvBHU1eLB3_VNT82X2phhshD5-sc1lGAi7aOZiAIQqP2W9xWp-2pKzMGU-W7GsTMMsiJC02ezXAcYaJjSymA.js:379
+[   97054ms] [LOG] 
+%c  @ https://static.cdninstagram.com/rsrc.php/v4if0s4/y2/l/en_US-j/lVrEHqMZCw0SspBHLH3lcGq4O9A4c7SOjevL6ANyjc9cJcXfG2AoXtH0dD9gEEs2XTEOMLU1PZtNsc7iXjGPvlQ-HXKVjtVPZv0iLX4PZxqJ0eddi5TnEqbo5Cdq-ncqoaDzrrCxjEFdRGjiFGHh9ozlMIeulWM2_p2afswhUn827ED1j5LnKPyIm1o6aGHgQxrtu9Xw2EYWhuenwy9Cv35c7Xl7ZGb_DTJiYKAAGK-rvBHU1eLB3_VNT82X2phhshD5-sc1lGAi7aOZiAIQqP2W9xWp-2pKzMGU-W7GsTMMsiJC02ezXAcYaJjSymA.js:379
+[   97255ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'. @ :0
+[   97626ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'. @ :0
+[   98316ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'. @ :0
+[  100395ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'. @ :0
+[  100736ms] [ERROR] Permissions policy violation: unload is not allowed in this document. @ https://static.xx.fbcdn.net/rsrc.php/v4/yS/r/IO0usekfpXJ.js:242
+[  101204ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'. @ :0

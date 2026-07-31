@@ -1,0 +1,151 @@
+- generic [active] [ref=f34e1]:
+  - generic [ref=f34e2]:
+    - banner [ref=f34e4]:
+      - generic [ref=f34e5]:
+        - generic [ref=f34e6]:
+          - button "Main menu" [ref=f34e88] [cursor=pointer]
+          - link "Google Search Console" [ref=f34e91] [cursor=pointer]:
+            - /url: ./search-console?resource_id=sc-domain%3Ajmstechsupport.com.au
+        - generic [ref=f34e11]:
+          - generic [ref=f34e13]:
+            - button "Help" [ref=f34e93] [cursor=pointer]:
+              - generic [ref=f34e16]: 
+            - button "User settings" [ref=f34e94] [cursor=pointer]
+          - button "Messages" [ref=f34e97] [cursor=pointer]:
+            - generic [ref=f34e98]: 
+        - generic [ref=f34e26]:
+          - button "Google apps" [ref=f34e101] [cursor=pointer]
+          - 'button "Google Account: Josh Slater (menadool.js@gmail.com)" [ref=f34e102] [cursor=pointer]'
+    - generic [ref=f34e104]:
+      - navigation "Breadcrumbs" [ref=f34e109]:
+        - heading "Overview" [level=1] [ref=f34e112]
+      - main [ref=f34e116]:
+        - generic [ref=f34e117]:
+          - generic [ref=f34e122]:
+            - generic [ref=f34e123]:
+              - generic [ref=f34e124]: lightbulb_outline
+              - generic [ref=f34e125]: Get insights into your site's Search performance
+            - generic [ref=f34e128]:
+              - generic [ref=f34e130]: chevron_right
+              - generic [ref=f34e131]: Explore your insights
+              - link "Explore your insights" [ref=f34e132] [cursor=pointer]:
+                - /url: ./search-console/performance/insights?resource_id=sc-domain%3Ajmstechsupport.com.au
+          - generic [ref=f34e134]:
+            - generic [ref=f34e135]:
+              - generic [ref=f34e136]: Performance
+              - generic [ref=f34e139]:
+                - generic [ref=f34e141]: chevron_right
+                - generic [ref=f34e142]: Full report
+                - link "Full report" [ref=f34e143] [cursor=pointer]:
+                  - /url: ./search-console/performance/search-analytics?resource_id=sc-domain%3Ajmstechsupport.com.au
+            - generic [ref=f34e146]:
+              - generic [ref=f34e147]: 21 total web search clicks
+              - img [ref=f34e155]:
+                - generic [ref=f34e156]:
+                  - generic [ref=f34e157]:
+                    - generic [ref=f34e158]: 29/04/2026
+                    - generic [ref=f34e160]: 12/05/2026
+                    - generic [ref=f34e162]: 25/05/2026
+                    - generic [ref=f34e164]: 07/06/2026
+                    - generic [ref=f34e166]: 20/06/2026
+                    - generic [ref=f34e168]: 03/07/2026
+                    - generic [ref=f34e170]: 16/07/2026
+                  - generic [ref=f34e172]:
+                    - generic [ref=f34e173]: "3"
+                    - generic [ref=f34e175]: "2"
+                    - generic [ref=f34e177]: "1"
+                    - generic [ref=f34e179]: "0"
+          - generic [ref=f34e189]:
+            - generic [ref=f34e190]:
+              - generic [ref=f34e191]: Indexing
+              - generic [ref=f34e194]:
+                - generic [ref=f34e196]: chevron_right
+                - generic [ref=f34e197]: Full report
+                - link "Full report" [ref=f34e198] [cursor=pointer]:
+                  - /url: ./search-console/index?resource_id=sc-domain%3Ajmstechsupport.com.au
+            - generic [ref=f34e201]:
+              - generic [ref=f34e203]:
+                - generic [ref=f34e204]: 22 not indexed pages
+                - generic [ref=f34e207]: 5 indexed pages
+              - img [ref=f34e213]:
+                - generic [ref=f34e214]:
+                  - generic [ref=f34e215]:
+                    - generic [ref=f34e216]: 01/05/2026
+                    - generic [ref=f34e218]: 13/05/2026
+                    - generic [ref=f34e220]: 25/05/2026
+                    - generic [ref=f34e222]: 06/06/2026
+                    - generic [ref=f34e224]: 18/06/2026
+                    - generic [ref=f34e226]: 30/06/2026
+                    - generic [ref=f34e228]: 12/07/2026
+                    - generic [ref=f34e230]: 24/07/2026
+                  - generic [ref=f34e232]:
+                    - generic [ref=f34e233]: "24"
+                    - generic [ref=f34e235]: "16"
+                    - generic [ref=f34e237]: "8"
+                    - generic [ref=f34e239]: "0"
+          - generic [ref=f34e261]:
+            - generic [ref=f34e262]: Experience
+            - table [ref=f34e267]:
+              - rowgroup [ref=f34e268]:
+                - row [ref=f34e269]:
+                  - columnheader "Type" [ref=f34e270]
+                  - columnheader [ref=f34e271]
+                  - columnheader "Good" [ref=f34e272]
+                  - columnheader "Needs improvement" [ref=f34e273]
+                  - columnheader "Poor" [ref=f34e274]
+                  - columnheader "Trend" [ref=f34e275]
+                  - columnheader [ref=f34e276]
+              - rowgroup [ref=f34e277]:
+                - row [ref=f34e278]:
+                  - cell "Core web vitals" [ref=f34e279]
+                  - cell "Mobile Desktop" [ref=f34e282]:
+                    - generic [ref=f34e284]:
+                      - generic [ref=f34e285]: Mobile
+                      - generic [ref=f34e286]: Desktop
+                  - cell "No data No data" [ref=f34e287]:
+                    - generic [ref=f34e288]:
+                      - generic [ref=f34e289]: No data
+                      - generic [ref=f34e290]: No data
+                  - cell "No data No data" [ref=f34e291]:
+                    - generic [ref=f34e292]:
+                      - generic [ref=f34e293]: No data
+                      - generic [ref=f34e294]: No data
+                  - cell "No data No data" [ref=f34e295]:
+                    - generic [ref=f34e296]:
+                      - generic [ref=f34e297]: No data
+                      - generic [ref=f34e298]: No data
+                  - cell [ref=f34e299]
+                - row [ref=f34e300]:
+                  - columnheader [ref=f34e301]
+                  - columnheader [ref=f34e302]
+                  - columnheader "HTTPS" [ref=f34e303]
+                  - columnheader [ref=f34e304]
+                  - columnheader "Non-HTTPS" [ref=f34e305]
+                  - columnheader [ref=f34e306]
+                  - columnheader [ref=f34e307]
+                - row [ref=f34e308]:
+                  - cell "HTTPS" [ref=f34e309]
+                  - cell [ref=f34e312]
+                  - cell "5" [ref=f34e313]
+                  - cell [ref=f34e316]
+                  - cell "0" [ref=f34e317]
+                  - cell [ref=f34e320]
+                  - cell [ref=f34e325]:
+                    - button "Open report" [ref=f34e328] [cursor=pointer]:
+                      - generic [ref=f34e329]: chevron_right
+          - generic [ref=f34e331]:
+            - generic [ref=f34e332]: Enhancements
+            - generic [ref=f34e334]:
+              - table [ref=f34e337]:
+                - rowgroup [ref=f34e338]:
+                  - row [ref=f34e339]:
+                    - columnheader "Type" [ref=f34e340]
+                    - columnheader "Valid" [ref=f34e341]
+                    - columnheader "Invalid" [ref=f34e342]
+                    - columnheader "Trend" [ref=f34e343]
+                    - columnheader [ref=f34e344]
+              - generic [ref=f34e346]:
+                - text: No enhancements yet.
+                - link "Learn more" [ref=f34e347] [cursor=pointer]:
+                  - /url: https://developers.google.com/search/docs/guides/search-gallery
+  - generic [ref=f34e348]: Overview

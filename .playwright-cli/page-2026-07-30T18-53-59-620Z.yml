@@ -1,0 +1,192 @@
+- generic [ref=f46e11]:
+  - generic [ref=f46e13]:
+    - link [ref=f46e16] [cursor=pointer]:
+      - /url: /
+      - img "Instagram" [ref=f46e19]
+    - generic [ref=f46e24]:
+      - link "Log In" [ref=f46e26] [cursor=pointer]:
+        - /url: /accounts/login/?next=%2Fjmstechsupport%2F&source=desktop_nav
+      - link "Sign Up" [ref=f46e28] [cursor=pointer]:
+        - /url: /accounts/emailsignup/
+  - main [ref=f46e29]:
+    - generic [ref=f46e31]:
+      - generic [ref=f46e32]:
+        - link [ref=f46e36] [cursor=pointer]:
+          - /url: /jmstechsupport/
+          - img "jmstechsupport's profile picture" [ref=f46e37]
+        - heading "jmstechsupport" [level=2] [ref=f46e44]
+        - list [ref=f46e47]:
+          - listitem [ref=f46e48]:
+            - link "226 followers" [ref=f46e50] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f46e51]:
+                - generic "226" [ref=f46e52]
+                - text: followers
+          - listitem [ref=f46e53]:
+            - link "889 following" [ref=f46e55] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f46e56]:
+                - generic [ref=f46e57]: "889"
+                - text: following
+        - generic [ref=f46e59]:
+          - generic [ref=f46e60]: JMS Tech Support
+          - generic [ref=f46e62]:
+            - button [ref=f46e63] [cursor=pointer]:
+              - generic [ref=f46e64]: Local mobile tech help in the Clarence Valley. 13+ yrs experience.Security camera installation • PC help • TV & phone.
+            - generic [ref=f46e65]:
+              - text: ...
+              - button "more" [ref=f46e66] [cursor=pointer]
+          - button "Link icon jmstechsupport.com.au/security-camera-installation-yamba and 1 more" [ref=f46e68] [cursor=pointer]:
+            - generic [ref=f46e69]:
+              - img "Link icon" [ref=f46e71]
+              - generic [ref=f46e74]: jmstechsupport.com.au/security-camera-installation-yamba and 1 more
+        - generic:
+          - menu
+      - generic [ref=f46e76]:
+        - tablist [ref=f46e77]:
+          - link [ref=f46e79] [cursor=pointer]:
+            - /url: /jmstechsupport/
+            - img "Posts" [ref=f46e81]
+          - link [ref=f46e92] [cursor=pointer]:
+            - /url: "#"
+            - img "Reels" [ref=f46e94]
+          - link [ref=f46e97] [cursor=pointer]:
+            - /url: "#"
+            - img "Tagged" [ref=f46e99]
+        - tabpanel
+      - generic [ref=f46e103]:
+        - generic [ref=f46e106]:
+          - generic [ref=f46e107]:
+            - link [ref=f46e109] [cursor=pointer]:
+              - /url: /jmstechsupport/p/DbXBNG4G07R/
+              - img "Photo by JMS Tech Support on July 28, 2026. May be an image of television, tablet, screen, phone, projector and text that says 'JMS TECH SUPPORT We come toyo to you. TIP TIP11 11 Ready to cast OpenaCast-erabledapp t-enabled app Open aCast-enableda and apt cast button CHROMECAST/ SMART TV NOT SHOWING? CHECK WI-FI If your phone can't find your Chromecast or smart TV, first check that both devices are on the same Wi-Fi network. Then restart the TV, phone and router needed. Wi-Fi Network 小 Home WiFi Connectedto Home_W Need help getting streaming working? JMS Tech Support comes you. Local help around Maclean, Yamba & nearby areas WE COME To YOU'." [ref=f46e112]
+            - link [ref=f46e115] [cursor=pointer]:
+              - /url: /jmstechsupport/p/DbRjAG0m4FA/
+              - img "Photo by JMS Tech Support on July 26, 2026. May be an image of screen, laptop and text that says 'JMS TECH SUPPORT We come to you. TIP TIP8 8 RESTART YOUR COMPUTER OCCASIONALLY Restarting Restarting ..···.. Restarting helps install updates and keeps your computer running smoothly. Local help around Maclean, Yamba & nearby areas We come to you.'." [ref=f46e118]
+            - link [ref=f46e121] [cursor=pointer]:
+              - /url: /jmstechsupport/p/DbP9ucoG_Lf/
+              - img "Photo by JMS Tech Support on July 26, 2026. May be an image of screen, phone and text that says 'JMS TECH SUPPORT We come you. TIP 9:41 Photos Photos 1,234 234eTs tens Select ACK UP YOUR PHOTOS Photos are not truly safe just because they're on your phone. Use cloud backup or another backup method so one lost or broken phone doesn't take your memories with it. 區 Laray Need help setting up backups? JMS Tech Support can help. 유화 WNg 4는u엄 Stanch Local help around Maclean, Yamba & nearby areas We come to you.'." [ref=f46e124]
+          - generic [ref=f46e126]:
+            - link [ref=f46e128] [cursor=pointer]:
+              - /url: /jmstechsupport/p/DbKmaLQm-ZM/
+              - img "Photo by JMS Tech Support on July 23, 2026. May be an image of microwave, screen and text that says 'JMS TECH SUPPORT We come to you. TIP 19 X WI-FI HATES CUPBOARDS. CORNERS & MICROWAVES If your Wi-Fi weak, check where the router sitting. Hiding cupboard, corner or near appliances can kill your signal. Keep it out in the open and as central as possible. x Need help with Wi-Fi dead spots? JMS Tech Support comes you. Local help around Maclean, Yamba & nearby areas We come to you'." [ref=f46e131]
+            - link [ref=f46e134] [cursor=pointer]:
+              - /url: /jmstechsupport/p/DbFAjx1G5Yq/
+              - img "Photo by JMS Tech Support on July 21, 2026. May be an image of car, screen, tablet, phone and text." [ref=f46e137]
+            - link [ref=f46e140] [cursor=pointer]:
+              - /url: /jmstechsupport/p/Da98OCDicFM/
+              - img "Photo by JMS Tech Support on July 19, 2026." [ref=f46e143]
+          - generic [ref=f46e145]:
+            - link [ref=f46e147] [cursor=pointer]:
+              - /url: /jmstechsupport/p/Da4k1c1iRMb/
+              - 'img "Photo by JMS Tech Support on July 16, 2026. May be an image of screen, tablet, laptop and text that says ''JMS TECH SUPPORT We come to you. TIP TIP13 13 NewEmail napaK Invoice Attached Extertal Frdre Tecomntsgbiing-varvie.com service.com To: youBuxantple.com \"ጦ নমা Sent 日 日 Drarts Drafs a Spam Trash UNEXPECTED ATTACHMENTS CAN BE TRAPS Unexpected invoice attachments, ZIP files and document links can be traps. If you weren''t expecting the email, check with the sender before opening anything. PDF Not sure fit''s safe? JMS Tech Support can help you check. Invoice_ 7842.pdf Invoice_7842.pdf pdf 512 512KB B Local help around Maclean, Yamba & nearby areas WE COME to YOU''." [ref=f46e150]'
+            - link [ref=f46e153] [cursor=pointer]:
+              - /url: /jmstechsupport/p/Day-EUNCZGr/
+              - img "Photo by JMS Tech Support on July 14, 2026. May be an image of phone, tablet, screen and text." [ref=f46e156]
+            - link [ref=f46e159] [cursor=pointer]:
+              - /url: /jmstechsupport/p/DatkSzqiR1W/
+              - img "Photo by JMS Tech Support on July 12, 2026. May be a Twitter screenshot of phone, screen, tablet and text that says 'JMS TECH SUPPORT We come to you. TIP 9 သိ် D SIGNS YOUR FACEBOOK MAY BE COMPROMISED Security alert oticed something นทนรบล account. Your Profile activity Recent Recentactivity activity Unusual login Jakarta donesia , soness Watch for unknown logins, strange messages sent from your account, changed email addresses or posts you did not create. something feels off, act quickly. Your account may Strange message Sentto 2friends Nastenda ε15 oudidn'ter dn'tereate tatusupda Yestendaya B:20pm 白 Cneckrncont.actviy Roetwlogins 8 Changapcawprd Secune ធមា់ Local help around Maclean, Yamba & nearby areas We come to you.'." [ref=f46e162]
+          - generic [ref=f46e164]:
+            - link [ref=f46e166] [cursor=pointer]:
+              - /url: /jmstechsupport/p/DasDj-MCYeh/
+              - img "Photo by JMS Tech Support on July 12, 2026. May be an image of phone, screen, battery and text that says 'JMS TECH SUPPORT We come to you. TIP 26 USB HARGING Using singpublicUSB publicUSB USB public chargers your data device expose to security risks. PUBLIC USB CHARGERS CAN BE RISKY Charging ports in public places can be convenient, but they are not always worth the risk. Use your own charger or power bank where possible, especially for important devices. Using your own charger is the safer option. JMS Tech Support comes to o you. ዓአ Local help around Maclean, Yamba & nearby areas We come to you.'." [ref=f46e169]
+            - link [ref=f46e172] [cursor=pointer]:
+              - /url: /jmstechsupport/p/Dar72tjiZ5q/
+              - img "Photo by JMS Tech Support on July 12, 2026. May be an image of screen and text that says 'JMS TECH SUPPORT We come to you. TIP 33 CHEAP USB DRIVES CAN LET YOU DOWN A bargain USB stick or memory card not always bargain if it fails or loses data. Important files deserve storage that is reliable, genuine and properly backed up. micro 16GB LOCK 32 Cheap storage can become expensive later. JMS Tech Support comes you. Local help around Maclean, Yamba & nearby areas We come to you.'." [ref=f46e175]
+            - link [ref=f46e178] [cursor=pointer]:
+              - /url: /jmstechsupport/p/DarBdXMCYKX/
+              - img "Photo by JMS Tech Support on July 11, 2026. May be an image of phone, screen, tablet, laptop and text." [ref=f46e181]
+        - button "Show more posts from jmstechsupport" [ref=f46e183] [cursor=pointer]
+  - contentinfo [ref=f46e186]:
+    - generic [ref=f46e187]:
+      - generic [ref=f46e189]:
+        - link "Meta" [ref=f46e191] [cursor=pointer]:
+          - /url: https://about.meta.com/
+        - link "About" [ref=f46e194] [cursor=pointer]:
+          - /url: https://about.instagram.com/
+        - link "Blog" [ref=f46e197] [cursor=pointer]:
+          - /url: https://about.instagram.com/blog/
+        - link "Jobs" [ref=f46e200] [cursor=pointer]:
+          - /url: https://about.instagram.com/about-us/careers
+        - link "Help" [ref=f46e203] [cursor=pointer]:
+          - /url: https://help.instagram.com/
+        - link "API" [ref=f46e206] [cursor=pointer]:
+          - /url: https://developers.facebook.com/docs/instagram
+        - link "Privacy" [ref=f46e209] [cursor=pointer]:
+          - /url: /legal/privacy/
+        - link "Terms" [ref=f46e212] [cursor=pointer]:
+          - /url: /legal/terms/
+        - link "Locations" [ref=f46e215] [cursor=pointer]:
+          - /url: /explore/locations/
+        - link "Popular" [ref=f46e218] [cursor=pointer]:
+          - /url: /popular/
+        - link "Instagram Lite" [ref=f46e221] [cursor=pointer]:
+          - /url: /web/lite/
+        - link "Meta AI" [ref=f46e224] [cursor=pointer]:
+          - /url: https://www.meta.ai/?utm_source=foa_web_footer
+        - link "Threads" [ref=f46e227] [cursor=pointer]:
+          - /url: https://www.threads.com/
+        - link "Contact Uploading & Non-Users" [ref=f46e230] [cursor=pointer]:
+          - /url: https://www.facebook.com/help/instagram/261704639352628
+        - link "Meta Verified" [ref=f46e233] [cursor=pointer]:
+          - /url: /accounts/meta_verified/?entrypoint=web_footer
+      - generic [ref=f46e235]:
+        - generic [ref=f46e236] [cursor=pointer]:
+          - generic [ref=f46e237]:
+            - generic [ref=f46e238]: English
+            - img "Down chevron icon" [ref=f46e241]
+          - combobox "Switch Display Language" [ref=f46e243]:
+            - option "Afrikaans"
+            - option "العربية"
+            - option "Čeština"
+            - option "Dansk"
+            - option "Deutsch"
+            - option "Ελληνικά"
+            - option "English" [selected]
+            - option "English (UK)"
+            - option "Español (España)"
+            - option "Español"
+            - option "فارسی"
+            - option "Suomi"
+            - option "Français"
+            - option "עברית"
+            - option "Bahasa Indonesia"
+            - option "Italiano"
+            - option "日本語"
+            - option "한국어"
+            - option "Bahasa Melayu"
+            - option "Norsk"
+            - option "Nederlands"
+            - option "Polski"
+            - option "Português (Brasil)"
+            - option "Português (Portugal)"
+            - option "Русский"
+            - option "Svenska"
+            - option "ภาษาไทย"
+            - option "Filipino"
+            - option "Türkçe"
+            - option "中文(简体)"
+            - option "中文(台灣)"
+            - option "বাংলা"
+            - option "ગુજરાતી"
+            - option "हिन्दी"
+            - option "Hrvatski"
+            - option "Magyar"
+            - option "ಕನ್ನಡ"
+            - option "മലയാളം"
+            - option "मराठी"
+            - option "नेपाली"
+            - option "ਪੰਜਾਬੀ"
+            - option "සිංහල"
+            - option "Slovenčina"
+            - option "தமிழ்"
+            - option "తెలుగు"
+            - option "اردو"
+            - option "Tiếng Việt"
+            - option "中文(香港)"
+            - option "Български"
+            - option "Français (Canada)"
+            - option "Română"
+            - option "Српски"
+            - option "Українська"
+        - generic [ref=f46e244]: © 2026 Instagram from Meta

@@ -1,0 +1,112 @@
+- generic [active] [ref=f9e1]:
+  - generic [ref=f9e2]:
+    - banner [ref=f9e4]:
+      - generic [ref=f9e5]:
+        - generic [ref=f9e6]:
+          - button "Main menu" [expanded] [ref=f9e7] [cursor=pointer]
+          - link "Google Search Console" [ref=f9e291] [cursor=pointer]:
+            - /url: ./search-console?resource_id=sc-domain%3Aleaddrop.com.au
+        - generic [ref=f9e10]:
+          - search [ref=f9e12]:
+            - button "Search" [ref=f9e13] [cursor=pointer]
+          - generic [ref=f9e17]:
+            - generic [ref=f9e19]:
+              - button "Help" [ref=f9e21] [cursor=pointer]:
+                - generic [ref=f9e22]: 
+              - button "User settings" [ref=f9e26] [cursor=pointer]
+            - 'button "Unread messages: 3" [ref=f9e33] [cursor=pointer]':
+              - generic [ref=f9e35]:
+                - generic [ref=f9e36]: 
+                - generic [ref=f9e614]: "3"
+        - generic [ref=f9e38]:
+          - button "Google apps" [ref=f9e42] [cursor=pointer]
+          - 'button "Google Account: Josh Slater (menadool.js@gmail.com)" [ref=f9e48] [cursor=pointer]'
+    - generic [ref=f9e618]:
+      - generic [ref=f9e621]:
+        - navigation "Breadcrumbs" [ref=f9e623]:
+          - generic "Page indexing" [ref=f9e625] [cursor=pointer]:
+            - link "Page indexing" [ref=f9e626]:
+              - /url: ./search-console/index?resource_id=sc-domain%3Aleaddrop.com.au&pages=ALL_URLS
+              - generic [ref=f9e627]: arrow_back
+          - heading "Page with redirect" [level=1] [ref=f9e632]
+        - button "EXPORT" [ref=f9e635] [cursor=pointer]:
+          - generic [ref=f9e638]:
+            - generic [ref=f9e639]: 
+            - generic [ref=f9e640]: EXPORT
+        - button "Get shareable link." [ref=f9e644] [cursor=pointer]:
+          - generic [ref=f9e645]: 
+      - generic [ref=f9e653]:
+        - generic [ref=f9e655]:
+          - listbox [disabled] [ref=f9e658]:
+            - option "All known pages" [disabled] [selected] [ref=f9e659]
+          - generic [ref=f9e660]: "Last update: 24/07/2026"
+        - main [ref=f9e664]:
+          - generic [ref=f9e665]:
+            - generic [ref=f9e667]:
+              - generic [ref=f9e668]:
+                - generic [ref=f9e669]: info
+                - generic [ref=f9e670]:
+                  - generic [ref=f9e671]: Page with redirect
+                  - generic [ref=f9e672]: These pages aren't indexed or served on Google
+                  - link "Link to more extensive documentation" [ref=f9e674] [cursor=pointer]:
+                    - /url: https://support.google.com/webmasters/answer/7440203#page_with_redirect
+                    - generic [ref=f9e676]: Learn more
+              - generic [ref=f9e679]:
+                - generic [ref=f9e680]: "First detected: 01/07/2026"
+                - generic [ref=f9e681]: Finished fixing?
+                - button "validate fix" [ref=f9e682] [cursor=pointer]
+            - generic [ref=f9e688]:
+              - generic [ref=f9e691]:
+                - generic "Affected pages" [ref=f9e692]
+                - generic "1" [ref=f9e693]
+              - img [ref=f9e697]:
+                - generic [ref=f9e698]:
+                  - generic [ref=f9e699]:
+                    - generic [ref=f9e700]: 01/05/2026
+                    - generic [ref=f9e702]: 13/05/2026
+                    - generic [ref=f9e704]: 25/05/2026
+                    - generic [ref=f9e706]: 06/06/2026
+                    - generic [ref=f9e708]: 18/06/2026
+                    - generic [ref=f9e710]: 30/06/2026
+                    - generic [ref=f9e712]: 12/07/2026
+                    - generic [ref=f9e714]: 24/07/2026
+                  - generic [ref=f9e716]:
+                    - generic [ref=f9e717]: "3"
+                    - generic [ref=f9e719]: "2"
+                    - generic [ref=f9e721]: "1"
+                    - generic [ref=f9e723]: "0"
+            - generic [ref=f9e781]:
+              - generic [ref=f9e783]:
+                - generic [ref=f9e784]:
+                  - generic [ref=f9e785]: Examples
+                  - button "null" [ref=f9e789] [cursor=pointer]:
+                    - generic [ref=f9e790]: 
+                - button "Filter table rows" [ref=f9e795] [cursor=pointer]:
+                  - generic [ref=f9e796]: 
+              - table [ref=f9e801]:
+                - rowgroup [ref=f9e802]:
+                  - row [ref=f9e803]:
+                    - columnheader "URL" [ref=f9e804]
+                    - columnheader "Last crawled" [ref=f9e810]
+                - rowgroup [ref=f9e816]:
+                  - row [ref=f9e817]:
+                    - cell "http://leaddrop.com.au/" [ref=f9e818]:
+                      - generic "http://leaddrop.com.au/" [ref=f9e820]
+                    - cell "25 Jul 2026" [ref=f9e822]
+              - generic [ref=f9e827]:
+                - generic [ref=f9e829]:
+                  - generic [ref=f9e830]: "Rows per page:"
+                  - listbox "Number of rows per page" [ref=f9e831] [cursor=pointer]:
+                    - option "5"
+                    - option "10" [selected] [ref=f9e832]
+                    - option "25"
+                    - option "50"
+                    - option "100"
+                    - option "250"
+                    - option "500"
+                - generic [ref=f9e833]:
+                  - generic [ref=f9e834]: 1-1 of 1
+                  - generic [ref=f9e835]:
+                    - generic [ref=f9e836]: 
+                    - generic [ref=f9e838]: 
+  - generic [ref=f9e613]: Page indexing

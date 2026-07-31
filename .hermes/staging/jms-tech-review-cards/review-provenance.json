@@ -1,0 +1,57 @@
+{
+  "source": "Google Maps public reviews for JMS Tech Support",
+  "source_url": "https://www.google.com/maps?cid=12452262121885535819&hl=en-AU",
+  "usage_rules": [
+    "The visible excerpt is an exact contiguous excerpt of the source review.",
+    "Reviewer names are reduced to first name and surname initial.",
+    "Every featured review is five stars.",
+    "Do not pair a review with an unrelated job image as though it documents that job."
+  ],
+  "reviews": [
+    {
+      "key": "38",
+      "filename": "review-tom-m.jpg",
+      "name": "Tom M.",
+      "service": "Security cameras",
+      "excerpt": "I fully recommend him and his product.",
+      "source_text": "I met Josh as a result of his letter drop in my area. He was and is just brilliant. He installed my cameras at my home, assisted with the set-up and has on numerous occasions provided great after care. The camera's are just what we needed. I fully recommend him and his product. All the best Josh.",
+      "published_relative_date": "3 months ago"
+    },
+    {
+      "key": "39",
+      "filename": "review-mekala-h.jpg",
+      "name": "Mekala H.",
+      "service": "Slow internet and Wi-Fi",
+      "excerpt": "By the time he left, my internet was so much faster. The difference was massive.",
+      "source_text": "Josh came over to fix my internet because it was honestly driving me insane with how slow it was. He didn’t just have a quick look and leave, he actually took the time to figure out what was going on and explain it to me in a way I could understand. By the time he left, my internet was so much faster. The difference was massive. What I really appreciated was that he gave me proper advice, not just a quick fix. You can tell he knows what he’s doing and actually cares about getting it right. Highly recommend.",
+      "published_relative_date": "3 months ago"
+    },
+    {
+      "key": "40",
+      "filename": "review-wendi-m.jpg",
+      "name": "Wendi M.",
+      "service": "Reliable house calls",
+      "excerpt": "Josh was very professional, he knew what he was talking about. Each time he turned up when he said he would.",
+      "source_text": "Josh was very professional, he knew what he was talking about. Each time he turned up when he said he would.",
+      "published_relative_date": "a month ago"
+    },
+    {
+      "key": "41",
+      "filename": "review-wendy-d.jpg",
+      "name": "Wendy D.",
+      "service": "Security cameras",
+      "excerpt": "Great service great products and great after service",
+      "source_text": "I recently had security cameras installed and cannot recommend highly enough. Great service great products and great after service",
+      "published_relative_date": "2 months ago"
+    },
+    {
+      "key": "42",
+      "filename": "review-helen-b.jpg",
+      "name": "Helen B.",
+      "service": "External security camera",
+      "excerpt": "Very happy with my external camera, great peace of mind",
+      "source_text": "Very happy with my external camera, great peace of mind.....thanks Josh 😊",
+      "published_relative_date": "5 months ago"
+    }
+  ]
+}

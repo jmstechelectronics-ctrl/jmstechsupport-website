@@ -1,0 +1,42 @@
+- generic [ref=f26e2]:
+  - banner [ref=f26e4]:
+    - generic [ref=f26e5]:
+      - button "Main menu" [ref=f26e7] [cursor=pointer]
+      - generic [ref=f26e13]:
+        - button "Help" [ref=f26e15] [cursor=pointer]:
+          - generic [ref=f26e16]: 
+        - button "User settings" [ref=f26e20] [cursor=pointer]
+      - generic [ref=f26e26]:
+        - button "Google apps" [ref=f26e30] [cursor=pointer]
+        - 'button "Google Account: Josh Slater (menadool.js@gmail.com)" [ref=f26e36] [cursor=pointer]'
+  - dialog "navigational drawer" [ref=f26e42]:
+    - navigation "Primary" [ref=f26e45]:
+      - button "Search property" [ref=f26e49] [cursor=pointer]:
+        - generic [ref=f26e56]:
+          - combobox "Search property" [ref=f26e57]
+          - generic: Search property
+        - generic [ref=f26e58]: 
+      - generic [ref=f26e60]:
+        - generic [ref=f26e62]:
+          - button [ref=f26e64] [cursor=pointer]:
+            - generic [ref=f26e65]: feedback
+          - button [ref=f26e71] [cursor=pointer]:
+            - generic [ref=f26e72]: info
+        - generic [ref=f26e79]:
+          - link "Privacy" [ref=f26e80] [cursor=pointer]:
+            - /url: https://myaccount.google.com/privacypolicy?hl=en-GB
+          - link "Terms" [ref=f26e81] [cursor=pointer]:
+            - /url: https://myaccount.google.com/termsofservice?hl=en-GB
+  - generic [ref=f26e84]:
+    - generic [ref=f26e85]: 
+    - generic [ref=f26e87]: Oops, you don't have access to this property
+    - generic [ref=f26e88]:
+      - generic [ref=f26e89]:
+        - text: "Signed in as:"
+        - generic [ref=f26e90]: menadool.js@gmail.com
+      - generic [ref=f26e91]:
+        - text: "Property:"
+        - generic [ref=f26e92]: jmstechsupport.com.au
+      - generic [ref=f26e93]: Sign in with an account that can access this property, or request access from a property owner.
+      - generic [ref=f26e94]: Otherwise
+      - button "Verify your ownership" [ref=f26e96] [cursor=pointer]

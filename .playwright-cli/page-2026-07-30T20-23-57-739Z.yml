@@ -1,0 +1,177 @@
+- generic [ref=f82e11]:
+  - generic [ref=f82e13]:
+    - link [ref=f82e16] [cursor=pointer]:
+      - /url: /
+      - img "Instagram" [ref=f82e19]
+    - generic [ref=f82e24]:
+      - link "Log In" [ref=f82e26] [cursor=pointer]:
+        - /url: /accounts/login/?next=%2Fjmswebdesign.com.au%2F&source=desktop_nav
+      - link "Sign Up" [ref=f82e28] [cursor=pointer]:
+        - /url: /accounts/emailsignup/
+  - main [ref=f82e29]:
+    - generic [ref=f82e31]:
+      - generic [ref=f82e32]:
+        - link [ref=f82e36] [cursor=pointer]:
+          - /url: /jmswebdesign.com.au/
+          - img "jmswebdesign.com.au's profile picture" [ref=f82e37]
+        - heading "jmswebdesign.com.au" [level=2] [ref=f82e44]
+        - list [ref=f82e47]:
+          - listitem [ref=f82e48]:
+            - link "282 followers" [ref=f82e50] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f82e51]:
+                - generic "282" [ref=f82e52]
+                - text: followers
+          - listitem [ref=f82e53]:
+            - link "1,092 following" [ref=f82e55] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f82e56]:
+                - generic [ref=f82e57]: 1,092
+                - text: following
+        - generic [ref=f82e59]:
+          - generic [ref=f82e60]: JMS Web Design
+          - generic [ref=f82e62]:
+            - button [ref=f82e63] [cursor=pointer]:
+              - generic [ref=f82e64]: Websites for small businesses.Professional, mobile-friendly sites with domain, hosting, email & updates included
+            - generic [ref=f82e65]:
+              - text: ...
+              - button "more" [ref=f82e66] [cursor=pointer]
+          - generic [ref=f82e68]:
+            - img "Link icon" [ref=f82e70]
+            - link "jmswebdesign.com.au" [ref=f82e74] [cursor=pointer]:
+              - /url: https://l.instagram.com/?u=http%3A%2F%2Fjmswebdesign.com.au%2F&e=AUCszA9-qKm6xBvgvJibpcZjQ35CQFOYREXcGNT5SwX8if-9jvNvSmMFE5XFiV0wIk5_AzpfRSpixf4Kp71AaV7mR_xnlKlsyX8TH8N0WGcmKzKRpe5hjqS0itxY4GiR1EVLaotxvoV8pQ
+        - generic:
+          - menu
+      - generic [ref=f82e76]:
+        - tablist [ref=f82e77]:
+          - link [ref=f82e79] [cursor=pointer]:
+            - /url: /jmswebdesign.com.au/
+            - img "Posts" [ref=f82e81]
+          - link [ref=f82e92] [cursor=pointer]:
+            - /url: "#"
+            - img "Tagged" [ref=f82e94]
+        - tabpanel
+      - generic [ref=f82e98]:
+        - generic [ref=f82e101]:
+          - generic [ref=f82e102]:
+            - link [ref=f82e104] [cursor=pointer]:
+              - /url: /jmswebdesign.com.au/p/Dbak3_eG3Zv/
+            - link [ref=f82e109] [cursor=pointer]:
+              - /url: /jmswebdesign.com.au/p/DbX08qCG6Xo/
+            - link [ref=f82e114] [cursor=pointer]:
+              - /url: /jmswebdesign.com.au/p/DbVMxWdG2En/
+          - generic [ref=f82e118]:
+            - link [ref=f82e120] [cursor=pointer]:
+              - /url: /jmswebdesign.com.au/p/DbSqB6dmxTk/
+            - link [ref=f82e125] [cursor=pointer]:
+              - /url: /jmswebdesign.com.au/p/DbP8FzRm5r6/
+            - link [ref=f82e130] [cursor=pointer]:
+              - /url: /jmswebdesign.com.au/p/DbNTlcRG4rB/
+          - generic [ref=f82e134]:
+            - link [ref=f82e136] [cursor=pointer]:
+              - /url: /jmswebdesign.com.au/p/DbIFIdKG9UO/
+            - link [ref=f82e141] [cursor=pointer]:
+              - /url: /jmswebdesign.com.au/p/DbFoM35m10O/
+            - link [ref=f82e146] [cursor=pointer]:
+              - /url: /jmswebdesign.com.au/p/Da-AuediYyb/
+          - generic [ref=f82e150]:
+            - link [ref=f82e152] [cursor=pointer]:
+              - /url: /jmswebdesign.com.au/p/Da7XCZBCSzX/
+            - link [ref=f82e157] [cursor=pointer]:
+              - /url: /jmswebdesign.com.au/p/Da42gppCX-z/
+            - link [ref=f82e162] [cursor=pointer]:
+              - /url: /jmswebdesign.com.au/p/Da2OBiniXXx/
+        - button "Show more posts from jmswebdesign.com.au" [ref=f82e166] [cursor=pointer]
+  - contentinfo [ref=f82e169]:
+    - generic [ref=f82e170]:
+      - generic [ref=f82e172]:
+        - link "Meta" [ref=f82e174] [cursor=pointer]:
+          - /url: https://about.meta.com/
+        - link "About" [ref=f82e177] [cursor=pointer]:
+          - /url: https://about.instagram.com/
+        - link "Blog" [ref=f82e180] [cursor=pointer]:
+          - /url: https://about.instagram.com/blog/
+        - link "Jobs" [ref=f82e183] [cursor=pointer]:
+          - /url: https://about.instagram.com/about-us/careers
+        - link "Help" [ref=f82e186] [cursor=pointer]:
+          - /url: https://help.instagram.com/
+        - link "API" [ref=f82e189] [cursor=pointer]:
+          - /url: https://developers.facebook.com/docs/instagram
+        - link "Privacy" [ref=f82e192] [cursor=pointer]:
+          - /url: /legal/privacy/
+        - link "Terms" [ref=f82e195] [cursor=pointer]:
+          - /url: /legal/terms/
+        - link "Locations" [ref=f82e198] [cursor=pointer]:
+          - /url: /explore/locations/
+        - link "Popular" [ref=f82e201] [cursor=pointer]:
+          - /url: /popular/
+        - link "Instagram Lite" [ref=f82e204] [cursor=pointer]:
+          - /url: /web/lite/
+        - link "Meta AI" [ref=f82e207] [cursor=pointer]:
+          - /url: https://www.meta.ai/?utm_source=foa_web_footer
+        - link "Threads" [ref=f82e210] [cursor=pointer]:
+          - /url: https://www.threads.com/
+        - link "Contact Uploading & Non-Users" [ref=f82e213] [cursor=pointer]:
+          - /url: https://www.facebook.com/help/instagram/261704639352628
+        - link "Meta Verified" [ref=f82e216] [cursor=pointer]:
+          - /url: /accounts/meta_verified/?entrypoint=web_footer
+      - generic [ref=f82e218]:
+        - generic [ref=f82e219] [cursor=pointer]:
+          - generic [ref=f82e220]:
+            - generic [ref=f82e221]: English
+            - img "Down chevron icon" [ref=f82e224]
+          - combobox "Switch Display Language" [ref=f82e226]:
+            - option "Afrikaans"
+            - option "العربية"
+            - option "Čeština"
+            - option "Dansk"
+            - option "Deutsch"
+            - option "Ελληνικά"
+            - option "English" [selected]
+            - option "English (UK)"
+            - option "Español (España)"
+            - option "Español"
+            - option "فارسی"
+            - option "Suomi"
+            - option "Français"
+            - option "עברית"
+            - option "Bahasa Indonesia"
+            - option "Italiano"
+            - option "日本語"
+            - option "한국어"
+            - option "Bahasa Melayu"
+            - option "Norsk"
+            - option "Nederlands"
+            - option "Polski"
+            - option "Português (Brasil)"
+            - option "Português (Portugal)"
+            - option "Русский"
+            - option "Svenska"
+            - option "ภาษาไทย"
+            - option "Filipino"
+            - option "Türkçe"
+            - option "中文(简体)"
+            - option "中文(台灣)"
+            - option "বাংলা"
+            - option "ગુજરાતી"
+            - option "हिन्दी"
+            - option "Hrvatski"
+            - option "Magyar"
+            - option "ಕನ್ನಡ"
+            - option "മലയാളം"
+            - option "मराठी"
+            - option "नेपाली"
+            - option "ਪੰਜਾਬੀ"
+            - option "සිංහල"
+            - option "Slovenčina"
+            - option "தமிழ்"
+            - option "తెలుగు"
+            - option "اردو"
+            - option "Tiếng Việt"
+            - option "中文(香港)"
+            - option "Български"
+            - option "Français (Canada)"
+            - option "Română"
+            - option "Српски"
+            - option "Українська"
+        - generic [ref=f82e227]: © 2026 Instagram from Meta

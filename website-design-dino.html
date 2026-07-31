@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Design — JMS Tech Support</title>
+  <meta name="description" content="Website creation is handled by JMS Web Design, our dedicated web design arm." />
+  <meta http-equiv="refresh" content="8;url=https://jmswebdesign.com.au/" />
+  <link rel="canonical" href="/website-design.html" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+      color:#102033;
+      display:flex;align-items:center;justify-content:center;
+      min-height:100vh;padding:24px;
+      background:radial-gradient(ellipse at 50% 30%, #e8f2fc 0%, #f6f8fb 60%);
+    }
+    .card{
+      background:#fff;
+      border-radius:18px;padding:40px 28px 32px;
+      max-width:640px;width:100%;
+      text-align:center;
+      box-shadow:0 2px 24px rgba(0,0,0,.07),0 8px 48px rgba(20,60,120,.06);
+      animation:card-enter .55s ease-out both;
+    }
+    @keyframes card-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+    .badge{
+      display:inline-block;
+      background:#e8f0fe;color:#1a73e8;
+      font-size:13px;font-weight:600;
+      padding:4px 16px;border-radius:99px;
+      margin-bottom:24px;
+      transition:background .3s,color .3s;
+    }
+    .badge.leaving{background:#fef3c7;color:#b45309}
+    .badge.ready{background:#dcfce7;color:#166534}
+
+    /* Brand row with wide track */
+    .handoff{
+      display:flex;align-items:flex-end;justify-content:center;
+      gap:0;margin-bottom:4px;
+      font-weight:600;font-size:14px;
+    }
+    .brand-left{color:#102033;flex-shrink:0;padding-bottom:40px}
+    .brand-right{color:#1a73e8;flex-shrink:0;padding-bottom:40px;transition:transform .3s}
+    .brand-right.pulse{transform:scale(1.1)}
+
+    /* Wide pixel track */
+    .track{
+      flex:1;min-width:120px;max-width:260px;
+      margin:0 8px;position:relative;
+      height:56px;
+    }
+    /* Ground line */
+    .track::before{
+      content:'';position:absolute;bottom:18px;left:0;right:0;
+      height:2px;background:#dce5f0;
+    }
+    /* Progress fill on ground line */
+    .track::after{
+      content:'';position:absolute;bottom:18px;left:0;
+      height:2px;width:0;
+      background:#1a73e8;
+      animation:draw-line 8s linear forwards;
+    }
+    @keyframes draw-line{to{width:100%}}
+
+    /* Pixel obstacle (small redirect arrow) */
+    .obstacle{
+      position:absolute;bottom:20px;left:50%;
+      transform:translateX(-50%);
+      width:16px;height:16px;
+    }
+    .obstacle::before{
+      content:'➜';
+      font-size:15px;color:#c4d4e6;line-height:1;
+    }
+
+    /* Custom pixel dino — JMS blue, built with box-shadow */
+    .dino{
+      position:absolute;bottom:28px;left:0;
+      width:6px;height:6px;
+      transform:translateX(-50%);
+      animation:travel-track 8s linear forwards;
+      z-index:2;
+    }
+    .dino-pixels{
+      position:absolute;bottom:0;left:0;
+      width:6px;height:6px;
+      background:#1a73e8;
+      box-shadow:
+        /* head */
+        12px -24px 0 #1a73e8, 18px -24px 0 #1a73e8,
+        18px -18px 0 #1a73e8, 24px -18px 0 #1a73e8,
+        18px -12px 0 #1a73e8, 24px -12px 0 #1a73e8,
+        /* eye */
+        24px -24px 0 #e8f2fc,
+        /* body */
+        6px -18px 0 #1a73e8, 12px -18px 0 #1a73e8,
+        6px -12px 0 #1a73e8, 12px -12px 0 #1a73e8,
+        6px -6px 0 #1a73e8, 12px -6px 0 #1a73e8,
+        /* tail */
+        -6px -18px 0 #1a73e8, -6px -12px 0 #1a73e8,
+        -12px -12px 0 #1a73e8, -6px -6px 0 #1a73e8,
+        /* legs — walking */
+        0px 0px 0 #1a73e8, 12px 0px 0 #1a73e8, 6px 0px 0 #1a73e8;
+      animation:walk-cycle .3s steps(1) infinite;
+    }
+    @keyframes walk-cycle{
+      0%,100%{box-shadow:
+        12px -24px 0 #1a73e8,18px -24px 0 #1a73e8,18px -18px 0 #1a73e8,24px -18px 0 #1a73e8,
+        18px -12px 0 #1a73e8,24px -12px 0 #1a73e8,24px -24px 0 #e8f2fc,
+        6px -18px 0 #1a73e8,12px -18px 0 #1a73e8,6px -12px 0 #1a73e8,12px -12px 0 #1a73e8,
+        6px -6px 0 #1a73e8,12px -6px 0 #1a73e8,
+        -6px -18px 0 #1a73e8,-6px -12px 0 #1a73e8,-12px -12px 0 #1a73e8,-6px -6px 0 #1a73e8,
+        0px 0px 0 #1a73e8,6px 0px 0 #1a73e8,12px 0px 0 #1a73e8}
+      50%{box-shadow:
+        12px -24px 0 #1a73e8,18px -24px 0 #1a73e8,18px -18px 0 #1a73e8,24px -18px 0 #1a73e8,
+        18px -12px 0 #1a73e8,24px -12px 0 #1a73e8,24px -24px 0 #e8f2fc,
+        6px -18px 0 #1a73e8,12px -18px 0 #1a73e8,6px -12px 0 #1a73e8,12px -12px 0 #1a73e8,
+        6px -6px 0 #1a73e8,12px -6px 0 #1a73e8,
+        -6px -18px 0 #1a73e8,-6px -12px 0 #1a73e8,-12px -12px 0 #1a73e8,-6px -6px 0 #1a73e8,
+        0px 0px 0 #1a73e8,6px 0px 0 transparent,12px 0px 0 #1a73e8}
+    }
+
+    /* Jump at midpoint (~50% of travel = ~4s) */
+    @keyframes travel-track{
+      0%{left:0;bottom:28px}
+      48%{left:50%;bottom:28px}
+      50%{left:52%;bottom:52px}
+      55%{left:55%;bottom:52px}
+      58%{left:58%;bottom:28px}
+      100%{left:100%;bottom:28px}
+    }
+
+    .subhead{font-size:14px;color:rgba(16,32,51,.55);margin-bottom:16px}
+
+    .offer{
+      background:#f0f7ff;border-radius:12px;
+      padding:14px 20px;margin:0 0 20px;
+    }
+    .offer strong{font-size:19px;color:#102033}
+    .offer span{color:rgba(16,32,51,.55);font-size:14px}
+
+    .btn{
+      display:inline-block;background:#1a73e8;color:#fff;
+      text-decoration:none;padding:13px 32px;border-radius:10px;
+      font-weight:600;font-size:15px;margin-bottom:14px;
+      transition:background .2s;
+    }
+    .btn:hover{background:#1557b0}
+
+    .progress-track{
+      width:100%;max-width:280px;height:4px;
+      background:#e8edf3;border-radius:2px;
+      margin:0 auto;overflow:hidden;
+    }
+    .progress-fill{
+      height:100%;width:0;background:#1a73e8;border-radius:2px;
+      animation:fill-bar 8s linear forwards;
+    }
+    @keyframes fill-bar{to{width:100%}}
+
+    @media (prefers-reduced-motion:reduce){
+      .card{animation:none;transform:none}
+      .track::after{animation:none;width:100%}
+      .dino{animation:none;left:100%;bottom:28px}
+      .dino-pixels{animation:none}
+      .obstacle{opacity:.4}
+      .progress-fill{animation:none;width:100%}
+      .brand-right.pulse{transform:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge" id="badge">JMS Web Design</div>
+
+    <div class="handoff">
+      <span class="brand-left">JMS Tech Support</span>
+      <div class="track">
+        <div class="obstacle"></div>
+        <div class="dino" id="dino">
+          <div class="dino-pixels"></div>
+        </div>
+      </div>
+      <span class="brand-right" id="brandRight">JMS Web Design</span>
+    </div>
+
+    <p class="subhead">Same owner, same phone number, same approach — real websites for real businesses, no agencies and no ticket queues.</p>
+
+    <div class="offer">
+      <strong>$349 once + $29/month</strong><br />
+      <span>Domain, hosting, email and ongoing support included. Live in 48 hours.</span>
+    </div>
+
+    <a class="btn" href="/website-design.html" id="btn">Visit JMS Web Design now</a>
+
+    <div class="progress-track">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+  </div>
+
+  <script>
+    const badge = document.getElementById('badge');
+    const brandRight = document.getElementById('brandRight');
+    const dino = document.getElementById('dino');
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+    if (!prefersReduced) {
+      setTimeout(() => {
+        badge.textContent = 'Taking you there…';
+        badge.classList.add('leaving');
+      }, 4000);
+
+      setTimeout(() => {
+        dino.style.opacity = '0';
+        brandRight.classList.add('pulse');
+        badge.textContent = 'Welcome to JMS Web Design';
+        badge.classList.remove('leaving');
+        badge.classList.add('ready');
+      }, 7400);
+    }
+
+    setTimeout(() => {
+      window.location.replace('https://jmswebdesign.com.au/');
+    }, 8000);
+  </script>
+</body>
+</html>

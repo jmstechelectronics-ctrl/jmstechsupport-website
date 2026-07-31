@@ -1,0 +1,29 @@
+- generic [ref=f18e2]:
+  - banner [ref=f18e4]:
+    - generic [ref=f18e5]:
+      - button [ref=f18e60] [cursor=pointer]
+      - generic [ref=f18e13]:
+        - button [ref=f18e61] [cursor=pointer]:
+          - generic [ref=f18e16]: 
+        - button [ref=f18e62] [cursor=pointer]
+      - generic [ref=f18e26]:
+        - button [ref=f18e63] [cursor=pointer]
+        - button [ref=f18e64] [cursor=pointer]
+  - generic [ref=f18e42]:
+    - generic [ref=f18e43]: 
+    - generic [ref=f18e45]: Oops, you don't have access to this property
+    - generic [ref=f18e46]:
+      - generic [ref=f18e47]:
+        - text: "Signed in as:"
+        - generic [ref=f18e48]: menadool.js@gmail.com
+      - generic [ref=f18e49]:
+        - text: "Property:"
+        - generic [ref=f18e50]: jmswebdesign.com.au
+      - generic [ref=f18e51]: Sign in with an account that can access this property, or request access from a property owner.
+      - generic [ref=f18e52]: Otherwise
+      - button [ref=f18e65] [cursor=pointer]:
+        - generic [ref=f18e56]: Verify your ownership
+  - dialog [active] [ref=f18e68]:
+    - generic [ref=f18e69]:
+      - generic [ref=f18e70]: Checking verification...
+      - progressbar [ref=f18e71]

@@ -1,0 +1,116 @@
+- generic [active] [ref=f100e1]:
+  - banner [ref=f100e2]:
+    - generic [ref=f100e3]:
+      - generic [ref=f100e4]:
+        - link [ref=f100e5] [cursor=pointer]:
+          - /url: /
+          - img "JMS Tech Support logo" [ref=f100e6]
+        - button "Open menu" [ref=f100e7] [cursor=pointer]
+      - generic:
+        - link "Home":
+          - /url: /
+        - link "About":
+          - /url: /about.html
+        - link "Services":
+          - /url: /services.html
+        - link "Websites":
+          - /url: https://jmswebdesign.com.au/
+        - link "Security Cameras":
+          - /url: /security-camera-installation-yamba.html
+        - link "Tips":
+          - /url: /tips/
+        - link "Contact":
+          - /url: /contact.html
+  - main [ref=f100e11]:
+    - generic [ref=f100e12]:
+      - generic [ref=f100e14]:
+        - heading "Computer repairs and tech support in Clarence Valley" [level=1] [ref=f100e15]
+        - paragraph [ref=f100e16]: On-site support for homes and small businesses in Yamba, Maclean, Grafton and nearby areas. We fix problems, explain what changed, and keep it simple.
+      - generic [ref=f100e17]:
+        - generic [ref=f100e18]:
+          - heading "What We Help With" [level=2] [ref=f100e19]
+          - paragraph [ref=f100e20]: Yamba, Maclean, Grafton and Clarence Valley
+        - generic [ref=f100e21]:
+          - generic [ref=f100e22]:
+            - img "PC and laptop troubleshooting service" [ref=f100e23]
+            - generic [ref=f100e24]:
+              - generic [ref=f100e25]: Computer support
+              - heading "PC and laptop troubleshooting" [level=3] [ref=f100e26]
+              - paragraph [ref=f100e27]: Speed issues, crashes, virus and pop-up removal, software installs, updates, startup problems and general reliability fixes.
+          - link "Open slow internet and dropout fixes page" [ref=f100e28] [cursor=pointer]:
+            - /url: /slow-internet-wifi-help.html
+            - img "Slow internet and dropout fixes service" [ref=f100e29]
+            - generic [ref=f100e30]:
+              - generic [ref=f100e31]: Wi-Fi / NBN
+              - heading "Slow internet and dropout fixes" [level=3] [ref=f100e32]
+              - paragraph [ref=f100e33]: Router setup, dead zones, mesh planning and NBN diagnostics for stable performance.
+              - generic [ref=f100e34]: Open slow internet page
+          - link "Open cameras page" [ref=f100e36] [cursor=pointer]:
+            - /url: /security-camera-installation-yamba.html
+            - img "Security camera installation and app setup service" [ref=f100e37]
+            - generic [ref=f100e38]:
+              - generic [ref=f100e39]: Security cameras
+              - heading "Installation and app setup" [level=3] [ref=f100e40]
+              - paragraph [ref=f100e41]: Clean camera installs, motion zones, recording setup and playback training.
+              - generic [ref=f100e42]: Open cameras page
+          - generic [ref=f100e44]:
+            - img "Phones tablets and smart TVs support service" [ref=f100e45]
+            - generic [ref=f100e46]:
+              - generic [ref=f100e47]: Devices
+              - heading "Phones, tablets and smart TVs" [level=3] [ref=f100e48]
+              - paragraph [ref=f100e49]: Setup, syncing, connectivity issues, storage cleanup and device-to-device integration.
+          - generic [ref=f100e50]:
+            - img "Smart home setup service" [ref=f100e51]
+            - generic [ref=f100e52]:
+              - generic [ref=f100e53]: Smart Home Setup
+              - heading "Smart Home Setup" [level=3] [ref=f100e54]
+              - paragraph [ref=f100e55]: Smart TVs, streaming devices, speakers, cameras and home automation setup. We connect everything and make sure it all works together.
+          - link "Open website creation page" [ref=f100e56] [cursor=pointer]:
+            - /url: https://jmswebdesign.com.au/
+            - img "Simple website creation service" [ref=f100e57]
+            - generic [ref=f100e58]:
+              - generic [ref=f100e59]: Websites
+              - heading "Simple website creation" [level=3] [ref=f100e60]
+              - paragraph [ref=f100e61]: Clean, mobile-friendly websites for local businesses, with practical setup and easy ongoing updates.
+              - generic [ref=f100e62]: Open website creation page
+      - generic [ref=f100e65]:
+        - heading "Need help now?" [level=2] [ref=f100e66]
+        - paragraph [ref=f100e67]: Call for urgent support or send job details through the contact page.
+        - generic [ref=f100e68]:
+          - link "Call 0418 160 226" [ref=f100e69] [cursor=pointer]:
+            - /url: tel:0418160226
+          - link "Contact form" [ref=f100e70] [cursor=pointer]:
+            - /url: /contact.html
+      - generic [ref=f100e72]:
+        - generic [ref=f100e73]:
+          - generic [ref=f100e74]:
+            - link "View Google IT Support Professional Certificate on Credly" [ref=f100e75] [cursor=pointer]:
+              - /url: https://www.credly.com/badges/6c52baf0-da9c-4a83-8c62-e63fef74cb77
+              - img "Google IT Support Professional Certificate badge" [ref=f100e76]
+            - paragraph [ref=f100e77]: Google IT Support Professional Certificate
+          - generic [ref=f100e78]:
+            - navigation "Footer" [ref=f100e79]:
+              - link "About" [ref=f100e80] [cursor=pointer]:
+                - /url: /about.html
+              - link "Services" [ref=f100e81] [cursor=pointer]:
+                - /url: /services.html
+              - link "Security Cameras" [ref=f100e82] [cursor=pointer]:
+                - /url: /security-camera-installation-yamba.html
+              - link "Tips" [ref=f100e83] [cursor=pointer]:
+                - /url: /tips/
+              - link "FAQ" [ref=f100e84] [cursor=pointer]:
+                - /url: /faq.html
+              - link "Contact" [ref=f100e85] [cursor=pointer]:
+                - /url: /contact.html
+            - navigation "Social media" [ref=f100e86]:
+              - link "Facebook" [ref=f100e87] [cursor=pointer]:
+                - /url: https://facebook.com/jmstechit
+              - link "Instagram" [ref=f100e90] [cursor=pointer]:
+                - /url: https://instagram.com/jmstechsupport
+              - link "YouTube" [ref=f100e93] [cursor=pointer]:
+                - /url: https://www.youtube.com/@JMSTechSupport
+              - link "X" [ref=f100e96] [cursor=pointer]:
+                - /url: https://x.com/jmstechsupport
+        - generic [ref=f100e99]:
+          - paragraph [ref=f100e100]: JMS Tech Support provides computer repairs, Wi-Fi help and security camera installation across Yamba, Maclean, Iluka, Townsend, Gulmarrad, Grafton and the Clarence Valley.
+          - paragraph [ref=f100e101]: © 2026 JMS Tech Support. All rights reserved. ABN 79 773 473 522
