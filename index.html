@@ -1200,7 +1200,12 @@
 
             <div class="footer-newsletter">
               <p class="footer-newsletter-title">Get tech tips &amp; local updates</p>
-              <form class="footer-newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+              <form class="footer-newsletter-form" name="newsletter" method="POST" action="https://formsubmit.co/josh@jmstechsupport.com.au">
+                <input type="hidden" name="form-name" value="newsletter">
+                <input type="hidden" name="_subject" value="JMS Tech Support newsletter signup">
+                <input type="hidden" name="_next" value="https://jmstechsupport.com.au/thanks.html">
+                <input type="hidden" name="_captcha" value="false">
+                <p hidden><label>Do not fill this in: <input name="_honey" autocomplete="off" tabindex="-1"></label></p>
                 <input type="email" name="email" placeholder="Your email" required aria-label="Email address" class="footer-newsletter-input" />
                 <button type="submit" class="footer-newsletter-btn">Subscribe</button>
               </form>
