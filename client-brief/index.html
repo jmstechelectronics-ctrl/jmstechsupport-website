@@ -408,11 +408,13 @@
         </div>
       </div>
 
-      <!-- Netlify Forms: email notifications should be enabled in the Netlify dashboard after deploy under Site > Forms. -->
-      <form name="website-client-brief" method="POST" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field" action="/client-brief/thank-you/index.html">
+      <form name="website-client-brief" method="POST" enctype="multipart/form-data" action="https://formsubmit.co/josh@jmstechsupport.com.au">
         <input type="hidden" name="form-name" value="website-client-brief" />
+        <input type="hidden" name="_subject" value="JMS Tech Support website client brief" />
+        <input type="hidden" name="_next" value="https://jmstechsupport.com.au/client-brief/thank-you/" />
+        <input type="hidden" name="_captcha" value="false" />
         <p hidden>
-          <label>Do not fill this in: <input name="bot-field" /></label>
+          <label>Do not fill this in: <input name="_honey" autocomplete="off" tabindex="-1" /></label>
         </p>
 
         <section>
